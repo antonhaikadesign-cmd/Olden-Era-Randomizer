@@ -157,30 +157,31 @@ function getLocalViewState() {
 }
 
 function getMultiUsage() {
-  const usage = state.multiplayer.usage;
+  const usage = state.multiplayer?.usage;
   return {
-    rerollCastlesLeftUsed: usage.get("rerollCastlesLeftUsed") === true,
-    rerollCastlesRightUsed: usage.get("rerollCastlesRightUsed") === true,
-    rerollBothLeftUsed: usage.get("rerollBothLeftUsed") === true,
-    rerollBothRightUsed: usage.get("rerollBothRightUsed") === true,
-    rerollSelfLeftUsed: usage.get("rerollSelfLeftUsed") === true,
-    rerollSelfRightUsed: usage.get("rerollSelfRightUsed") === true,
+    rerollCastlesLeftUsed: usage?.get("rerollCastlesLeftUsed") === true,
+    rerollCastlesRightUsed: usage?.get("rerollCastlesRightUsed") === true,
+    rerollBothLeftUsed: usage?.get("rerollBothLeftUsed") === true,
+    rerollBothRightUsed: usage?.get("rerollBothRightUsed") === true,
+    rerollSelfLeftUsed: usage?.get("rerollSelfLeftUsed") === true,
+    rerollSelfRightUsed: usage?.get("rerollSelfRightUsed") === true,
   };
 }
 
 function getMultiplayerViewState() {
+  const game = state.multiplayer?.game;
   return {
     sides: {
       left: {
-        faction: state.multiplayer.game.get("leftFaction"),
-        heroSlug: state.multiplayer.game.get("leftHeroSlug"),
+        faction: game?.get("leftFaction"),
+        heroSlug: game?.get("leftHeroSlug"),
       },
       right: {
-        faction: state.multiplayer.game.get("rightFaction"),
-        heroSlug: state.multiplayer.game.get("rightHeroSlug"),
+        faction: game?.get("rightFaction"),
+        heroSlug: game?.get("rightHeroSlug"),
       },
     },
-    coin: state.multiplayer.game.get("coin") ?? 0,
+    coin: game?.get("coin") ?? 0,
     seat: state.multiplayer.seat,
     usage: getMultiUsage(),
     connectedPeers: state.multiplayer.connectedPeers ?? 1,
@@ -311,7 +312,7 @@ function renderMeta(viewState) {
   } else {
     const seat = viewState.seat ? viewState.seat.toUpperCase() : "SPECTATOR";
     modeDescription.textContent =
-      "Multiplayer mode shares the same room state for both players. Castle reroll is shared once, each player gets one shared hero reroll and one personal hero reroll.";
+      "Multiplayer mode shares the same room state for both players. Each player gets one castle reroll, one reroll for both heroes, and one reroll for their own hero.";
     roomBanner.classList.remove("hidden");
     roomValue.textContent = state.multiplayer.roomId;
     seatValue.textContent = seat;
@@ -441,27 +442,53 @@ async function initializeMultiplayer({ roomId, isHost }) {
   const provider = new WebsocketProvider("wss://demos.yjs.dev", roomId, ydoc);
 
   const root = ydoc.getMap("root");
-  const players = root.get("players") || new Y.Map();
-  const game = root.get("game") || new Y.Map();
-  const usage = root.get("usage") || new Y.Map();
-
-  if (!root.get("players")) root.set("players", players);
-  if (!root.get("game")) root.set("game", game);
-  if (!root.get("usage")) root.set("usage", usage);
 
   state.multiplayer = {
     roomId,
     ydoc,
     provider,
     root,
-    players,
-    game,
-    usage,
+    players: null,
+    game: null,
+    usage: null,
     seat: null,
     connectedPeers: 1,
   };
 
+  function getSharedMaps() {
+    return {
+      players: root.get("players") ?? null,
+      game: root.get("game") ?? null,
+      usage: root.get("usage") ?? null,
+    };
+  }
+
+  function attachSharedMaps() {
+    const maps = getSharedMaps();
+    state.multiplayer.players = maps.players;
+    state.multiplayer.game = maps.game;
+    state.multiplayer.usage = maps.usage;
+    return maps;
+  }
+
+  function ensureSharedMaps() {
+    const existing = getSharedMaps();
+    const players = existing.players ?? new Y.Map();
+    const game = existing.game ?? new Y.Map();
+    const usage = existing.usage ?? new Y.Map();
+
+    if (!existing.players) root.set("players", players);
+    if (!existing.game) root.set("game", game);
+    if (!existing.usage) root.set("usage", usage);
+
+    state.multiplayer.players = players;
+    state.multiplayer.game = game;
+    state.multiplayer.usage = usage;
+    return { players, game, usage };
+  }
+
   function initializeSharedGameIfNeeded() {
+    const { game, usage } = ensureSharedMaps();
     if (game.get("initialized")) {
       return;
     }
@@ -481,29 +508,43 @@ async function initializeMultiplayer({ roomId, isHost }) {
     game.set("initialized", true);
   }
 
-  if (isHost) {
-    initializeSharedGameIfNeeded();
-  }
-
   const awareness = provider.awareness;
   awareness.setLocalStateField("clientId", clientId);
 
+  function getAssignedPlayerCount() {
+    const players = state.multiplayer.players;
+    if (!players) {
+      return 1;
+    }
+
+    const left = players.get("left");
+    const right = players.get("right");
+    return new Set([left, right].filter(Boolean)).size || 1;
+  }
+
   function updatePresence() {
-    state.multiplayer.connectedPeers = awareness.getStates().size;
+    state.multiplayer.connectedPeers = getAssignedPlayerCount();
     if (state.multiplayer.seat === "left" || state.multiplayer.seat === "right") {
       awareness.setLocalStateField("seat", state.multiplayer.seat);
     }
   }
 
   root.observeDeep(() => {
+    attachSharedMaps();
     claimSeat();
     updatePresence();
-    if (game.get("initialized")) {
+    if (state.multiplayer.game?.get("initialized")) {
       render();
     }
   });
 
   function claimSeat() {
+    const players = state.multiplayer.players;
+    if (!players) {
+      state.multiplayer.seat = null;
+      return;
+    }
+
     const left = players.get("left");
     const right = players.get("right");
 
@@ -533,7 +574,12 @@ async function initializeMultiplayer({ roomId, isHost }) {
   }
 
   function rerollSharedCastles() {
+    const game = state.multiplayer.game;
+    const usage = state.multiplayer.usage;
     if (!state.multiplayer.seat || state.multiplayer.seat === "spectator") {
+      return;
+    }
+    if (!game || !usage) {
       return;
     }
 
@@ -552,8 +598,13 @@ async function initializeMultiplayer({ roomId, isHost }) {
   }
 
   function rerollSharedBothHeroes() {
+    const game = state.multiplayer.game;
+    const usage = state.multiplayer.usage;
     const seat = state.multiplayer.seat;
     if (!seat || seat === "spectator") {
+      return;
+    }
+    if (!game || !usage) {
       return;
     }
 
@@ -570,8 +621,13 @@ async function initializeMultiplayer({ roomId, isHost }) {
   }
 
   function rerollOwnHero() {
+    const game = state.multiplayer.game;
+    const usage = state.multiplayer.usage;
     const seat = state.multiplayer.seat;
     if (!seat || seat === "spectator") {
+      return;
+    }
+    if (!game || !usage) {
       return;
     }
 
@@ -587,6 +643,10 @@ async function initializeMultiplayer({ roomId, isHost }) {
   }
 
   function flipSharedCoin() {
+    const game = state.multiplayer.game;
+    if (!game) {
+      return;
+    }
     const value = Math.random() < 0.5 ? 0 : 1;
     game.set("coin", value);
     animateCoin(value);
@@ -605,11 +665,15 @@ async function initializeMultiplayer({ roomId, isHost }) {
   }
 
   provider.on("status", () => {
+    attachSharedMaps();
+    claimSeat();
     updatePresence();
     render();
   });
 
   awareness.on("change", () => {
+    attachSharedMaps();
+    claimSeat();
     updatePresence();
     render();
   });
@@ -617,6 +681,8 @@ async function initializeMultiplayer({ roomId, isHost }) {
   provider.on("sync", () => {
     if (isHost) {
       initializeSharedGameIfNeeded();
+    } else {
+      attachSharedMaps();
     }
     claimSeat();
     updatePresence();
