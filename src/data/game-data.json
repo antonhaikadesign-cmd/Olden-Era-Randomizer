@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07T20:04:26.879Z",
+  "generatedAt": "2026-05-07T20:16:51.904Z",
   "source": "https://www.olden-era.com/en/heroes",
   "factions": [
     {
@@ -46,8 +46,14 @@
       },
       "description": "In the Tactics Phase, he has +1 hex to the creature placement range. Creatures in his army gain 1 Initiative for every 6 hero level(s).",
       "startingSkills": [
-        "Summon Swarm",
-        "Tactics"
+        {
+          "name": "Summon Swarm",
+          "image": "assets/skills/basic_summon_swarm.webp"
+        },
+        {
+          "name": "Tactics",
+          "image": "assets/skills/basic_tactics.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -70,8 +76,14 @@
       },
       "description": "Amnesiac - Wights growth in your cities increases by 2. Under his command, Wights gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Wights lose an equal amount of Attack and Defence.",
       "startingSkills": [
-        "Necromancy",
-        "Insight"
+        {
+          "name": "Necromancy",
+          "image": "assets/skills/basic_necromancy.webp"
+        },
+        {
+          "name": "Insight",
+          "image": "assets/skills/basic_insight.webp"
+        }
       ],
       "startingSpell": {
         "name": "Silence",
@@ -97,8 +109,14 @@
       },
       "description": "She starts with the \"Masterful Firewall\" spell. This version of the spell stays active for +1 additional round. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
       "startingSkills": [
-        "Murmuring",
-        "Primal Magic"
+        {
+          "name": "Murmuring",
+          "image": "assets/skills/basic_murmuring.webp"
+        },
+        {
+          "name": "Primal Magic",
+          "image": "assets/skills/basic_primal_magic.webp"
+        }
       ],
       "startingSpell": {
         "name": "Firewall",
@@ -124,8 +142,14 @@
       },
       "description": "Rousing Presence - Increases Morale of friendly creatures by 1 and gives +2% chance per Morale point that a friendly creature takes an additional turn. For every 4 levels, this bonus increases by 1%.",
       "startingSkills": [
-        "Ascension",
-        "Leadership"
+        {
+          "name": "Ascension",
+          "image": "assets/skills/basic_ascension.webp"
+        },
+        {
+          "name": "Leadership",
+          "image": "assets/skills/basic_leadership.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -148,8 +172,14 @@
       },
       "description": "Retains the army when fleeing from battle against neutral squads. +5% Persuasion Power when using Diplomacy, plus an additional +1% for every 4 hero levels.",
       "startingSkills": [
-        "Murmuring",
-        "Diplomacy"
+        {
+          "name": "Murmuring",
+          "image": "assets/skills/basic_murmuring.webp"
+        },
+        {
+          "name": "Diplomacy",
+          "image": "assets/skills/basic_diplomacy.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -172,8 +202,14 @@
       },
       "description": "Hymn to Arina - Starts with the “Masterful Arina’s Touch” spell. This version of the spell increases target´s Speed by 1. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
       "startingSkills": [
-        "Ascension",
-        "Thaumaturgy"
+        {
+          "name": "Ascension",
+          "image": "assets/skills/basic_ascension.webp"
+        },
+        {
+          "name": "Thaumaturgy",
+          "image": "assets/skills/basic_thaumaturgy.webp"
+        }
       ],
       "startingSpell": {
         "name": "Arina’s Touch",
@@ -199,8 +235,14 @@
       },
       "description": "Drive 'em Crazy - Starts with the “Masterful Berserk” spell. This version of the spell affects all creatures adjacent to the target. The cost of this spell is reduced by 1 mana for every 3 hero levels.",
       "startingSkills": [
-        "Necromancy",
-        "Resistance"
+        {
+          "name": "Necromancy",
+          "image": "assets/skills/basic_necromancy.webp"
+        },
+        {
+          "name": "Resistance",
+          "image": "assets/skills/basic_resistance.webp"
+        }
       ],
       "startingSpell": {
         "name": "Berserk",
@@ -226,8 +268,14 @@
       },
       "description": "When leveling up, she gains 1 additional attribute point for every 2 hero levels. She gains +5% XP for every 2 hero levels.",
       "startingSkills": [
-        "Murmuring",
-        "Insight"
+        {
+          "name": "Murmuring",
+          "image": "assets/skills/basic_murmuring.webp"
+        },
+        {
+          "name": "Insight",
+          "image": "assets/skills/basic_insight.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -250,8 +298,14 @@
       },
       "description": "He produces +1 Crystals per day, plus another +1 for every 5 hero level(s). Increases the amount of Crystals found on the map by 100%.",
       "startingSkills": [
-        "Summon Swarm",
-        "Economy"
+        {
+          "name": "Summon Swarm",
+          "image": "assets/skills/basic_summon_swarm.webp"
+        },
+        {
+          "name": "Economy",
+          "image": "assets/skills/basic_economy.webp"
+        }
       ],
       "startingSpell": {
         "name": "Groundsight",
@@ -277,8 +331,14 @@
       },
       "description": "Spellweaver - Deals +10% Damage with spells, plus 1% more for every 2 hero levels. The Damage from the enemy hero’s spells is reduced by the same value.",
       "startingSkills": [
-        "Abyssal Communion",
-        "Sorcery"
+        {
+          "name": "Abyssal Communion",
+          "image": "assets/skills/basic_abyssal_communion.webp"
+        },
+        {
+          "name": "Sorcery",
+          "image": "assets/skills/basic_sorcery.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -301,8 +361,14 @@
       },
       "description": "Built Different - Creatures in his army take –10% basic attack Damage, and –1% additionally for every 2 hero levels. Additionally, for every 2 hero levels, creatures in the army take –1% Damage from Ranged and Long Reach attacks.",
       "startingSkills": [
-        "Necromancy",
-        "Defence"
+        {
+          "name": "Necromancy",
+          "image": "assets/skills/basic_necromancy.webp"
+        },
+        {
+          "name": "Defence",
+          "image": "assets/skills/basic_defence.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -325,8 +391,14 @@
       },
       "description": "Pure Essence - The summoned Avatar deals Pure Damage. Has +1 Spell Power per 3 hero levels for the purpose of summoning an Avatar.",
       "startingSkills": [
-        "Abyssal Communion",
-        "Summon Avatar"
+        {
+          "name": "Abyssal Communion",
+          "image": "assets/skills/basic_abyssal_communion.webp"
+        },
+        {
+          "name": "Summon Avatar",
+          "image": "assets/skills/basic_summon_avatar.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -349,8 +421,14 @@
       },
       "description": "Wealthy - Produces 500 Gold per day, +100 more for every 2 hero levels. Increases the amount of Gold found on the map by 50%.",
       "startingSkills": [
-        "Ascension",
-        "Economy"
+        {
+          "name": "Ascension",
+          "image": "assets/skills/basic_ascension.webp"
+        },
+        {
+          "name": "Economy",
+          "image": "assets/skills/basic_economy.webp"
+        }
       ],
       "startingSpell": {
         "name": "Energize",
@@ -376,8 +454,14 @@
       },
       "description": "Creta, daughter of NavarrGem Seeker - Produces 1 Gem per day, +1 more for every 5 hero levels. Increases the amount of Gems found on the map by 100%.",
       "startingSkills": [
-        "Triumvirates Strength",
-        "Economy"
+        {
+          "name": "Triumvirates Strength",
+          "image": "assets/skills/basic_triumvirates_strength.webp"
+        },
+        {
+          "name": "Economy",
+          "image": "assets/skills/basic_economy.webp"
+        }
       ],
       "startingSpell": {
         "name": "Groundsight",
@@ -403,8 +487,14 @@
       },
       "description": "His Heroic Strike deals +10 Damage, plus 5 more for every 6 hero level(s). Additionally, it reduces the target’s Initiative by 1 until the battle end. This effect is stackable.",
       "startingSkills": [
-        "Summon Swarm",
-        "Combat"
+        {
+          "name": "Summon Swarm",
+          "image": "assets/skills/basic_summon_swarm.webp"
+        },
+        {
+          "name": "Combat",
+          "image": "assets/skills/basic_combat.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -427,8 +517,14 @@
       },
       "description": "Balthazar's Lair - Minotaurs growth in your cities increases by 1. Under his command, Minotaurs gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Minotaurs lose an equal amount of Attack and Defence.",
       "startingSkills": [
-        "Triumvirates Strength",
-        "Leadership"
+        {
+          "name": "Triumvirates Strength",
+          "image": "assets/skills/basic_triumvirates_strength.webp"
+        },
+        {
+          "name": "Leadership",
+          "image": "assets/skills/basic_leadership.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -451,7 +547,10 @@
       },
       "description": "True Believer - +1 Communion level after a victory. +1 maximum Communion level for every 8 hero levels.",
       "startingSkills": [
-        "Advanced Abyssal Communion"
+        {
+          "name": "Advanced Abyssal Communion",
+          "image": "assets/skills/advanced_abyssal_communion.webp"
+        }
       ],
       "startingSpell": {
         "name": "Blink",
@@ -477,8 +576,14 @@
       },
       "description": "She starts with the \"Masterful Mirror Copy\" spell. This version of the spell can target enemy creatures. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
       "startingSkills": [
-        "Murmuring",
-        "Arcane Magic"
+        {
+          "name": "Murmuring",
+          "image": "assets/skills/basic_murmuring.webp"
+        },
+        {
+          "name": "Arcane Magic",
+          "image": "assets/skills/basic_arcane_magic.webp"
+        }
       ],
       "startingSpell": {
         "name": "Mirror Copy",
@@ -504,8 +609,14 @@
       },
       "description": "His movement takes no terrain penalties. He also has +1 Sight Radius, plus an additional +1 for every 5 hero levels.",
       "startingSkills": [
-        "Murmuring",
-        "Scouting"
+        {
+          "name": "Murmuring",
+          "image": "assets/skills/basic_murmuring.webp"
+        },
+        {
+          "name": "Scouting",
+          "image": "assets/skills/basic_scouting.webp"
+        }
       ],
       "startingSpell": {
         "name": "From a Bird’s Eye",
@@ -531,8 +642,14 @@
       },
       "description": "Herbomancer growth in your cities increases by 1. Under his command, Herbomancers gain +1 Speed, +1 Initiative, and +20% HP. Their Attack and Defense increase by 1 for every 3 hero levels, and enemy Herbomancers lose an equal amount of Attack and Defense.",
       "startingSkills": [
-        "Murmuring",
-        "Thaumaturgy"
+        {
+          "name": "Murmuring",
+          "image": "assets/skills/basic_murmuring.webp"
+        },
+        {
+          "name": "Thaumaturgy",
+          "image": "assets/skills/basic_thaumaturgy.webp"
+        }
       ],
       "startingSpell": {
         "name": "Song of Power",
@@ -558,8 +675,14 @@
       },
       "description": "Slitering Menace - Medusae growth in your cities increases by 1. Under her command, Medusae gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Medusae lose an equal amount of Attack and Defence.",
       "startingSkills": [
-        "Triumvirates Strength",
-        "Defence"
+        {
+          "name": "Triumvirates Strength",
+          "image": "assets/skills/basic_triumvirates_strength.webp"
+        },
+        {
+          "name": "Defence",
+          "image": "assets/skills/basic_defence.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -582,8 +705,14 @@
       },
       "description": "Tombbound Will - Liches growth in your cities increases by 2. Under his command, Liches gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Liches lose an equal amount of Attack and Defence.",
       "startingSkills": [
-        "Necromancy",
-        "Intelligence"
+        {
+          "name": "Necromancy",
+          "image": "assets/skills/basic_necromancy.webp"
+        },
+        {
+          "name": "Intelligence",
+          "image": "assets/skills/basic_intelligence.webp"
+        }
       ],
       "startingSpell": {
         "name": "Shade Cloak",
@@ -609,7 +738,10 @@
       },
       "description": "He starts with the \"Masterful Fireball\" spell. This version of the spell hits a larger area. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
       "startingSkills": [
-        "Advanced Murmuring"
+        {
+          "name": "Advanced Murmuring",
+          "image": "assets/skills/advanced_murmuring.webp"
+        }
       ],
       "startingSpell": {
         "name": "Fireball",
@@ -635,8 +767,14 @@
       },
       "description": "She has +5% Movement points for every 8 hero level(s). Moves significantly more efficiently on roads.",
       "startingSkills": [
-        "Summon Swarm",
-        "Logistics"
+        {
+          "name": "Summon Swarm",
+          "image": "assets/skills/basic_summon_swarm.webp"
+        },
+        {
+          "name": "Logistics",
+          "image": "assets/skills/basic_logistics.webp"
+        }
       ],
       "startingSpell": {
         "name": "Doreath’s Tide",
@@ -662,7 +800,10 @@
       },
       "description": "Undead Legion - Has +5% Necromancy Power, plus 1% more for every 4 hero levels.",
       "startingSkills": [
-        "Advanced Necromancy"
+        {
+          "name": "Advanced Necromancy",
+          "image": "assets/skills/advanced_necromancy.webp"
+        }
       ],
       "startingSpell": {
         "name": "手铐",
@@ -688,8 +829,14 @@
       },
       "description": "Faun growth in your cities increases by 1. Under her command, Fauns gain +1 Speed, +1 Initiative, and +20% HP. Their Attack and Defense increase by 1 for every 3 hero levels, and enemy Fauns lose an equal amount of Attack and Defense.",
       "startingSkills": [
-        "Murmuring",
-        "Battlecraft"
+        {
+          "name": "Murmuring",
+          "image": "assets/skills/basic_murmuring.webp"
+        },
+        {
+          "name": "Battlecraft",
+          "image": "assets/skills/basic_battlecraft.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -712,8 +859,14 @@
       },
       "description": "She starts with the \"Masterful Ice Bolt\" spell. The Initiative penalty of this version of the spell is twice as strong. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
       "startingSkills": [
-        "Murmuring",
-        "Primal Magic"
+        {
+          "name": "Murmuring",
+          "image": "assets/skills/basic_murmuring.webp"
+        },
+        {
+          "name": "Primal Magic",
+          "image": "assets/skills/basic_primal_magic.webp"
+        }
       ],
       "startingSpell": {
         "name": "Ice Bolt",
@@ -739,8 +892,14 @@
       },
       "description": "Wealthy - Produces 500 Gold per day, +100 more for every 1 hero levels. Increases the amount of Gold found on the map by 50%.",
       "startingSkills": [
-        "Triumvirates Strength",
-        "Economy"
+        {
+          "name": "Triumvirates Strength",
+          "image": "assets/skills/basic_triumvirates_strength.webp"
+        },
+        {
+          "name": "Economy",
+          "image": "assets/skills/basic_economy.webp"
+        }
       ],
       "startingSpell": {
         "name": "Thick Hide",
@@ -766,8 +925,14 @@
       },
       "description": "Arcane Dominion - Receives +1 level to all Arcane spells, plus 1 more for every 10 hero levels and can use it in battle without limits. Enemy hero cannot cast Arcane spells.",
       "startingSkills": [
-        "Triumvirates Strength",
-        "Arcane Magic"
+        {
+          "name": "Triumvirates Strength",
+          "image": "assets/skills/basic_triumvirates_strength.webp"
+        },
+        {
+          "name": "Arcane Magic",
+          "image": "assets/skills/basic_arcane_magic.webp"
+        }
       ],
       "startingSpell": {
         "name": "手铐",
@@ -793,8 +958,14 @@
       },
       "description": "Friendly creatures have +1 Morale. They also have a higher chance of triggering the positive Morale effect: +2% chance per Morale point. For every 4 levels, this bonus increases by 1%.",
       "startingSkills": [
-        "Summon Swarm",
-        "Leadership"
+        {
+          "name": "Summon Swarm",
+          "image": "assets/skills/basic_summon_swarm.webp"
+        },
+        {
+          "name": "Leadership",
+          "image": "assets/skills/basic_leadership.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -817,8 +988,14 @@
       },
       "description": "Creatures in his army deal +10% basic attack damage, plus an additional +1% for every 2 hero levels. Additionally, they deal +1% Ranged and Long Reach damage for every 2 hero levels.",
       "startingSkills": [
-        "Murmuring",
-        "Offence"
+        {
+          "name": "Murmuring",
+          "image": "assets/skills/basic_murmuring.webp"
+        },
+        {
+          "name": "Offence",
+          "image": "assets/skills/basic_offence.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -841,8 +1018,14 @@
       },
       "description": "Fighter - Creatures in his army deal +10% basic attack Damage, plus 1% more for every 2 hero levels. Additionally, they deal +1% Melee Damage for every 2 hero levels (Lv.2 / 4 / 6 / 8 / 10 / 12 / 14).",
       "startingSkills": [
-        "Abyssal Communion",
-        "Offence"
+        {
+          "name": "Abyssal Communion",
+          "image": "assets/skills/basic_abyssal_communion.webp"
+        },
+        {
+          "name": "Offence",
+          "image": "assets/skills/basic_offence.webp"
+        }
       ],
       "startingSpell": {
         "name": "Blessing",
@@ -868,8 +1051,14 @@
       },
       "description": "Hive Queen growth in your cities increases by 1. Under his command, Hive Queens gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defense increase by 1 for every 3 hero levels, and enemy Hive Queens lose an equal amount of Attack and Defense.",
       "startingSkills": [
-        "Summon Swarm",
-        "Intelligence"
+        {
+          "name": "Summon Swarm",
+          "image": "assets/skills/basic_summon_swarm.webp"
+        },
+        {
+          "name": "Intelligence",
+          "image": "assets/skills/basic_intelligence.webp"
+        }
       ],
       "startingSpell": {
         "name": "Sleep",
@@ -895,8 +1084,14 @@
       },
       "description": "Bones Guild - Graverobbers growth in your cities increases by 2. Under his command, Graverobbers gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Graverobbers lose an equal amount of Attack and Defence.",
       "startingSkills": [
-        "Necromancy",
-        "Luck"
+        {
+          "name": "Necromancy",
+          "image": "assets/skills/basic_necromancy.webp"
+        },
+        {
+          "name": "Luck",
+          "image": "assets/skills/basic_luck.webp"
+        }
       ],
       "startingSpell": {
         "name": "Read Minds",
@@ -922,8 +1117,14 @@
       },
       "description": "He starts with the \"Masterful Chain Lightning\" spell. This version of the spell loses half as much damage when jumping between targets. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
       "startingSkills": [
-        "Murmuring",
-        "Primal Magic"
+        {
+          "name": "Murmuring",
+          "image": "assets/skills/basic_murmuring.webp"
+        },
+        {
+          "name": "Primal Magic",
+          "image": "assets/skills/basic_primal_magic.webp"
+        }
       ],
       "startingSpell": {
         "name": "Chain Lightning",
@@ -949,8 +1150,14 @@
       },
       "description": "Gem Seeker - Produces 1 Gem per day, +1 more for every 5 hero levels. Increases the amount of Gems found on the map by 100%.",
       "startingSkills": [
-        "Ascension",
-        "Recruitment"
+        {
+          "name": "Ascension",
+          "image": "assets/skills/basic_ascension.webp"
+        },
+        {
+          "name": "Recruitment",
+          "image": "assets/skills/basic_recruitment.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -973,8 +1180,14 @@
       },
       "description": "Heart of Ice - Creatures in her army take ­–10% basic attack Damage, and ­–1% less for every 2 hero levels. Additionally, for every 2 hero levels, creatures in the army take ­–1% Damage from Melee attacks (Lv.2 / 4 / 6 / 8 / 10 / 12 / 14).",
       "startingSkills": [
-        "Abyssal Communion",
-        "Defence"
+        {
+          "name": "Abyssal Communion",
+          "image": "assets/skills/basic_abyssal_communion.webp"
+        },
+        {
+          "name": "Defence",
+          "image": "assets/skills/basic_defence.webp"
+        }
       ],
       "startingSpell": {
         "name": "Ice Bolt",
@@ -1000,8 +1213,14 @@
       },
       "description": "Leash of Chains - Concubi growth in your cities increases by 1. Under his command, Concubi gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Concubi lose an equal amount of Attack and Defence.",
       "startingSkills": [
-        "Abyssal Communion",
-        "Diplomacy"
+        {
+          "name": "Abyssal Communion",
+          "image": "assets/skills/basic_abyssal_communion.webp"
+        },
+        {
+          "name": "Diplomacy",
+          "image": "assets/skills/basic_diplomacy.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -1024,8 +1243,14 @@
       },
       "description": "Wayfarer - Has +10% Movement points, plus 2.5% more for every 6 hero levels. Moves significantly more efficiently on roads.",
       "startingSkills": [
-        "Ascension",
-        "Logistics"
+        {
+          "name": "Ascension",
+          "image": "assets/skills/basic_ascension.webp"
+        },
+        {
+          "name": "Logistics",
+          "image": "assets/skills/basic_logistics.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -1048,8 +1273,14 @@
       },
       "description": "Rogueish - Cultists growth in your cities increases by 1. Under his command, Cultists gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Cultists lose an equal amount of Attack and Defence.",
       "startingSkills": [
-        "Abyssal Communion",
-        "Intelligence"
+        {
+          "name": "Abyssal Communion",
+          "image": "assets/skills/basic_abyssal_communion.webp"
+        },
+        {
+          "name": "Intelligence",
+          "image": "assets/skills/basic_intelligence.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -1072,8 +1303,14 @@
       },
       "description": "Salt of the Earth - Swordsmen growth in your cities increases by 1. Under his command, Swordsmen gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Swordsmen lose an equal amount of Attack and Defence.",
       "startingSkills": [
-        "Ascension",
-        "Defence"
+        {
+          "name": "Ascension",
+          "image": "assets/skills/basic_ascension.webp"
+        },
+        {
+          "name": "Defence",
+          "image": "assets/skills/basic_defence.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -1096,8 +1333,14 @@
       },
       "description": "Compassionate Healer - Starts with the “Masterful Healing Water” spell. This version of the spell dispels all negative effects from friendly creatures. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
       "startingSkills": [
-        "Ascension",
-        "Resistance"
+        {
+          "name": "Ascension",
+          "image": "assets/skills/basic_ascension.webp"
+        },
+        {
+          "name": "Resistance",
+          "image": "assets/skills/basic_resistance.webp"
+        }
       ],
       "startingSpell": {
         "name": "Healing Water",
@@ -1123,8 +1366,14 @@
       },
       "description": "Jouster - Cavalry growth in your cities increases by 1. Under her command, Cavalry gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Cavalry lose an equal amount of Attack and Defence.",
       "startingSkills": [
-        "Ascension",
-        "Battlecraft"
+        {
+          "name": "Ascension",
+          "image": "assets/skills/basic_ascension.webp"
+        },
+        {
+          "name": "Battlecraft",
+          "image": "assets/skills/basic_battlecraft.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -1147,8 +1396,14 @@
       },
       "description": "Dreadful War - Dread Knights growth in your cities increases by 2. Under his command, Dread Knights gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Dread Knights lose an equal amount of Attack and Defence.",
       "startingSkills": [
-        "Necromancy",
-        "Tactics"
+        {
+          "name": "Necromancy",
+          "image": "assets/skills/basic_necromancy.webp"
+        },
+        {
+          "name": "Tactics",
+          "image": "assets/skills/basic_tactics.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -1171,8 +1426,14 @@
       },
       "description": "Wish to Learn - Gains 25% XP, plus 5% for every 2 hero levels. When leveling up, gains 1 additional attribute point(s) for every 2 hero levels.",
       "startingSkills": [
-        "Triumvirates Strength",
-        "Insight"
+        {
+          "name": "Triumvirates Strength",
+          "image": "assets/skills/basic_triumvirates_strength.webp"
+        },
+        {
+          "name": "Insight",
+          "image": "assets/skills/basic_insight.webp"
+        }
       ],
       "startingSpell": {
         "name": "From a Bird’s Eye",
@@ -1198,8 +1459,14 @@
       },
       "description": "Jaeger - Crossbowmen growth in your cities increases by 1. Under her command, Crossbowmen gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Crossbowmen lose an equal amount of Attack and Defence.",
       "startingSkills": [
-        "Ascension",
-        "Offence"
+        {
+          "name": "Ascension",
+          "image": "assets/skills/basic_ascension.webp"
+        },
+        {
+          "name": "Offence",
+          "image": "assets/skills/basic_offence.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -1222,8 +1489,14 @@
       },
       "description": "They receive +1 level to all Primal spells, plus another +1 for every 10 hero levels. Casting Primal spells does not prevent them from using other spells of the same Magic School. Enemy hero cannot cast Primal spells.",
       "startingSkills": [
-        "Summon Swarm",
-        "Primal Magic"
+        {
+          "name": "Summon Swarm",
+          "image": "assets/skills/basic_summon_swarm.webp"
+        },
+        {
+          "name": "Primal Magic",
+          "image": "assets/skills/basic_primal_magic.webp"
+        }
       ],
       "startingSpell": {
         "name": "Anti‑Magic",
@@ -1249,8 +1522,14 @@
       },
       "description": "The Blind Folk - Troglodytes growth in your cities increases by 1. Under his command, Troglodytes gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Troglodytes lose an equal amount of Attack and Defence.",
       "startingSkills": [
-        "Triumvirates Strength",
-        "Tactics"
+        {
+          "name": "Triumvirates Strength",
+          "image": "assets/skills/basic_triumvirates_strength.webp"
+        },
+        {
+          "name": "Tactics",
+          "image": "assets/skills/basic_tactics.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -1273,8 +1552,14 @@
       },
       "description": "Charismatic - Keeps its army when fleeing from battle with neutral squads. +5% Persuasion Power when using Diplomacy, plus 1% more for every 4 hero levels.",
       "startingSkills": [
-        "Necromancy",
-        "Diplomacy"
+        {
+          "name": "Necromancy",
+          "image": "assets/skills/basic_necromancy.webp"
+        },
+        {
+          "name": "Diplomacy",
+          "image": "assets/skills/basic_diplomacy.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -1297,8 +1582,14 @@
       },
       "description": "Low Summoning - Ra’Shothes growth in your cities increases by 1. Under her command, Ra’Shothes gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Ra’Shothes lose an equal amount of Attack and Defence.",
       "startingSkills": [
-        "Abyssal Communion",
-        "Leadership"
+        {
+          "name": "Abyssal Communion",
+          "image": "assets/skills/basic_abyssal_communion.webp"
+        },
+        {
+          "name": "Leadership",
+          "image": "assets/skills/basic_leadership.webp"
+        }
       ],
       "startingSpell": {
         "name": "Groundsight",
@@ -1324,8 +1615,14 @@
       },
       "description": "Mouldering - Starts with the “Masterful Despair” spell. This version of the spell deals +100% Damage. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
       "startingSkills": [
-        "Necromancy",
-        "Sorcery"
+        {
+          "name": "Necromancy",
+          "image": "assets/skills/basic_necromancy.webp"
+        },
+        {
+          "name": "Sorcery",
+          "image": "assets/skills/basic_sorcery.webp"
+        }
       ],
       "startingSpell": {
         "name": "Despair",
@@ -1351,8 +1648,14 @@
       },
       "description": "Hornet growth in your cities increases by 1. Under her command, Hornets gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defense increase by 1 for every 3 hero levels, and enemy Hornets lose an equal amount of Attack and Defense.",
       "startingSkills": [
-        "Summon Swarm",
-        "Battle Magic"
+        {
+          "name": "Summon Swarm",
+          "image": "assets/skills/basic_summon_swarm.webp"
+        },
+        {
+          "name": "Battle Magic",
+          "image": "assets/skills/basic_battle_magic.webp"
+        }
       ],
       "startingSpell": {
         "name": "Vulnerability",
@@ -1378,8 +1681,14 @@
       },
       "description": "Pathfinder - Has no terrain penalties. Also has +1 Sight Radius, plus 1 more for every 5 hero levels.",
       "startingSkills": [
-        "Ascension",
-        "Scouting"
+        {
+          "name": "Ascension",
+          "image": "assets/skills/basic_ascension.webp"
+        },
+        {
+          "name": "Scouting",
+          "image": "assets/skills/basic_scouting.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -1402,8 +1711,14 @@
       },
       "description": "Radiating Knowledge - Receives +1 level to all Daylight spells, plus 1 more for every 10 hero levels, and can use them in battle without limits. Enemy hero cannot cast Daylight spells.",
       "startingSkills": [
-        "Ascension",
-        "Daylight Magic"
+        {
+          "name": "Ascension",
+          "image": "assets/skills/basic_ascension.webp"
+        },
+        {
+          "name": "Daylight Magic",
+          "image": "assets/skills/basic_daylight_magic.webp"
+        }
       ],
       "startingSpell": {
         "name": "From a Bird’s Eye",
@@ -1429,8 +1744,14 @@
       },
       "description": "Locust growth in your cities increases by 1. Under her command, Locusts gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defense increase by 1 for every 3 hero levels, and enemy Locusts lose an equal amount of Attack and Defense.",
       "startingSkills": [
-        "Summon Avatar",
-        "Defence"
+        {
+          "name": "Summon Avatar",
+          "image": "assets/skills/basic_summon_avatar.webp"
+        },
+        {
+          "name": "Defence",
+          "image": "assets/skills/basic_defence.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -1453,8 +1774,14 @@
       },
       "description": "Shadowmastery - Receives +1 level to all Nightshade spells, plus 1 more for every 10 hero levels and can use it in battle without limits. Enemy hero cannot cast Nightshade spells.",
       "startingSkills": [
-        "Triumvirates Strength",
-        "Nightshade Magic"
+        {
+          "name": "Triumvirates Strength",
+          "image": "assets/skills/basic_triumvirates_strength.webp"
+        },
+        {
+          "name": "Nightshade Magic",
+          "image": "assets/skills/basic_nightshade_magic.webp"
+        }
       ],
       "startingSpell": {
         "name": "Sleep",
@@ -1480,7 +1807,10 @@
       },
       "description": "True Lord - Increases Attack and Defence of friendly creatures by 20% of his Attack and Defence, plus 5% more for every 6 hero levels.",
       "startingSkills": [
-        "Advanced Ascension"
+        {
+          "name": "Advanced Ascension",
+          "image": "assets/skills/advanced_ascension.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -1503,8 +1833,14 @@
       },
       "description": "Wistful Nostalgia - Starts with the “Masterful Rewind Life” spell. This version of the spell can revive units beyond their original amount. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
       "startingSkills": [
-        "Necromancy",
-        "Thaumaturgy"
+        {
+          "name": "Necromancy",
+          "image": "assets/skills/basic_necromancy.webp"
+        },
+        {
+          "name": "Thaumaturgy",
+          "image": "assets/skills/basic_thaumaturgy.webp"
+        }
       ],
       "startingSpell": {
         "name": "Rewind Life",
@@ -1530,8 +1866,14 @@
       },
       "description": "Reaver growth in your cities increases by 1. Under his command, Reavers gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defense increase by 1 for every 3 hero levels, and enemy Reavers lose an equal amount of Attack and Defense.",
       "startingSkills": [
-        "Summon Swarm",
-        "Insight"
+        {
+          "name": "Summon Swarm",
+          "image": "assets/skills/basic_summon_swarm.webp"
+        },
+        {
+          "name": "Insight",
+          "image": "assets/skills/basic_insight.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -1554,8 +1896,14 @@
       },
       "description": "Arcane Dominion - Receives +1 level to all Arcane spells, plus 1 more for every 10 hero levels and can use it in battle without limits. Enemy hero cannot cast Arcane spells.",
       "startingSkills": [
-        "Necromancy",
-        "Arcane Magic"
+        {
+          "name": "Necromancy",
+          "image": "assets/skills/basic_necromancy.webp"
+        },
+        {
+          "name": "Arcane Magic",
+          "image": "assets/skills/basic_arcane_magic.webp"
+        }
       ],
       "startingSpell": {
         "name": "Impending Fate",
@@ -1581,7 +1929,10 @@
       },
       "description": "Coldblood Siblings - Aga’Shoth Riders growth in your cities increases by 1. Under his command, Aga’Shoth Riders gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Aga’Shoth Riders lose an equal amount of Attack and Defence.",
       "startingSkills": [
-        "Advanced Abyssal Communion"
+        {
+          "name": "Advanced Abyssal Communion",
+          "image": "assets/skills/advanced_abyssal_communion.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -1604,8 +1955,14 @@
       },
       "description": "Languid Soil - Starts with the “Masterful Web” spell. This version of the spell affects all enemies. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
       "startingSkills": [
-        "Necromancy",
-        "Logistics"
+        {
+          "name": "Necromancy",
+          "image": "assets/skills/basic_necromancy.webp"
+        },
+        {
+          "name": "Logistics",
+          "image": "assets/skills/basic_logistics.webp"
+        }
       ],
       "startingSpell": {
         "name": "Web",
@@ -1631,8 +1988,14 @@
       },
       "description": "Alchemist - Produces 1 Mercury per day, +1 more for every 5 hero levels. Increases the amount of Mercury found on the map by 1.",
       "startingSkills": [
-        "Abyssal Communion",
-        "Daylight Magic"
+        {
+          "name": "Abyssal Communion",
+          "image": "assets/skills/basic_abyssal_communion.webp"
+        },
+        {
+          "name": "Daylight Magic",
+          "image": "assets/skills/basic_daylight_magic.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -1655,8 +2018,14 @@
       },
       "description": "Chessmaster - In the Tactical Phase, has +1 hex to the radius and can see the positions of neutral armies. Creatures in her army gain 1 Initiative for every 6 hero levels.",
       "startingSkills": [
-        "Abyssal Communion",
-        "Tactics"
+        {
+          "name": "Abyssal Communion",
+          "image": "assets/skills/basic_abyssal_communion.webp"
+        },
+        {
+          "name": "Tactics",
+          "image": "assets/skills/basic_tactics.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -1679,8 +2048,14 @@
       },
       "description": "Spiritual Vigor - +1 spell cap for each Global Map spell. Additionally, his maximum mana increases by 10%, plus 5% more for every 5 hero levels.",
       "startingSkills": [
-        "Ascension",
-        "Diplomacy"
+        {
+          "name": "Ascension",
+          "image": "assets/skills/basic_ascension.webp"
+        },
+        {
+          "name": "Diplomacy",
+          "image": "assets/skills/basic_diplomacy.webp"
+        }
       ],
       "startingSpell": {
         "name": "Reinforcements",
@@ -1706,8 +2081,14 @@
       },
       "description": "She starts with the “Masterful Haste” spell. This version of the spell affects all friendly creatures. While casting this spell, effective Spell Power is increased by 1 for every 3 hero level(s).",
       "startingSkills": [
-        "Summon Swarm",
-        "Daylight Magic"
+        {
+          "name": "Summon Swarm",
+          "image": "assets/skills/basic_summon_swarm.webp"
+        },
+        {
+          "name": "Daylight Magic",
+          "image": "assets/skills/basic_daylight_magic.webp"
+        }
       ],
       "startingSpell": {
         "name": "Haste",
@@ -1733,8 +2114,14 @@
       },
       "description": "Wealthy - Produces 500 Gold per day, +100 more for every 1 hero levels. Increases the amount of Gold found on the map by 50%.",
       "startingSkills": [
-        "Necromancy",
-        "Battle Magic"
+        {
+          "name": "Necromancy",
+          "image": "assets/skills/basic_necromancy.webp"
+        },
+        {
+          "name": "Battle Magic",
+          "image": "assets/skills/basic_battle_magic.webp"
+        }
       ],
       "startingSpell": {
         "name": "Fatal Decay",
@@ -1760,8 +2147,14 @@
       },
       "description": "Danse Macabre - Onyx Dancers growth in your cities increases by 1. Under her command, Onyx Dancers gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Onyx Dancers lose an equal amount of Attack and Defence.",
       "startingSkills": [
-        "Triumvirates Strength",
-        "Luck"
+        {
+          "name": "Triumvirates Strength",
+          "image": "assets/skills/basic_triumvirates_strength.webp"
+        },
+        {
+          "name": "Luck",
+          "image": "assets/skills/basic_luck.webp"
+        }
       ],
       "startingSpell": {
         "name": "Twilight",
@@ -1787,8 +2180,14 @@
       },
       "description": "Spy - Infiltrators growth in your cities increases by 1. Under his command, Infiltrators gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Infiltrators lose an equal amount of Attack and Defence.",
       "startingSkills": [
-        "Triumvirates Strength",
-        "Scouting"
+        {
+          "name": "Triumvirates Strength",
+          "image": "assets/skills/basic_triumvirates_strength.webp"
+        },
+        {
+          "name": "Scouting",
+          "image": "assets/skills/basic_scouting.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -1811,8 +2210,14 @@
       },
       "description": "She produces +1 Crystal per day, plus an additional +1 for every 5 hero levels. Increases the amount of Crystals found on the map by 100%.",
       "startingSkills": [
-        "Murmuring",
-        "Sorcery"
+        {
+          "name": "Murmuring",
+          "image": "assets/skills/basic_murmuring.webp"
+        },
+        {
+          "name": "Sorcery",
+          "image": "assets/skills/basic_sorcery.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -1835,8 +2240,14 @@
       },
       "description": "Heart of Hearts - Starts with the “Masterful Vulnerability” spell. This version of the spell makes the target always take maximum Damage. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
       "startingSkills": [
-        "Ascension",
-        "Nightshade Magic"
+        {
+          "name": "Ascension",
+          "image": "assets/skills/basic_ascension.webp"
+        },
+        {
+          "name": "Nightshade Magic",
+          "image": "assets/skills/basic_nightshade_magic.webp"
+        }
       ],
       "startingSpell": {
         "name": "Vulnerability",
@@ -1862,8 +2273,14 @@
       },
       "description": "Part of a Pack - Undead Pets growth in your cities increases by 2. Under her command, Undead Pets gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Undead Pets lose an equal amount of Attack and Defence.",
       "startingSkills": [
-        "Necromancy",
-        "Scouting"
+        {
+          "name": "Necromancy",
+          "image": "assets/skills/basic_necromancy.webp"
+        },
+        {
+          "name": "Scouting",
+          "image": "assets/skills/basic_scouting.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -1886,8 +2303,14 @@
       },
       "description": "Creatures in her army deal +10% basic attack Damage, plus an additional 1% for every 2 hero level(s). Additionally, they deal +1% Ranged and Long Reach Damage for every 2 hero level(s).",
       "startingSkills": [
-        "Summon Swarm",
-        "Offence"
+        {
+          "name": "Summon Swarm",
+          "image": "assets/skills/basic_summon_swarm.webp"
+        },
+        {
+          "name": "Offence",
+          "image": "assets/skills/basic_offence.webp"
+        }
       ],
       "startingSpell": {
         "name": "Favorable Wind",
@@ -1913,8 +2336,14 @@
       },
       "description": "Wayfarer - Has +10% Movement points, plus 2.5% more for every 6 hero levels. Moves significantly more efficiently on roads.",
       "startingSkills": [
-        "Abyssal Communion",
-        "Logistics"
+        {
+          "name": "Abyssal Communion",
+          "image": "assets/skills/basic_abyssal_communion.webp"
+        },
+        {
+          "name": "Logistics",
+          "image": "assets/skills/basic_logistics.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -1937,8 +2366,14 @@
       },
       "description": "When leveling up, he gains 1 additional attribute point(s) for every 2 hero level(s). He gains +5% XP for every 2 hero level(s).",
       "startingSkills": [
-        "Summon Swarm",
-        "Battlecraft"
+        {
+          "name": "Summon Swarm",
+          "image": "assets/skills/basic_summon_swarm.webp"
+        },
+        {
+          "name": "Battlecraft",
+          "image": "assets/skills/basic_battlecraft.webp"
+        }
       ],
       "startingSpell": {
         "name": "Impending Fate",
@@ -1964,8 +2399,14 @@
       },
       "description": "She has +1 Luck. Creatures under her command have an increased chance of triggering a Lucky Strike: +2% chance per Luck point. For every 4 hero levels, this bonus increases by an additional 1%.",
       "startingSkills": [
-        "Murmuring",
-        "Luck"
+        {
+          "name": "Murmuring",
+          "image": "assets/skills/basic_murmuring.webp"
+        },
+        {
+          "name": "Luck",
+          "image": "assets/skills/basic_luck.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -1988,8 +2429,14 @@
       },
       "description": "Heroic Smite - His Heroic Strike deals +40 Damage, plus 5 more for every 3 hero levels. Additionally, it increases all Damage taken by the target by 20% until the end of the next round.",
       "startingSkills": [
-        "Ascension",
-        "Resistance"
+        {
+          "name": "Ascension",
+          "image": "assets/skills/basic_ascension.webp"
+        },
+        {
+          "name": "Resistance",
+          "image": "assets/skills/basic_resistance.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -2012,8 +2459,14 @@
       },
       "description": "He starts with the \"Masterful Guillotine\" spell. This version of the spell deals damage that increases twice as fast when cast on the same target. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
       "startingSkills": [
-        "Murmuring",
-        "Battle Magic"
+        {
+          "name": "Murmuring",
+          "image": "assets/skills/basic_murmuring.webp"
+        },
+        {
+          "name": "Battle Magic",
+          "image": "assets/skills/basic_battle_magic.webp"
+        }
       ],
       "startingSpell": {
         "name": "Guillotine",
@@ -2039,8 +2492,14 @@
       },
       "description": "Perfect Puppets - Skeletons growth in your cities increases by 2. Under his command, Skeletons gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Skeletons lose an equal amount of Attack and",
       "startingSkills": [
-        "Necromancy",
-        "Offence"
+        {
+          "name": "Necromancy",
+          "image": "assets/skills/basic_necromancy.webp"
+        },
+        {
+          "name": "Offence",
+          "image": "assets/skills/basic_offence.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -2063,8 +2522,14 @@
       },
       "description": "She starts with the “Masterful Blink” spell. This version of the spell can target enemy creatures. The cost of this spell is reduced by 1 mana for every 3 hero level(s).",
       "startingSkills": [
-        "Summon Swarm",
-        "Summon Avatar"
+        {
+          "name": "Summon Swarm",
+          "image": "assets/skills/basic_summon_swarm.webp"
+        },
+        {
+          "name": "Summon Avatar",
+          "image": "assets/skills/basic_summon_avatar.webp"
+        }
       ],
       "startingSpell": {
         "name": "Blink",
@@ -2090,8 +2555,14 @@
       },
       "description": "Friendly creatures have +1 Speed, plus an additional 1 for every 8 hero level(s).",
       "startingSkills": [
-        "Summon Swarm",
-        "Battle Magic"
+        {
+          "name": "Summon Swarm",
+          "image": "assets/skills/basic_summon_swarm.webp"
+        },
+        {
+          "name": "Battle Magic",
+          "image": "assets/skills/basic_battle_magic.webp"
+        }
       ],
       "startingSpell": {
         "name": "Fireball",
@@ -2117,8 +2588,14 @@
       },
       "description": "Wish to Learn - Gains 25% XP, plus 5% for every 2 hero levels. When leveling up, gains 2 additional attribute point(s) for every 2 hero levels.",
       "startingSkills": [
-        "Ascension",
-        "Insight"
+        {
+          "name": "Ascension",
+          "image": "assets/skills/basic_ascension.webp"
+        },
+        {
+          "name": "Insight",
+          "image": "assets/skills/basic_insight.webp"
+        }
       ],
       "startingSpell": {
         "name": "Early Start",
@@ -2144,8 +2621,14 @@
       },
       "description": "Magic Fortress - Starts with the “Masterful Carapace” spell. Creatures with this version of Carapace are immune to negative and dispel effect. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
       "startingSkills": [
-        "Abyssal Communion",
-        "Arcane Magic"
+        {
+          "name": "Abyssal Communion",
+          "image": "assets/skills/basic_abyssal_communion.webp"
+        },
+        {
+          "name": "Arcane Magic",
+          "image": "assets/skills/basic_arcane_magic.webp"
+        }
       ],
       "startingSpell": {
         "name": "Carapace",
@@ -2171,8 +2654,14 @@
       },
       "description": "Four-Leaf Horseshoe - +1 Luck. For each point of Luck, creatures have +2% chance to deal a critical strike. For every 4 levels, +1% to this bonus.",
       "startingSkills": [
-        "Triumvirates Strength",
-        "Luck"
+        {
+          "name": "Triumvirates Strength",
+          "image": "assets/skills/basic_triumvirates_strength.webp"
+        },
+        {
+          "name": "Luck",
+          "image": "assets/skills/basic_luck.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -2195,8 +2684,14 @@
       },
       "description": "Shadowmastery - Receives +1 level to all Nightshade spells, plus 1 more for every 10 hero levels and can use it in battle without limits. Enemy hero cannot cast Nightshade spells.",
       "startingSkills": [
-        "Necromancy",
-        "Nightshade Magic"
+        {
+          "name": "Necromancy",
+          "image": "assets/skills/basic_necromancy.webp"
+        },
+        {
+          "name": "Nightshade Magic",
+          "image": "assets/skills/basic_nightshade_magic.webp"
+        }
       ],
       "startingSpell": {
         "name": "Sleep",
@@ -2222,8 +2717,14 @@
       },
       "description": "Mask of the Sun - Starts with the “Masterful Arina's Chosen” spell. This version of the spell gives the target +1 action point(s). While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
       "startingSkills": [
-        "Triumvirates Strength",
-        "Thaumaturgy"
+        {
+          "name": "Triumvirates Strength",
+          "image": "assets/skills/basic_triumvirates_strength.webp"
+        },
+        {
+          "name": "Thaumaturgy",
+          "image": "assets/skills/basic_thaumaturgy.webp"
+        }
       ],
       "startingSpell": {
         "name": "Arina’s Chosen",
@@ -2249,8 +2750,14 @@
       },
       "description": "Mask of the Moon - Starts with the “Masterful Umbral Grip” spell. This version of the spell deals +100% Damage. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
       "startingSkills": [
-        "Abyssal Communion",
-        "Nightshade Magic"
+        {
+          "name": "Abyssal Communion",
+          "image": "assets/skills/basic_abyssal_communion.webp"
+        },
+        {
+          "name": "Nightshade Magic",
+          "image": "assets/skills/basic_nightshade_magic.webp"
+        }
       ],
       "startingSpell": {
         "name": "Umbral Grip",
@@ -2276,7 +2783,10 @@
       },
       "description": "Venomous Strike - Her Heroic Strike deals +40 Damage, plus 5 more for every 3 hero levels. Additionally, poisons the target until the end of the next round, dealing [25 × (1 ＋ hero's Level × 0.1)] Magic Damage.",
       "startingSkills": [
-        "Advanced Triumvirates Strength"
+        {
+          "name": "Advanced Triumvirates Strength",
+          "image": "assets/skills/advanced_triumvirates_strength.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -2299,8 +2809,14 @@
       },
       "description": "Her summoned Avatar is immune to Magic Damage. When casting Summon Avatar, its effective Spell Power is increased by 1 for every 3 hero levels.",
       "startingSkills": [
-        "Murmuring",
-        "Summon Avatar"
+        {
+          "name": "Murmuring",
+          "image": "assets/skills/basic_murmuring.webp"
+        },
+        {
+          "name": "Summon Avatar",
+          "image": "assets/skills/basic_summon_avatar.webp"
+        }
       ],
       "startingSpell": {
         "name": "Weakening Ray",
@@ -2326,8 +2842,14 @@
       },
       "description": "Radiating Knowledge - Receives +1 level to all Daylight spells, plus 1 more for every 10 hero levels, and can use them in battle without limits. Enemy hero cannot cast Daylight spells.",
       "startingSkills": [
-        "Triumvirates Strength",
-        "Daylight Magic"
+        {
+          "name": "Triumvirates Strength",
+          "image": "assets/skills/basic_triumvirates_strength.webp"
+        },
+        {
+          "name": "Daylight Magic",
+          "image": "assets/skills/basic_daylight_magic.webp"
+        }
       ],
       "startingSpell": {
         "name": "Inner Light",
@@ -2353,7 +2875,10 @@
       },
       "description": "Undead Legion - Has +5% Necromancy Power, plus 1% more for every 4 hero levels.",
       "startingSkills": [
-        "Advanced Necromancy"
+        {
+          "name": "Advanced Necromancy",
+          "image": "assets/skills/advanced_necromancy.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -2376,7 +2901,10 @@
       },
       "description": "Her summoned Fire Larva stacks have +4% health, plus another 1% for every 2 hero level(s).",
       "startingSkills": [
-        "Advanced Summon Swarm"
+        {
+          "name": "Advanced Summon Swarm",
+          "image": "assets/skills/advanced_summon_swarm.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -2399,8 +2927,14 @@
       },
       "description": "With One Eye - Open Starts with the “Masterful Early Start” spell. This version of the spell cannot be dispelled by any means. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels..",
       "startingSkills": [
-        "Triumvirates Strength",
-        "Battlecraft"
+        {
+          "name": "Triumvirates Strength",
+          "image": "assets/skills/basic_triumvirates_strength.webp"
+        },
+        {
+          "name": "Battlecraft",
+          "image": "assets/skills/basic_battlecraft.webp"
+        }
       ],
       "startingSpell": {
         "name": "Early Start",
@@ -2426,8 +2960,14 @@
       },
       "description": "Rift's Envoy - Grand Shoth growth in your cities increases by 1. Under its command, Grand Shoth gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Grand Shoth lose an equal amount of Attack and Defence.",
       "startingSkills": [
-        "Abyssal Communion",
-        "Summon Avatar"
+        {
+          "name": "Abyssal Communion",
+          "image": "assets/skills/basic_abyssal_communion.webp"
+        },
+        {
+          "name": "Summon Avatar",
+          "image": "assets/skills/basic_summon_avatar.webp"
+        }
       ],
       "startingSpell": {
         "name": "Wean",
@@ -2453,8 +2993,14 @@
       },
       "description": "At the beginning of each round, he generates +2 Focus Points, plus an additional +1 for every 3 hero levels. The enemy loses the same amount of Focus Points.",
       "startingSkills": [
-        "Murmuring",
-        "Sorcery"
+        {
+          "name": "Murmuring",
+          "image": "assets/skills/basic_murmuring.webp"
+        },
+        {
+          "name": "Sorcery",
+          "image": "assets/skills/basic_sorcery.webp"
+        }
       ],
       "startingSpell": {
         "name": "Energy Explosion",
@@ -2480,8 +3026,14 @@
       },
       "description": "Stellar Purge - His Heroic Strike deals +40 Damage, plus 3 more for every 5 hero levels. Additionally, it dispels all positive effects from the target.",
       "startingSkills": [
-        "Abyssal Communion",
-        "Logistics"
+        {
+          "name": "Abyssal Communion",
+          "image": "assets/skills/basic_abyssal_communion.webp"
+        },
+        {
+          "name": "Logistics",
+          "image": "assets/skills/basic_logistics.webp"
+        }
       ],
       "startingSpell": {
         "name": "Reinforcements",
@@ -2507,7 +3059,10 @@
       },
       "description": "Alvarian Hydra - Hydras growth in your cities increases by 1. Under her command, Hydras gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Hydras lose an equal amount of Attack and Defence.",
       "startingSkills": [
-        "Advanced Triumvirates Strength"
+        {
+          "name": "Advanced Triumvirates Strength",
+          "image": "assets/skills/advanced_triumvirates_strength.webp"
+        }
       ],
       "startingSpell": {
         "name": "Taunt",
@@ -2533,8 +3088,14 @@
       },
       "description": "Pathfinder - Has no terrain penalties. Also has +1 Sight Radius, plus 1 more for every 5 hero levels.",
       "startingSkills": [
-        "Abyssal Communion",
-        "Scouting"
+        {
+          "name": "Abyssal Communion",
+          "image": "assets/skills/basic_abyssal_communion.webp"
+        },
+        {
+          "name": "Scouting",
+          "image": "assets/skills/basic_scouting.webp"
+        }
       ],
       "startingSpell": {
         "name": "Unnatural Calm",
@@ -2560,8 +3121,14 @@
       },
       "description": "+1 spell slot for each Global Map spell. Her maximum mana increases by 10%, plus an additional 5% for every 5 hero levels.",
       "startingSkills": [
-        "Murmuring",
-        "Intelligence"
+        {
+          "name": "Murmuring",
+          "image": "assets/skills/basic_murmuring.webp"
+        },
+        {
+          "name": "Intelligence",
+          "image": "assets/skills/basic_intelligence.webp"
+        }
       ],
       "startingSpell": {
         "name": "Primordial Chaos",
@@ -2587,8 +3154,14 @@
       },
       "description": "Blessing - Starts with the “Masterful Blessing” spell. This version of the spell makes the target always deal maximum Damage. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
       "startingSkills": [
-        "Ascension",
-        "Daylight Magic"
+        {
+          "name": "Ascension",
+          "image": "assets/skills/basic_ascension.webp"
+        },
+        {
+          "name": "Daylight Magic",
+          "image": "assets/skills/basic_daylight_magic.webp"
+        }
       ],
       "startingSpell": {
         "name": "Blessing",
@@ -2614,8 +3187,14 @@
       },
       "description": "He starts with the \"Masterful Cave In\" spell. The obstacles created by this version of the spell must be damaged 1 additional time to be destroyed. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
       "startingSkills": [
-        "Murmuring",
-        "Primal Magic"
+        {
+          "name": "Murmuring",
+          "image": "assets/skills/basic_murmuring.webp"
+        },
+        {
+          "name": "Primal Magic",
+          "image": "assets/skills/basic_primal_magic.webp"
+        }
       ],
       "startingSpell": {
         "name": "Cave In",
@@ -2641,8 +3220,14 @@
       },
       "description": "Primal Weaving - Receives +1 level to all Primal spells, plus 1 more for every 10 hero levels and can use it in battle without limits. Enemy hero cannot cast Primal spells.",
       "startingSkills": [
-        "Abyssal Communion",
-        "Primal Magic"
+        {
+          "name": "Abyssal Communion",
+          "image": "assets/skills/basic_abyssal_communion.webp"
+        },
+        {
+          "name": "Primal Magic",
+          "image": "assets/skills/basic_primal_magic.webp"
+        }
       ],
       "startingSpell": {
         "name": "Lightning Bolt",
@@ -2668,8 +3253,14 @@
       },
       "description": "He is immune to negative effects in battles and on the global map. His creatures take –10% Magic Damage, and an additional –2% for every 3 hero level(s).",
       "startingSkills": [
-        "Summon Swarm",
-        "Resistance"
+        {
+          "name": "Summon Swarm",
+          "image": "assets/skills/basic_summon_swarm.webp"
+        },
+        {
+          "name": "Resistance",
+          "image": "assets/skills/basic_resistance.webp"
+        }
       ],
       "startingSpell": {
         "name": "Vengeance",
@@ -2695,8 +3286,14 @@
       },
       "description": "Charismatic - Keeps her army when fleeing from battle with neutral squads. +5% Persuasion Power when using Diplomacy, plus 1% more for every 4 hero levels.",
       "startingSkills": [
-        "Triumvirates Strength",
-        "Diplomacy"
+        {
+          "name": "Triumvirates Strength",
+          "image": "assets/skills/basic_triumvirates_strength.webp"
+        },
+        {
+          "name": "Diplomacy",
+          "image": "assets/skills/basic_diplomacy.webp"
+        }
       ],
       "startingSpell": {
         "name": "Assemble!",
@@ -2722,8 +3319,14 @@
       },
       "description": "Spellweaver - Deals +10% Damage with spells, plus 1% more for every 2 hero levels. The Damage from the enemy hero's spells is reduced by the same value.",
       "startingSkills": [
-        "Triumvirates Strength",
-        "Sorcery"
+        {
+          "name": "Triumvirates Strength",
+          "image": "assets/skills/basic_triumvirates_strength.webp"
+        },
+        {
+          "name": "Sorcery",
+          "image": "assets/skills/basic_sorcery.webp"
+        }
       ],
       "startingSpell": {
         "name": "Firewall",
@@ -2749,8 +3352,14 @@
       },
       "description": "Alchemist - Produces 1 Mercury per day, +1 more for every 5 hero levels. Increases the amount of Mercury found on the map by 1.",
       "startingSkills": [
-        "Necromancy",
-        "Battlecraft"
+        {
+          "name": "Necromancy",
+          "image": "assets/skills/basic_necromancy.webp"
+        },
+        {
+          "name": "Battlecraft",
+          "image": "assets/skills/basic_battlecraft.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {
@@ -2773,8 +3382,14 @@
       },
       "description": "Weaving the Light - Lightweavers growth in your cities increases by 1. Under her command, Lightweavers gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Lightweavers lose an equal amount of Attack and Defence.",
       "startingSkills": [
-        "Ascension",
-        "Intelligence"
+        {
+          "name": "Ascension",
+          "image": "assets/skills/basic_ascension.webp"
+        },
+        {
+          "name": "Intelligence",
+          "image": "assets/skills/basic_intelligence.webp"
+        }
       ],
       "startingSpell": {
         "name": "Heavenly Blades",
@@ -2800,8 +3415,14 @@
       },
       "description": "Waurms growth in your cities increases by 1. Under his command, Waurmos gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defense increase by 1 for every 3 hero levels, and enemy Waurmos lose an equal amount of Attack and Defense.",
       "startingSkills": [
-        "Summon Swarm",
-        "Nightshade Magic"
+        {
+          "name": "Summon Swarm",
+          "image": "assets/skills/basic_summon_swarm.webp"
+        },
+        {
+          "name": "Nightshade Magic",
+          "image": "assets/skills/basic_nightshade_magic.webp"
+        }
       ],
       "startingSpell": null,
       "stats": {

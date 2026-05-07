@@ -16,6 +16,10 @@
   box-sizing: border-box;
 }
 
+.hidden {
+  display: none !important;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -42,6 +46,41 @@ body::before {
   display: grid;
   place-items: center;
   padding: 28px;
+}
+
+.mode-screen {
+  width: min(760px, 100%);
+}
+
+.mode-card {
+  padding: 28px;
+  border: 3px solid var(--gold);
+  background:
+    linear-gradient(180deg, rgba(15, 33, 79, 0.94), rgba(7, 18, 44, 0.97)),
+    radial-gradient(circle at top, rgba(121, 153, 255, 0.08), transparent 30%);
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.48),
+    inset 0 0 0 2px rgba(255, 234, 175, 0.4);
+  text-align: center;
+}
+
+.mode-actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.mode-button {
+  min-width: 220px;
+}
+
+.mode-links {
+  margin-top: 16px;
+}
+
+.board-links {
+  margin-top: 14px;
 }
 
 .board {
@@ -184,6 +223,10 @@ h1 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 10px;
   margin-top: 14px;
+}
+
+.town-selector.is-hidden {
+  display: none;
 }
 
 .town-option {
@@ -329,6 +372,18 @@ h1 {
   background: rgba(17, 31, 68, 0.55);
   color: var(--ink);
   font-size: 0.95rem;
+}
+
+.skill-chip {
+  gap: 8px;
+  padding-right: 14px;
+}
+
+.skill-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  flex: none;
 }
 
 .detail-chip-muted {
@@ -534,6 +589,10 @@ h1 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
     align-items: center;
   }
+
+  .room-banner {
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 960px) {
@@ -561,6 +620,10 @@ h1 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .mode-actions {
+    flex-direction: column;
+  }
+
   .hero-footer,
   .versus-column {
     grid-template-columns: 1fr;
@@ -579,4 +642,27 @@ h1 {
   .coin-button {
     max-width: 110px;
   }
+}
+.room-banner {
+  margin-bottom: 18px;
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  border: 2px solid rgba(240, 208, 126, 0.55);
+  background: linear-gradient(180deg, rgba(16, 34, 79, 0.92), rgba(9, 21, 51, 0.95));
+}
+
+.room-label {
+  margin: 0 0 4px;
+  color: var(--gold);
+  text-transform: uppercase;
+  font-size: 0.76rem;
+  letter-spacing: 0.12em;
+}
+
+.room-value {
+  margin: 0;
+  color: var(--ink);
 }

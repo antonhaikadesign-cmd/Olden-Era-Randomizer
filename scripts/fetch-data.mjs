@@ -114,7 +114,10 @@ function parseHeroDetails(html, hero) {
   );
 
   const startingSkills = skillsSectionMatch
-    ? [...skillsSectionMatch[1].matchAll(/title="([^"]+)"/g)].map((match) => humanizeSlug(match[1]))
+    ? [...skillsSectionMatch[1].matchAll(/<div class="hero-content-skill" title="([^"]+)"><span style="display:contents"><img src="([^"]+)" alt="([^"]+)"\/><\/span><\/div>/g)].map((match) => ({
+        name: humanizeSlug(match[1]),
+        image: toAssetPath(match[2]),
+      }))
     : [];
 
   const spellTitle = spellSectionMatch?.[1].match(/title="([^"]+)"/)?.[1] ?? null;
@@ -166,14 +169,24 @@ async function main() {
     .sort((a, b) => a.name.localeCompare(b.name));
   const factions = parseFactionImages(heroesHtml);
 
+  const extraAssets = new Map();
+
   for (const hero of heroes) {
     const heroHtml = fetchHtml(`${SITE_ORIGIN}/en/heroes/${hero.slug}`);
     Object.assign(hero, parseHeroDetails(heroHtml, hero));
     await downloadFile(hero.remoteImage, path.join(publicDir, hero.image));
 
     if (hero.startingSpell?.image) {
-      await downloadFile(`${SITE_ORIGIN}${hero.startingSpell.image.replace(/^assets/, "/img")}`, path.join(publicDir, hero.startingSpell.image));
+      extraAssets.set(hero.startingSpell.image, `${SITE_ORIGIN}${hero.startingSpell.image.replace(/^assets/, "/img")}`);
     }
+
+    for (const skill of hero.startingSkills) {
+      extraAssets.set(skill.image, `${SITE_ORIGIN}${skill.image.replace(/^assets/, "/img")}`);
+    }
+  }
+
+  for (const [assetPath, assetUrl] of extraAssets) {
+    await downloadFile(assetUrl, path.join(publicDir, assetPath));
   }
 
   for (const faction of factions) {

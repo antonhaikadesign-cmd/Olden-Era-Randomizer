@@ -8,17 +8,51 @@
   </head>
   <body>
     <div class="page-shell">
-      <main class="board">
+      <section class="mode-screen" id="modeScreen">
+        <div class="mode-card">
+          <p class="eyebrow">Heroes of Might and Magic: Olden Era</p>
+          <h1>Hero Duel Randomizer</h1>
+          <p class="subtitle">
+            Choose a mode. Single player keeps unlimited rerolls. Multiplayer creates a shared room and copies the invite link automatically.
+          </p>
+          <div class="mode-actions">
+            <button class="roll-button mode-button" id="singleModeButton" type="button">Single</button>
+            <button class="roll-button roll-button-secondary mode-button" id="multiModeButton" type="button">
+              Multiplayer
+            </button>
+          </div>
+          <div class="mode-links">
+            <a class="source-link" href="./rules.html">Rules / Правила</a>
+          </div>
+        </div>
+      </section>
+
+      <main class="board hidden" id="appBoard">
         <header class="board-header">
           <div class="title-panel">
             <p class="eyebrow">Heroes of Might and Magic: Olden Era</p>
             <h1>Hero Duel Randomizer</h1>
-            <p class="subtitle">
+            <p class="subtitle" id="modeDescription">
               Randomize castles and heroes, inspect starting kit, and flip a quick 0/1 coin on the side.
             </p>
+            <div class="mode-links board-links">
+              <a class="source-link" href="./rules.html" target="_blank" rel="noreferrer">Rules / Правила</a>
+            </div>
           </div>
           <img class="header-art" src="./public/assets/ui/header.jpg" alt="Olden Era official artwork" />
         </header>
+
+        <section class="room-banner hidden" id="roomBanner">
+          <div>
+            <p class="room-label">Multiplayer Room</p>
+            <p class="room-value" id="roomValue"></p>
+          </div>
+          <div>
+            <p class="room-label">Your Side</p>
+            <p class="room-value" id="seatValue"></p>
+          </div>
+          <button class="hero-reroll-button" id="copyLinkButton" type="button">Copy Invite Link</button>
+        </section>
 
         <section class="arena" aria-label="Randomized matchup">
           <article class="duelist-panel" data-side="left">
