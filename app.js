@@ -508,6 +508,12 @@ async function initializeMultiplayer({ roomId, isHost }) {
     game.set("initialized", true);
   }
 
+  if (isHost) {
+    initializeSharedGameIfNeeded();
+  } else {
+    attachSharedMaps();
+  }
+
   const awareness = provider.awareness;
   awareness.setLocalStateField("clientId", clientId);
 
@@ -527,6 +533,12 @@ async function initializeMultiplayer({ roomId, isHost }) {
     if (state.multiplayer.seat === "left" || state.multiplayer.seat === "right") {
       awareness.setLocalStateField("seat", state.multiplayer.seat);
     }
+  }
+
+  claimSeat();
+  updatePresence();
+  if (state.multiplayer.game?.get("initialized")) {
+    render();
   }
 
   root.observeDeep(() => {
@@ -679,11 +691,7 @@ async function initializeMultiplayer({ roomId, isHost }) {
   });
 
   provider.on("sync", () => {
-    if (isHost) {
-      initializeSharedGameIfNeeded();
-    } else {
-      attachSharedMaps();
-    }
+    attachSharedMaps();
     claimSeat();
     updatePresence();
     showApp();
