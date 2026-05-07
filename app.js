@@ -13,6 +13,7 @@ const modeDescription = document.querySelector("#modeDescription");
 const roomBanner = document.querySelector("#roomBanner");
 const roomValue = document.querySelector("#roomValue");
 const seatValue = document.querySelector("#seatValue");
+const presenceValue = document.querySelector("#presenceValue");
 const copyLinkButton = document.querySelector("#copyLinkButton");
 const panels = {
   left: document.querySelector('.duelist-panel[data-side="left"]'),
@@ -158,7 +159,8 @@ function getLocalViewState() {
 function getMultiUsage() {
   const usage = state.multiplayer.usage;
   return {
-    castlesUsed: usage.get("castlesUsed") === true,
+    rerollCastlesLeftUsed: usage.get("rerollCastlesLeftUsed") === true,
+    rerollCastlesRightUsed: usage.get("rerollCastlesRightUsed") === true,
     rerollBothLeftUsed: usage.get("rerollBothLeftUsed") === true,
     rerollBothRightUsed: usage.get("rerollBothRightUsed") === true,
     rerollSelfLeftUsed: usage.get("rerollSelfLeftUsed") === true,
@@ -181,6 +183,7 @@ function getMultiplayerViewState() {
     coin: state.multiplayer.game.get("coin") ?? 0,
     seat: state.multiplayer.seat,
     usage: getMultiUsage(),
+    connectedPeers: state.multiplayer.connectedPeers ?? 1,
   };
 }
 
@@ -275,8 +278,10 @@ function renderButtons(viewState) {
   const seat = viewState.seat;
   const ownSide = seat === "left" || seat === "right" ? seat : null;
 
-  townRollButton.disabled = usage.castlesUsed || !ownSide;
-  townRollButton.textContent = usage.castlesUsed ? "Reroll Castles Used" : "Reroll Castles";
+  const castlesKey = ownSide === "left" ? "rerollCastlesLeftUsed" : "rerollCastlesRightUsed";
+  const castlesUsed = ownSide ? usage[castlesKey] : true;
+  townRollButton.disabled = castlesUsed || !ownSide;
+  townRollButton.textContent = castlesUsed ? "Reroll Castles Used" : "Reroll Castles";
 
   const bothKey = ownSide === "left" ? "rerollBothLeftUsed" : "rerollBothRightUsed";
   const bothUsed = ownSide ? usage[bothKey] : true;
@@ -310,8 +315,9 @@ function renderMeta(viewState) {
     roomBanner.classList.remove("hidden");
     roomValue.textContent = state.multiplayer.roomId;
     seatValue.textContent = seat;
+    presenceValue.textContent = viewState.connectedPeers > 1 ? "Connected" : "Waiting";
     poolInfo.textContent =
-      "Multiplayer mode: shared castles reroll once, each player may reroll both heroes once, and reroll only their own hero once.";
+      "Multiplayer mode: each player may reroll castles once, reroll both heroes once, and reroll only their own hero once.";
   }
 
   coinButton.querySelector(".coin-face").textContent = String(viewState.coin ?? 0);
@@ -419,10 +425,10 @@ async function initializeMultiplayer({ roomId, isHost }) {
   setSearchParams(nextParams);
 
   let Y;
-  let WebrtcProvider;
+  let WebsocketProvider;
   try {
     Y = await import("https://esm.sh/yjs@13.6.27?bundle");
-    ({ WebrtcProvider } = await import("https://esm.sh/y-webrtc@10.3.0?bundle"));
+    ({ WebsocketProvider } = await import("https://esm.sh/y-websocket@1.5.4?bundle"));
   } catch (error) {
     modeDescription.textContent =
       "Multiplayer failed to initialize in this browser session. Please refresh and try again.";
@@ -432,9 +438,7 @@ async function initializeMultiplayer({ roomId, isHost }) {
   }
 
   const ydoc = new Y.Doc();
-  const provider = new WebrtcProvider(roomId, ydoc, {
-    password: "olden-era-room",
-  });
+  const provider = new WebsocketProvider("wss://demos.yjs.dev", roomId, ydoc);
 
   const root = ydoc.getMap("root");
   const players = root.get("players") || new Y.Map();
@@ -454,6 +458,7 @@ async function initializeMultiplayer({ roomId, isHost }) {
     game,
     usage,
     seat: null,
+    connectedPeers: 1,
   };
 
   function initializeSharedGameIfNeeded() {
@@ -467,7 +472,8 @@ async function initializeMultiplayer({ roomId, isHost }) {
     game.set("leftHeroSlug", pickHeroSlug(leftFaction.key));
     game.set("rightHeroSlug", pickHeroSlug(rightFaction.key));
     game.set("coin", 0);
-    usage.set("castlesUsed", false);
+    usage.set("rerollCastlesLeftUsed", false);
+    usage.set("rerollCastlesRightUsed", false);
     usage.set("rerollBothLeftUsed", false);
     usage.set("rerollBothRightUsed", false);
     usage.set("rerollSelfLeftUsed", false);
@@ -479,8 +485,19 @@ async function initializeMultiplayer({ roomId, isHost }) {
     initializeSharedGameIfNeeded();
   }
 
+  const awareness = provider.awareness;
+  awareness.setLocalStateField("clientId", clientId);
+
+  function updatePresence() {
+    state.multiplayer.connectedPeers = awareness.getStates().size;
+    if (state.multiplayer.seat === "left" || state.multiplayer.seat === "right") {
+      awareness.setLocalStateField("seat", state.multiplayer.seat);
+    }
+  }
+
   root.observeDeep(() => {
     claimSeat();
+    updatePresence();
     if (game.get("initialized")) {
       render();
     }
@@ -516,7 +533,13 @@ async function initializeMultiplayer({ roomId, isHost }) {
   }
 
   function rerollSharedCastles() {
-    if (usage.get("castlesUsed") || !state.multiplayer.seat || state.multiplayer.seat === "spectator") {
+    if (!state.multiplayer.seat || state.multiplayer.seat === "spectator") {
+      return;
+    }
+
+    const usageKey =
+      state.multiplayer.seat === "left" ? "rerollCastlesLeftUsed" : "rerollCastlesRightUsed";
+    if (usage.get(usageKey)) {
       return;
     }
 
@@ -525,7 +548,7 @@ async function initializeMultiplayer({ roomId, isHost }) {
     game.set("rightFaction", rightFaction.key);
     game.set("leftHeroSlug", pickHeroSlug(leftFaction.key));
     game.set("rightHeroSlug", pickHeroSlug(rightFaction.key));
-    usage.set("castlesUsed", true);
+    usage.set(usageKey, true);
   }
 
   function rerollSharedBothHeroes() {
@@ -581,16 +604,33 @@ async function initializeMultiplayer({ roomId, isHost }) {
     });
   }
 
-  provider.on("synced", () => {
+  provider.on("status", () => {
+    updatePresence();
+    render();
+  });
+
+  awareness.on("change", () => {
+    updatePresence();
+    render();
+  });
+
+  provider.on("sync", () => {
     if (isHost) {
       initializeSharedGameIfNeeded();
     }
     claimSeat();
+    updatePresence();
     showApp();
     render();
   });
 
-  renderMeta({ seat: "CONNECTING", coin: 0, sides: { left: {}, right: {} }, usage: {} });
+  renderMeta({
+    seat: "CONNECTING",
+    coin: 0,
+    sides: { left: {}, right: {} },
+    usage: {},
+    connectedPeers: 1,
+  });
 
   townRollButton.onclick = rerollSharedCastles;
   rollButton.onclick = rerollSharedBothHeroes;
