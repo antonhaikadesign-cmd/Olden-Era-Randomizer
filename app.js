@@ -16,6 +16,9 @@ const seatValue = document.querySelector("#seatValue");
 const presenceValue = document.querySelector("#presenceValue");
 const copyLinkButton = document.querySelector("#copyLinkButton");
 const waitingPanel = document.querySelector("#waitingPanel");
+const debugPanel = document.querySelector("#debugPanel");
+const debugGrid = document.querySelector("#debugGrid");
+const debugToggleButton = document.querySelector("#debugToggleButton");
 const arenaSection = document.querySelector(".arena");
 const controlsSection = document.querySelector(".controls");
 const panels = {
@@ -38,6 +41,7 @@ const state = {
   mode: null,
   multiplayer: null,
   single: createSingleState(),
+  debugVisible: true,
 };
 
 function getClientId() {
@@ -328,6 +332,83 @@ function renderMeta(viewState) {
   coinResult.textContent = `Result: ${viewState.coin ?? 0}`;
 }
 
+function stringifyDebugValue(value) {
+  if (value === null || value === undefined || value === "") {
+    return "n/a";
+  }
+
+  if (typeof value === "object") {
+    try {
+      return JSON.stringify(value);
+    } catch {
+      return String(value);
+    }
+  }
+
+  return String(value);
+}
+
+function getDebugEntries() {
+  if (state.mode !== "multiplayer" || !state.multiplayer) {
+    return [];
+  }
+
+  const players = state.multiplayer.players;
+  const game = state.multiplayer.game;
+  const usage = state.multiplayer.usage;
+  const awarenessStates = state.multiplayer.awarenessStates ?? [];
+
+  return [
+    ["room", state.multiplayer.roomId],
+    ["clientId", clientId],
+    ["seat", state.multiplayer.seat],
+    ["status", state.multiplayer.providerStatus],
+    ["sync", state.multiplayer.synced],
+    ["connectedPeers", state.multiplayer.connectedPeers],
+    ["players.left", players?.get("left")],
+    ["players.right", players?.get("right")],
+    ["initialized", game?.get("initialized")],
+    ["leftFaction", game?.get("leftFaction")],
+    ["rightFaction", game?.get("rightFaction")],
+    ["leftHeroSlug", game?.get("leftHeroSlug")],
+    ["rightHeroSlug", game?.get("rightHeroSlug")],
+    ["coin", game?.get("coin")],
+    ["usage.leftCastles", usage?.get("rerollCastlesLeftUsed")],
+    ["usage.rightCastles", usage?.get("rerollCastlesRightUsed")],
+    ["usage.leftBoth", usage?.get("rerollBothLeftUsed")],
+    ["usage.rightBoth", usage?.get("rerollBothRightUsed")],
+    ["usage.leftSelf", usage?.get("rerollSelfLeftUsed")],
+    ["usage.rightSelf", usage?.get("rerollSelfRightUsed")],
+    ["awareness", awarenessStates],
+    ["lastEvent", state.multiplayer.lastEvent],
+  ];
+}
+
+function renderDebugPanel() {
+  if (state.mode !== "multiplayer") {
+    debugPanel.classList.add("hidden");
+    return;
+  }
+
+  debugPanel.classList.toggle("hidden", !state.debugVisible);
+  debugToggleButton.textContent = state.debugVisible ? "Hide Debug" : "Show Debug";
+
+  if (!state.debugVisible) {
+    return;
+  }
+
+  debugGrid.innerHTML = "";
+  for (const [key, value] of getDebugEntries()) {
+    const item = document.createElement("div");
+    item.className = "debug-item";
+    item.innerHTML = `
+      <p class="debug-key">${key}</p>
+      <p class="debug-value">${stringifyDebugValue(value)}</p>
+    `;
+    debugGrid.appendChild(item);
+  }
+}
+
 function renderLobbyState(viewState) {
   if (state.mode === "single") {
     waitingPanel.classList.add("hidden");
@@ -345,6 +426,7 @@ function renderLobbyState(viewState) {
 function render() {
   const viewState = getCurrentViewState();
   renderLobbyState(viewState);
+  renderDebugPanel();
   if (!hasRenderableState(viewState)) {
     renderMeta(viewState);
     return;
@@ -471,6 +553,10 @@ async function initializeMultiplayer({ roomId, isHost }) {
     usage: null,
     seat: null,
     connectedPeers: 1,
+    synced: false,
+    providerStatus: "connecting",
+    awarenessStates: [],
+    lastEvent: "init",
   };
 
   function getSharedMaps() {
@@ -537,6 +623,7 @@ async function initializeMultiplayer({ roomId, isHost }) {
 
   const awareness = provider.awareness;
   awareness.setLocalStateField("clientId", clientId);
+  state.multiplayer.lastEvent = "awareness:init";
 
   function getAssignedPlayerCount() {
     const players = state.multiplayer.players;
@@ -551,6 +638,11 @@ async function initializeMultiplayer({ roomId, isHost }) {
 
   function updatePresence() {
     state.multiplayer.connectedPeers = getAssignedPlayerCount();
+    state.multiplayer.awarenessStates = Array.from(awareness.getStates().entries()).map(([id, value]) => ({
+      id,
+      clientId: value.clientId ?? null,
+      seat: value.seat ?? null,
+    }));
     if (state.multiplayer.seat === "left" || state.multiplayer.seat === "right") {
       awareness.setLocalStateField("seat", state.multiplayer.seat);
     }
@@ -563,6 +655,7 @@ async function initializeMultiplayer({ roomId, isHost }) {
   }
 
   root.observeDeep(() => {
+    state.multiplayer.lastEvent = "root.observeDeep";
     attachSharedMaps();
     claimSeat();
     updatePresence();
@@ -698,6 +791,8 @@ async function initializeMultiplayer({ roomId, isHost }) {
   }
 
   provider.on("status", () => {
+    state.multiplayer.providerStatus = provider.wsconnected ? "connected" : "disconnected";
+    state.multiplayer.lastEvent = "provider.status";
     attachSharedMaps();
     claimSeat();
     updatePresence();
@@ -705,6 +800,7 @@ async function initializeMultiplayer({ roomId, isHost }) {
   });
 
   awareness.on("change", () => {
+    state.multiplayer.lastEvent = "awareness.change";
     attachSharedMaps();
     claimSeat();
     updatePresence();
@@ -712,6 +808,8 @@ async function initializeMultiplayer({ roomId, isHost }) {
   });
 
   provider.on("sync", () => {
+    state.multiplayer.synced = true;
+    state.multiplayer.lastEvent = "provider.sync";
     attachSharedMaps();
     claimSeat();
     updatePresence();
@@ -736,6 +834,7 @@ async function initializeMultiplayer({ roomId, isHost }) {
     panel.querySelector("[data-reroll-side]").onclick = () => rerollOwnHero();
   }
 
+  render();
 }
 
 singleModeButton.addEventListener("click", initializeSingle);
@@ -756,6 +855,11 @@ window.addEventListener("keydown", (event) => {
 });
 
 buildTownSelectors();
+
+debugToggleButton.addEventListener("click", () => {
+  state.debugVisible = !state.debugVisible;
+  renderDebugPanel();
+});
 
 if (params.get("mode") === "multi" && params.get("room")) {
   initializeMultiplayer({ roomId: params.get("room"), isHost: params.get("host") === "1" });
