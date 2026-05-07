@@ -184,6 +184,15 @@ function getMultiplayerViewState() {
   };
 }
 
+function hasRenderableState(viewState) {
+  return (
+    Boolean(viewState?.sides?.left?.faction) &&
+    Boolean(viewState?.sides?.right?.faction) &&
+    Boolean(viewState?.sides?.left?.heroSlug) &&
+    Boolean(viewState?.sides?.right?.heroSlug)
+  );
+}
+
 function getCurrentViewState() {
   return state.mode === "multiplayer" ? getMultiplayerViewState() : getLocalViewState();
 }
@@ -194,6 +203,10 @@ function setPanel(side, viewState) {
   const faction = getFaction(sideState.faction);
   const hero = heroesBySlug.get(sideState.heroSlug);
   const pool = getAvailableHeroes(sideState.faction);
+
+  if (!faction || !hero) {
+    return;
+  }
 
   panel.querySelector("[data-town-name]").textContent = faction.name;
   const townImage = panel.querySelector("[data-town-image]");
@@ -307,6 +320,10 @@ function renderMeta(viewState) {
 
 function render() {
   const viewState = getCurrentViewState();
+  if (!hasRenderableState(viewState)) {
+    renderMeta(viewState);
+    return;
+  }
   setPanel("left", viewState);
   setPanel("right", viewState);
   renderTownSelectorState(viewState);
@@ -401,8 +418,18 @@ async function initializeMultiplayer({ roomId, isHost }) {
   }
   setSearchParams(nextParams);
 
-  const Y = await import("https://esm.sh/yjs@13.6.27");
-  const { WebrtcProvider } = await import("https://esm.sh/y-webrtc@10.3.0");
+  let Y;
+  let WebrtcProvider;
+  try {
+    Y = await import("https://esm.sh/yjs@13.6.27?bundle");
+    ({ WebrtcProvider } = await import("https://esm.sh/y-webrtc@10.3.0?bundle"));
+  } catch (error) {
+    modeDescription.textContent =
+      "Multiplayer failed to initialize in this browser session. Please refresh and try again.";
+    poolInfo.textContent = "Multiplayer modules could not be loaded.";
+    console.error(error);
+    return;
+  }
 
   const ydoc = new Y.Doc();
   const provider = new WebrtcProvider(roomId, ydoc, {
@@ -429,11 +456,6 @@ async function initializeMultiplayer({ roomId, isHost }) {
     seat: null,
   };
 
-  root.observeDeep(() => {
-    claimSeat();
-    render();
-  });
-
   function initializeSharedGameIfNeeded() {
     if (game.get("initialized")) {
       return;
@@ -452,6 +474,17 @@ async function initializeMultiplayer({ roomId, isHost }) {
     usage.set("rerollSelfRightUsed", false);
     game.set("initialized", true);
   }
+
+  if (isHost) {
+    initializeSharedGameIfNeeded();
+  }
+
+  root.observeDeep(() => {
+    claimSeat();
+    if (game.get("initialized")) {
+      render();
+    }
+  });
 
   function claimSeat() {
     const left = players.get("left");
@@ -553,8 +586,11 @@ async function initializeMultiplayer({ roomId, isHost }) {
       initializeSharedGameIfNeeded();
     }
     claimSeat();
+    showApp();
     render();
   });
+
+  renderMeta({ seat: "CONNECTING", coin: 0, sides: { left: {}, right: {} }, usage: {} });
 
   townRollButton.onclick = rerollSharedCastles;
   rollButton.onclick = rerollSharedBothHeroes;
