@@ -14,7 +14,7 @@
             <p class="eyebrow">Heroes of Might and Magic: Olden Era</p>
             <h1>Hero Duel Randomizer</h1>
             <p class="subtitle">
-              Choose castles for both sides, then reroll only heroes from those factions.
+              Randomize castles and heroes, inspect starting kit, and flip a quick 0/1 coin on the side.
             </p>
           </div>
           <img class="header-art" src="./public/assets/ui/header.jpg" alt="Olden Era official artwork" />
@@ -36,28 +36,67 @@
             </section>
 
             <section class="hero-card">
-              <img class="hero-portrait" data-hero-image alt="" />
-              <div class="hero-copy">
-                <div class="hero-heading">
-                  <p class="hero-faction" data-hero-faction></p>
-                  <h2 class="hero-name" data-hero-name></h2>
+              <div class="hero-top">
+                <img class="hero-portrait" data-hero-image alt="" />
+                <div class="hero-summary">
+                  <div class="hero-heading">
+                    <p class="hero-faction" data-hero-faction></p>
+                    <h2 class="hero-name" data-hero-name></h2>
+                    <p class="hero-class" data-hero-class></p>
+                  </div>
+                  <p class="hero-description" data-hero-description></p>
+                  <div class="hero-links">
+                    <a class="source-link" data-hero-source href="#" target="_blank" rel="noreferrer">
+                      View Full Hero Page
+                    </a>
+                  </div>
                 </div>
-                <div class="hero-meta">
-                  <p class="hero-pool" data-hero-pool></p>
-                  <button class="hero-reroll-button" type="button" data-reroll-side>
-                    Reroll Hero
-                  </button>
-                </div>
+              </div>
+
+              <div class="hero-detail-grid">
+                <section class="detail-box">
+                  <h3>Starting Skills</h3>
+                  <div class="chip-list" data-hero-skills></div>
+                </section>
+
+                <section class="detail-box">
+                  <h3>Starting Spell</h3>
+                  <div class="spell-box" data-hero-spell></div>
+                </section>
+
+                <section class="detail-box">
+                  <h3>Initial Stats</h3>
+                  <div class="stats-grid">
+                    <div class="stat-chip"><span>ATK</span><strong data-stat-attack></strong></div>
+                    <div class="stat-chip"><span>DEF</span><strong data-stat-defence></strong></div>
+                    <div class="stat-chip"><span>SP</span><strong data-stat-spell-power></strong></div>
+                    <div class="stat-chip"><span>INT</span><strong data-stat-intelligence></strong></div>
+                  </div>
+                </section>
+              </div>
+
+              <div class="hero-footer">
+                <p class="hero-pool" data-hero-pool></p>
+                <button class="hero-reroll-button" type="button" data-reroll-side>Reroll Hero</button>
               </div>
             </section>
           </article>
 
-          <div class="versus-column" aria-hidden="true">
-            <div class="versus-mark">VS</div>
+          <div class="versus-column">
+            <div class="versus-mark" aria-hidden="true">VS</div>
             <button class="roll-button roll-button-secondary" id="townRollButton" type="button">
               Reroll Castles
             </button>
             <button class="roll-button" id="rollButton" type="button">Reroll Both Heroes</button>
+
+            <section class="coin-panel" aria-label="Coin flip">
+              <p class="coin-label">Coin 0/1</p>
+              <button class="coin-button" id="coinButton" type="button" aria-live="polite">
+                <span class="coin-face">0</span>
+                <span class="coin-rim">Flip</span>
+              </button>
+              <p class="coin-result" id="coinResult">Press the coin</p>
+            </section>
           </div>
 
           <article class="duelist-panel" data-side="right">
@@ -75,18 +114,48 @@
             </section>
 
             <section class="hero-card">
-              <img class="hero-portrait" data-hero-image alt="" />
-              <div class="hero-copy">
-                <div class="hero-heading">
-                  <p class="hero-faction" data-hero-faction></p>
-                  <h2 class="hero-name" data-hero-name></h2>
+              <div class="hero-top">
+                <img class="hero-portrait" data-hero-image alt="" />
+                <div class="hero-summary">
+                  <div class="hero-heading">
+                    <p class="hero-faction" data-hero-faction></p>
+                    <h2 class="hero-name" data-hero-name></h2>
+                    <p class="hero-class" data-hero-class></p>
+                  </div>
+                  <p class="hero-description" data-hero-description></p>
+                  <div class="hero-links">
+                    <a class="source-link" data-hero-source href="#" target="_blank" rel="noreferrer">
+                      View Full Hero Page
+                    </a>
+                  </div>
                 </div>
-                <div class="hero-meta">
-                  <p class="hero-pool" data-hero-pool></p>
-                  <button class="hero-reroll-button" type="button" data-reroll-side>
-                    Reroll Hero
-                  </button>
-                </div>
+              </div>
+
+              <div class="hero-detail-grid">
+                <section class="detail-box">
+                  <h3>Starting Skills</h3>
+                  <div class="chip-list" data-hero-skills></div>
+                </section>
+
+                <section class="detail-box">
+                  <h3>Starting Spell</h3>
+                  <div class="spell-box" data-hero-spell></div>
+                </section>
+
+                <section class="detail-box">
+                  <h3>Initial Stats</h3>
+                  <div class="stats-grid">
+                    <div class="stat-chip"><span>ATK</span><strong data-stat-attack></strong></div>
+                    <div class="stat-chip"><span>DEF</span><strong data-stat-defence></strong></div>
+                    <div class="stat-chip"><span>SP</span><strong data-stat-spell-power></strong></div>
+                    <div class="stat-chip"><span>INT</span><strong data-stat-intelligence></strong></div>
+                  </div>
+                </section>
+              </div>
+
+              <div class="hero-footer">
+                <p class="hero-pool" data-hero-pool></p>
+                <button class="hero-reroll-button" type="button" data-reroll-side>Reroll Hero</button>
               </div>
             </section>
           </article>

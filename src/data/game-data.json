@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07T16:22:53.348Z",
+  "generatedAt": "2026-05-07T20:04:26.879Z",
   "source": "https://www.olden-era.com/en/heroes",
   "factions": [
     {
@@ -38,757 +38,2779 @@
       "slug": "abigor_duke_of_battle",
       "name": "Abigor, Duke of Battle",
       "faction": "hive",
-      "className": "",
-      "image": "assets/heroes/hive/abigor_duke_of_battle.webp"
+      "image": "assets/heroes/hive/abigor_duke_of_battle.webp",
+      "className": "Enforcer",
+      "specialty": {
+        "name": "Chessmaster",
+        "description": "In the Tactics Phase, he has +1 hex to the creature placement range. Creatures in his army gain 1 Initiative for every 6 hero level(s)."
+      },
+      "description": "In the Tactics Phase, he has +1 hex to the creature placement range. Creatures in his army gain 1 Initiative for every 6 hero level(s).",
+      "startingSkills": [
+        "Summon Swarm",
+        "Tactics"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "4",
+        "defence": "0",
+        "spellPower": "2",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/abigor_duke_of_battle"
     },
     {
       "slug": "adahn",
       "name": "Adahn",
       "faction": "necropolis",
-      "className": "",
-      "image": "assets/heroes/necropolis/adahn.webp"
+      "image": "assets/heroes/necropolis/adahn.webp",
+      "className": "Necromancer",
+      "specialty": {
+        "name": "Wight",
+        "description": "Amnesiac - Wights growth in your cities increases by 2. Under his command, Wights gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Wights lose an equal amount of Attack and Defence."
+      },
+      "description": "Amnesiac - Wights growth in your cities increases by 2. Under his command, Wights gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Wights lose an equal amount of Attack and Defence.",
+      "startingSkills": [
+        "Necromancy",
+        "Insight"
+      ],
+      "startingSpell": {
+        "name": "Silence",
+        "image": "assets/spells/nightshade/silence.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "0",
+        "spellPower": "2",
+        "intelligence": "4"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/adahn"
     },
     {
       "slug": "aeliniel",
       "name": "Aeliniel",
       "faction": "sylvan",
-      "className": "",
-      "image": "assets/heroes/sylvan/aeliniel.webp"
+      "image": "assets/heroes/sylvan/aeliniel.webp",
+      "className": "Druid",
+      "specialty": {
+        "name": "Tempered Embers",
+        "description": "She starts with the \"Masterful Firewall\" spell. This version of the spell stays active for +1 additional round. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels."
+      },
+      "description": "She starts with the \"Masterful Firewall\" spell. This version of the spell stays active for +1 additional round. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
+      "startingSkills": [
+        "Murmuring",
+        "Primal Magic"
+      ],
+      "startingSpell": {
+        "name": "Firewall",
+        "image": "assets/spells/primal/firewall.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "2",
+        "spellPower": "2",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/aeliniel"
     },
     {
       "slug": "aeos_the_exalted",
       "name": "Aeos the Exalted",
       "faction": "temple",
-      "className": "",
-      "image": "assets/heroes/temple/aeos_the_exalted.webp"
+      "image": "assets/heroes/temple/aeos_the_exalted.webp",
+      "className": "Knight",
+      "specialty": {
+        "name": "Leadership",
+        "description": "Rousing Presence - Increases Morale of friendly creatures by 1 and gives +2% chance per Morale point that a friendly creature takes an additional turn. For every 4 levels, this bonus increases by 1%."
+      },
+      "description": "Rousing Presence - Increases Morale of friendly creatures by 1 and gives +2% chance per Morale point that a friendly creature takes an additional turn. For every 4 levels, this bonus increases by 1%.",
+      "startingSkills": [
+        "Ascension",
+        "Leadership"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "2",
+        "defence": "3",
+        "spellPower": "1",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/aeos_the_exalted"
     },
     {
       "slug": "alluring_sh_a",
-      "name": "Alluring Sh&#x27;a",
+      "name": "Alluring Sh'a",
       "faction": "sylvan",
-      "className": "",
-      "image": "assets/heroes/sylvan/alluring_sh_a.webp"
+      "image": "assets/heroes/sylvan/alluring_sh_a.webp",
+      "className": "Warden",
+      "specialty": {
+        "name": "Charismatic",
+        "description": "Retains the army when fleeing from battle against neutral squads. +5% Persuasion Power when using Diplomacy, plus an additional +1% for every 4 hero levels."
+      },
+      "description": "Retains the army when fleeing from battle against neutral squads. +5% Persuasion Power when using Diplomacy, plus an additional +1% for every 4 hero levels.",
+      "startingSkills": [
+        "Murmuring",
+        "Diplomacy"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "2",
+        "defence": "1",
+        "spellPower": "2",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/alluring_sh_a"
     },
     {
       "slug": "anastasia_the_meek",
       "name": "Anastasia the Meek",
       "faction": "temple",
-      "className": "",
-      "image": "assets/heroes/temple/anastasia_the_meek.webp"
+      "image": "assets/heroes/temple/anastasia_the_meek.webp",
+      "className": "Cleric",
+      "specialty": {
+        "name": "Arina's Touch",
+        "description": "Hymn to Arina - Starts with the “Masterful Arina’s Touch” spell. This version of the spell increases target´s Speed by 1. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels."
+      },
+      "description": "Hymn to Arina - Starts with the “Masterful Arina’s Touch” spell. This version of the spell increases target´s Speed by 1. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
+      "startingSkills": [
+        "Ascension",
+        "Thaumaturgy"
+      ],
+      "startingSpell": {
+        "name": "Arina’s Touch",
+        "image": "assets/spells/daylight/arinas_touch.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "1",
+        "spellPower": "2",
+        "intelligence": "3"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/anastasia_the_meek"
     },
     {
       "slug": "artorius_veritas",
       "name": "Artorius Veritas",
       "faction": "necropolis",
-      "className": "",
-      "image": "assets/heroes/necropolis/artorius_veritas.webp"
+      "image": "assets/heroes/necropolis/artorius_veritas.webp",
+      "className": "Death Knight",
+      "specialty": {
+        "name": "Berserk",
+        "description": "Drive 'em Crazy - Starts with the “Masterful Berserk” spell. This version of the spell affects all creatures adjacent to the target. The cost of this spell is reduced by 1 mana for every 3 hero levels."
+      },
+      "description": "Drive 'em Crazy - Starts with the “Masterful Berserk” spell. This version of the spell affects all creatures adjacent to the target. The cost of this spell is reduced by 1 mana for every 3 hero levels.",
+      "startingSkills": [
+        "Necromancy",
+        "Resistance"
+      ],
+      "startingSpell": {
+        "name": "Berserk",
+        "image": "assets/spells/nightshade/berserk.webp"
+      },
+      "stats": {
+        "attack": "3",
+        "defence": "1",
+        "spellPower": "1",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/artorius_veritas"
     },
     {
       "slug": "aunt_daliar",
       "name": "Autn Daliar",
       "faction": "sylvan",
-      "className": "",
-      "image": "assets/heroes/sylvan/aunt_daliar.webp"
+      "image": "assets/heroes/sylvan/aunt_daliar.webp",
+      "className": "Warden",
+      "specialty": {
+        "name": "Wish to Learn",
+        "description": "When leveling up, she gains 1 additional attribute point for every 2 hero levels. She gains +5% XP for every 2 hero levels."
+      },
+      "description": "When leveling up, she gains 1 additional attribute point for every 2 hero levels. She gains +5% XP for every 2 hero levels.",
+      "startingSkills": [
+        "Murmuring",
+        "Insight"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "2",
+        "defence": "1",
+        "spellPower": "2",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/aunt_daliar"
     },
     {
       "slug": "bathym_duke_of_jewels",
       "name": "Bathym, Duke of Jewels",
       "faction": "hive",
-      "className": "",
-      "image": "assets/heroes/hive/bathym_duke_of_jewels.webp"
+      "image": "assets/heroes/hive/bathym_duke_of_jewels.webp",
+      "className": "Herald",
+      "specialty": {
+        "name": "Charming Shine",
+        "description": "He produces +1 Crystals per day, plus another +1 for every 5 hero level(s). Increases the amount of Crystals found on the map by 100%."
+      },
+      "description": "He produces +1 Crystals per day, plus another +1 for every 5 hero level(s). Increases the amount of Crystals found on the map by 100%.",
+      "startingSkills": [
+        "Summon Swarm",
+        "Economy"
+      ],
+      "startingSpell": {
+        "name": "Groundsight",
+        "image": "assets/spells/primal/groundsight.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "0",
+        "spellPower": "4",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/bathym_duke_of_jewels"
     },
     {
       "slug": "blackhorn",
       "name": "Blackhorn",
       "faction": "schism",
-      "className": "",
-      "image": "assets/heroes/schism/blackhorn.webp"
+      "image": "assets/heroes/schism/blackhorn.webp",
+      "className": "Oathkeeper",
+      "specialty": {
+        "name": "Sorcery",
+        "description": "Spellweaver - Deals +10% Damage with spells, plus 1% more for every 2 hero levels. The Damage from the enemy hero’s spells is reduced by the same value."
+      },
+      "description": "Spellweaver - Deals +10% Damage with spells, plus 1% more for every 2 hero levels. The Damage from the enemy hero’s spells is reduced by the same value.",
+      "startingSkills": [
+        "Abyssal Communion",
+        "Sorcery"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "3",
+        "defence": "2",
+        "spellPower": "1",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/blackhorn"
     },
     {
       "slug": "bulwark",
       "name": "Bulwark",
       "faction": "necropolis",
-      "className": "",
-      "image": "assets/heroes/necropolis/bulwark.webp"
+      "image": "assets/heroes/necropolis/bulwark.webp",
+      "className": "Death Knight",
+      "specialty": {
+        "name": "Defence",
+        "description": "Built Different - Creatures in his army take –10% basic attack Damage, and –1% additionally for every 2 hero levels. Additionally, for every 2 hero levels, creatures in the army take –1% Damage from Ranged and Long Reach attacks."
+      },
+      "description": "Built Different - Creatures in his army take –10% basic attack Damage, and –1% additionally for every 2 hero levels. Additionally, for every 2 hero levels, creatures in the army take –1% Damage from Ranged and Long Reach attacks.",
+      "startingSkills": [
+        "Necromancy",
+        "Defence"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "3",
+        "defence": "1",
+        "spellPower": "1",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/bulwark"
     },
     {
       "slug": "changeling_urgo",
       "name": "Changeling Urgo",
       "faction": "schism",
-      "className": "",
-      "image": "assets/heroes/schism/changeling_urgo.webp"
+      "image": "assets/heroes/schism/changeling_urgo.webp",
+      "className": "Oathkeeper",
+      "specialty": {
+        "name": "Summon Avatar",
+        "description": "Pure Essence - The summoned Avatar deals Pure Damage. Has +1 Spell Power per 3 hero levels for the purpose of summoning an Avatar."
+      },
+      "description": "Pure Essence - The summoned Avatar deals Pure Damage. Has +1 Spell Power per 3 hero levels for the purpose of summoning an Avatar.",
+      "startingSkills": [
+        "Abyssal Communion",
+        "Summon Avatar"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "3",
+        "defence": "2",
+        "spellPower": "1",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/changeling_urgo"
     },
     {
       "slug": "clarissa",
       "name": "Clarissa",
       "faction": "temple",
-      "className": "",
-      "image": "assets/heroes/temple/clarissa.webp"
+      "image": "assets/heroes/temple/clarissa.webp",
+      "className": "Cleric",
+      "specialty": {
+        "name": "Gold",
+        "description": "Wealthy - Produces 500 Gold per day, +100 more for every 2 hero levels. Increases the amount of Gold found on the map by 50%."
+      },
+      "description": "Wealthy - Produces 500 Gold per day, +100 more for every 2 hero levels. Increases the amount of Gold found on the map by 50%.",
+      "startingSkills": [
+        "Ascension",
+        "Economy"
+      ],
+      "startingSpell": {
+        "name": "Energize",
+        "image": "assets/spells/arcane/energize.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "1",
+        "spellPower": "2",
+        "intelligence": "3"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/clarissa"
     },
     {
       "slug": "creta_daughter_of_navarr",
       "name": "Creta, daughter of Navarr",
       "faction": "dungeon",
-      "className": "",
-      "image": "assets/heroes/dungeon/creta_daughter_of_navarr.webp"
+      "image": "assets/heroes/dungeon/creta_daughter_of_navarr.webp",
+      "className": "Overlord",
+      "specialty": {
+        "name": "Gem",
+        "description": "Creta, daughter of NavarrGem Seeker - Produces 1 Gem per day, +1 more for every 5 hero levels. Increases the amount of Gems found on the map by 100%."
+      },
+      "description": "Creta, daughter of NavarrGem Seeker - Produces 1 Gem per day, +1 more for every 5 hero levels. Increases the amount of Gems found on the map by 100%.",
+      "startingSkills": [
+        "Triumvirates Strength",
+        "Economy"
+      ],
+      "startingSpell": {
+        "name": "Groundsight",
+        "image": "assets/spells/primal/groundsight.webp"
+      },
+      "stats": {
+        "attack": "2",
+        "defence": "2",
+        "spellPower": "2",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/creta_daughter_of_navarr"
     },
     {
       "slug": "curson_duke_of_rage",
       "name": "Curson, Duke of Rage",
       "faction": "hive",
-      "className": "",
-      "image": "assets/heroes/hive/curson_duke_of_rage.webp"
+      "image": "assets/heroes/hive/curson_duke_of_rage.webp",
+      "className": "Enforcer",
+      "specialty": {
+        "name": "Intimidating Strike",
+        "description": "His Heroic Strike deals +10 Damage, plus 5 more for every 6 hero level(s). Additionally, it reduces the target’s Initiative by 1 until the battle end. This effect is stackable."
+      },
+      "description": "His Heroic Strike deals +10 Damage, plus 5 more for every 6 hero level(s). Additionally, it reduces the target’s Initiative by 1 until the battle end. This effect is stackable.",
+      "startingSkills": [
+        "Summon Swarm",
+        "Combat"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "4",
+        "defence": "0",
+        "spellPower": "2",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/curson_duke_of_rage"
     },
     {
       "slug": "devir_son_of_devir",
       "name": "Devir, son of Devir",
       "faction": "dungeon",
-      "className": "",
-      "image": "assets/heroes/dungeon/devir_son_of_devir.webp"
+      "image": "assets/heroes/dungeon/devir_son_of_devir.webp",
+      "className": "Overlord",
+      "specialty": {
+        "name": "Minotaurs",
+        "description": "Balthazar's Lair - Minotaurs growth in your cities increases by 1. Under his command, Minotaurs gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Minotaurs lose an equal amount of Attack and Defence."
+      },
+      "description": "Balthazar's Lair - Minotaurs growth in your cities increases by 1. Under his command, Minotaurs gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Minotaurs lose an equal amount of Attack and Defence.",
+      "startingSkills": [
+        "Triumvirates Strength",
+        "Leadership"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "2",
+        "defence": "2",
+        "spellPower": "2",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/devir_son_of_devir"
     },
     {
       "slug": "dhuvri",
       "name": "Dhüvri",
       "faction": "schism",
-      "className": "",
-      "image": "assets/heroes/schism/dhuvri.webp"
+      "image": "assets/heroes/schism/dhuvri.webp",
+      "className": "Riftspeaker",
+      "specialty": {
+        "name": "Abyssal Communion",
+        "description": "True Believer - +1 Communion level after a victory. +1 maximum Communion level for every 8 hero levels."
+      },
+      "description": "True Believer - +1 Communion level after a victory. +1 maximum Communion level for every 8 hero levels.",
+      "startingSkills": [
+        "Advanced Abyssal Communion"
+      ],
+      "startingSpell": {
+        "name": "Blink",
+        "image": "assets/spells/arcane/blink.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "1",
+        "spellPower": "3",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/dhuvri"
     },
     {
       "slug": "echolily",
       "name": "Echolily",
       "faction": "sylvan",
-      "className": "",
-      "image": "assets/heroes/sylvan/echolily.webp"
+      "image": "assets/heroes/sylvan/echolily.webp",
+      "className": "Druid",
+      "specialty": {
+        "name": "Murmuring Copy",
+        "description": "She starts with the \"Masterful Mirror Copy\" spell. This version of the spell can target enemy creatures. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels."
+      },
+      "description": "She starts with the \"Masterful Mirror Copy\" spell. This version of the spell can target enemy creatures. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
+      "startingSkills": [
+        "Murmuring",
+        "Arcane Magic"
+      ],
+      "startingSpell": {
+        "name": "Mirror Copy",
+        "image": "assets/spells/arcane/mirror_copy.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "2",
+        "spellPower": "2",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/echolily"
     },
     {
       "slug": "eith",
       "name": "Eith",
       "faction": "sylvan",
-      "className": "",
-      "image": "assets/heroes/sylvan/eith.webp"
+      "image": "assets/heroes/sylvan/eith.webp",
+      "className": "Warden",
+      "specialty": {
+        "name": "Pathfinder",
+        "description": "His movement takes no terrain penalties. He also has +1 Sight Radius, plus an additional +1 for every 5 hero levels."
+      },
+      "description": "His movement takes no terrain penalties. He also has +1 Sight Radius, plus an additional +1 for every 5 hero levels.",
+      "startingSkills": [
+        "Murmuring",
+        "Scouting"
+      ],
+      "startingSpell": {
+        "name": "From a Bird’s Eye",
+        "image": "assets/spells/daylight/from_a_birds_eye.webp"
+      },
+      "stats": {
+        "attack": "2",
+        "defence": "1",
+        "spellPower": "2",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/eith"
     },
     {
       "slug": "elder_tss_kish",
-      "name": "Elder Tss&#x27;kish",
+      "name": "Elder Tss'kish",
       "faction": "sylvan",
-      "className": "",
-      "image": "assets/heroes/sylvan/elder_tss_kish.webp"
+      "image": "assets/heroes/sylvan/elder_tss_kish.webp",
+      "className": "Druid",
+      "specialty": {
+        "name": "Oldest Known Tree",
+        "description": "Herbomancer growth in your cities increases by 1. Under his command, Herbomancers gain +1 Speed, +1 Initiative, and +20% HP. Their Attack and Defense increase by 1 for every 3 hero levels, and enemy Herbomancers lose an equal amount of Attack and Defense."
+      },
+      "description": "Herbomancer growth in your cities increases by 1. Under his command, Herbomancers gain +1 Speed, +1 Initiative, and +20% HP. Their Attack and Defense increase by 1 for every 3 hero levels, and enemy Herbomancers lose an equal amount of Attack and Defense.",
+      "startingSkills": [
+        "Murmuring",
+        "Thaumaturgy"
+      ],
+      "startingSpell": {
+        "name": "Song of Power",
+        "image": "assets/spells/daylight/song_of_power.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "2",
+        "spellPower": "2",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/elder_tss_kish"
     },
     {
       "slug": "enatee",
       "name": "Enatee",
       "faction": "dungeon",
-      "className": "",
-      "image": "assets/heroes/dungeon/enatee.webp"
+      "image": "assets/heroes/dungeon/enatee.webp",
+      "className": "Overlord",
+      "specialty": {
+        "name": "Medusae",
+        "description": "Slitering Menace - Medusae growth in your cities increases by 1. Under her command, Medusae gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Medusae lose an equal amount of Attack and Defence."
+      },
+      "description": "Slitering Menace - Medusae growth in your cities increases by 1. Under her command, Medusae gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Medusae lose an equal amount of Attack and Defence.",
+      "startingSkills": [
+        "Triumvirates Strength",
+        "Defence"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "2",
+        "defence": "2",
+        "spellPower": "2",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/enatee"
     },
     {
       "slug": "ethric",
       "name": "Ethric",
       "faction": "necropolis",
-      "className": "",
-      "image": "assets/heroes/necropolis/ethric.webp"
+      "image": "assets/heroes/necropolis/ethric.webp",
+      "className": "Necromancer",
+      "specialty": {
+        "name": "Liches",
+        "description": "Tombbound Will - Liches growth in your cities increases by 2. Under his command, Liches gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Liches lose an equal amount of Attack and Defence."
+      },
+      "description": "Tombbound Will - Liches growth in your cities increases by 2. Under his command, Liches gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Liches lose an equal amount of Attack and Defence.",
+      "startingSkills": [
+        "Necromancy",
+        "Intelligence"
+      ],
+      "startingSpell": {
+        "name": "Shade Cloak",
+        "image": "assets/spells/nightshade/shade_cloak.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "0",
+        "spellPower": "2",
+        "intelligence": "4"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/ethric"
     },
     {
       "slug": "faleor",
       "name": "Faleor",
       "faction": "sylvan",
-      "className": "",
-      "image": "assets/heroes/sylvan/faleor.webp"
+      "image": "assets/heroes/sylvan/faleor.webp",
+      "className": "Warden",
+      "specialty": {
+        "name": "Hksmilla’s Step",
+        "description": "He starts with the \"Masterful Fireball\" spell. This version of the spell hits a larger area. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels."
+      },
+      "description": "He starts with the \"Masterful Fireball\" spell. This version of the spell hits a larger area. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
+      "startingSkills": [
+        "Advanced Murmuring"
+      ],
+      "startingSpell": {
+        "name": "Fireball",
+        "image": "assets/spells/primal/fireball.webp"
+      },
+      "stats": {
+        "attack": "2",
+        "defence": "1",
+        "spellPower": "2",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/faleor"
     },
     {
       "slug": "fleu",
       "name": "Fleu",
       "faction": "hive",
-      "className": "",
-      "image": "assets/heroes/hive/fleu.webp"
+      "image": "assets/heroes/hive/fleu.webp",
+      "className": "Herald",
+      "specialty": {
+        "name": "Wayfarer",
+        "description": "She has +5% Movement points for every 8 hero level(s). Moves significantly more efficiently on roads."
+      },
+      "description": "She has +5% Movement points for every 8 hero level(s). Moves significantly more efficiently on roads.",
+      "startingSkills": [
+        "Summon Swarm",
+        "Logistics"
+      ],
+      "startingSpell": {
+        "name": "Doreath’s Tide",
+        "image": "assets/spells/arcane/doreaths_tide.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "0",
+        "spellPower": "4",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/fleu"
     },
     {
       "slug": "funerella",
       "name": "Funerella",
       "faction": "necropolis",
-      "className": "",
-      "image": "assets/heroes/necropolis/funerella.webp"
+      "image": "assets/heroes/necropolis/funerella.webp",
+      "className": "Necromancer",
+      "specialty": {
+        "name": "Necromancy",
+        "description": "Undead Legion - Has +5% Necromancy Power, plus 1% more for every 4 hero levels."
+      },
+      "description": "Undead Legion - Has +5% Necromancy Power, plus 1% more for every 4 hero levels.",
+      "startingSkills": [
+        "Advanced Necromancy"
+      ],
+      "startingSpell": {
+        "name": "手铐",
+        "image": "assets/spells/arcane/shackles.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "0",
+        "spellPower": "2",
+        "intelligence": "4"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/funerella"
     },
     {
       "slug": "gingertail",
       "name": "Gingertail",
       "faction": "sylvan",
-      "className": "",
-      "image": "assets/heroes/sylvan/gingertail.webp"
+      "image": "assets/heroes/sylvan/gingertail.webp",
+      "className": "Warden",
+      "specialty": {
+        "name": "Faunsong",
+        "description": "Faun growth in your cities increases by 1. Under her command, Fauns gain +1 Speed, +1 Initiative, and +20% HP. Their Attack and Defense increase by 1 for every 3 hero levels, and enemy Fauns lose an equal amount of Attack and Defense."
+      },
+      "description": "Faun growth in your cities increases by 1. Under her command, Fauns gain +1 Speed, +1 Initiative, and +20% HP. Their Attack and Defense increase by 1 for every 3 hero levels, and enemy Fauns lose an equal amount of Attack and Defense.",
+      "startingSkills": [
+        "Murmuring",
+        "Battlecraft"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "2",
+        "defence": "1",
+        "spellPower": "2",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/gingertail"
     },
     {
       "slug": "glacia",
       "name": "Glacia",
       "faction": "sylvan",
-      "className": "",
-      "image": "assets/heroes/sylvan/glacia.webp"
+      "image": "assets/heroes/sylvan/glacia.webp",
+      "className": "Druid",
+      "specialty": {
+        "name": "Ice Bolt",
+        "description": "She starts with the \"Masterful Ice Bolt\" spell. The Initiative penalty of this version of the spell is twice as strong. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels."
+      },
+      "description": "She starts with the \"Masterful Ice Bolt\" spell. The Initiative penalty of this version of the spell is twice as strong. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
+      "startingSkills": [
+        "Murmuring",
+        "Primal Magic"
+      ],
+      "startingSpell": {
+        "name": "Ice Bolt",
+        "image": "assets/spells/primal/ice_bolt.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "2",
+        "spellPower": "2",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/glacia"
     },
     {
       "slug": "glastor",
       "name": "Glastor",
       "faction": "dungeon",
-      "className": "",
-      "image": "assets/heroes/dungeon/glastor.webp"
+      "image": "assets/heroes/dungeon/glastor.webp",
+      "className": "Warlock",
+      "specialty": {
+        "name": "Gold",
+        "description": "Wealthy - Produces 500 Gold per day, +100 more for every 1 hero levels. Increases the amount of Gold found on the map by 50%."
+      },
+      "description": "Wealthy - Produces 500 Gold per day, +100 more for every 1 hero levels. Increases the amount of Gold found on the map by 50%.",
+      "startingSkills": [
+        "Triumvirates Strength",
+        "Economy"
+      ],
+      "startingSpell": {
+        "name": "Thick Hide",
+        "image": "assets/spells/primal/thick_hide.webp"
+      },
+      "stats": {
+        "attack": "0",
+        "defence": "2",
+        "spellPower": "2",
+        "intelligence": "3"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/glastor"
     },
     {
       "slug": "gleard_the_grey",
       "name": "Gleard the Grey",
       "faction": "dungeon",
-      "className": "",
-      "image": "assets/heroes/dungeon/gleard_the_grey.webp"
+      "image": "assets/heroes/dungeon/gleard_the_grey.webp",
+      "className": "Overlord",
+      "specialty": {
+        "name": "Arcane Magic",
+        "description": "Arcane Dominion - Receives +1 level to all Arcane spells, plus 1 more for every 10 hero levels and can use it in battle without limits. Enemy hero cannot cast Arcane spells."
+      },
+      "description": "Arcane Dominion - Receives +1 level to all Arcane spells, plus 1 more for every 10 hero levels and can use it in battle without limits. Enemy hero cannot cast Arcane spells.",
+      "startingSkills": [
+        "Triumvirates Strength",
+        "Arcane Magic"
+      ],
+      "startingSpell": {
+        "name": "手铐",
+        "image": "assets/spells/arcane/shackles.webp"
+      },
+      "stats": {
+        "attack": "2",
+        "defence": "2",
+        "spellPower": "2",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/gleard_the_grey"
     },
     {
       "slug": "goldentongue",
       "name": "Goldentongue",
       "faction": "hive",
-      "className": "",
-      "image": "assets/heroes/hive/goldentongue.webp"
+      "image": "assets/heroes/hive/goldentongue.webp",
+      "className": "Enforcer",
+      "specialty": {
+        "name": "Rousing Presence",
+        "description": "Friendly creatures have +1 Morale. They also have a higher chance of triggering the positive Morale effect: +2% chance per Morale point. For every 4 levels, this bonus increases by 1%."
+      },
+      "description": "Friendly creatures have +1 Morale. They also have a higher chance of triggering the positive Morale effect: +2% chance per Morale point. For every 4 levels, this bonus increases by 1%.",
+      "startingSkills": [
+        "Summon Swarm",
+        "Leadership"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "4",
+        "defence": "0",
+        "spellPower": "2",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/goldentongue"
     },
     {
       "slug": "gorel_spearhead",
       "name": "Gorel Spearhead",
       "faction": "sylvan",
-      "className": "",
-      "image": "assets/heroes/sylvan/gorel_spearhead.webp"
+      "image": "assets/heroes/sylvan/gorel_spearhead.webp",
+      "className": "Warden",
+      "specialty": {
+        "name": "Shooter",
+        "description": "Creatures in his army deal +10% basic attack damage, plus an additional +1% for every 2 hero levels. Additionally, they deal +1% Ranged and Long Reach damage for every 2 hero levels."
+      },
+      "description": "Creatures in his army deal +10% basic attack damage, plus an additional +1% for every 2 hero levels. Additionally, they deal +1% Ranged and Long Reach damage for every 2 hero levels.",
+      "startingSkills": [
+        "Murmuring",
+        "Offence"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "2",
+        "defence": "1",
+        "spellPower": "2",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/gorel_spearhead"
     },
     {
       "slug": "grellekh_the_betrayer",
       "name": "Grellekh the Betrayer",
       "faction": "schism",
-      "className": "",
-      "image": "assets/heroes/schism/grellekh_the_betrayer.webp"
+      "image": "assets/heroes/schism/grellekh_the_betrayer.webp",
+      "className": "Riftspeaker",
+      "specialty": {
+        "name": "Offence",
+        "description": "Fighter - Creatures in his army deal +10% basic attack Damage, plus 1% more for every 2 hero levels. Additionally, they deal +1% Melee Damage for every 2 hero levels (Lv.2 / 4 / 6 / 8 / 10 / 12 / 14)."
+      },
+      "description": "Fighter - Creatures in his army deal +10% basic attack Damage, plus 1% more for every 2 hero levels. Additionally, they deal +1% Melee Damage for every 2 hero levels (Lv.2 / 4 / 6 / 8 / 10 / 12 / 14).",
+      "startingSkills": [
+        "Abyssal Communion",
+        "Offence"
+      ],
+      "startingSpell": {
+        "name": "Blessing",
+        "image": "assets/spells/daylight/blessing.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "1",
+        "spellPower": "3",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/grellekh_the_betrayer"
     },
     {
       "slug": "groo",
       "name": "Groo",
       "faction": "hive",
-      "className": "",
-      "image": "assets/heroes/hive/groo.webp"
+      "image": "assets/heroes/hive/groo.webp",
+      "className": "Herald",
+      "specialty": {
+        "name": "Son of All Mothers",
+        "description": "Hive Queen growth in your cities increases by 1. Under his command, Hive Queens gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defense increase by 1 for every 3 hero levels, and enemy Hive Queens lose an equal amount of Attack and Defense."
+      },
+      "description": "Hive Queen growth in your cities increases by 1. Under his command, Hive Queens gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defense increase by 1 for every 3 hero levels, and enemy Hive Queens lose an equal amount of Attack and Defense.",
+      "startingSkills": [
+        "Summon Swarm",
+        "Intelligence"
+      ],
+      "startingSpell": {
+        "name": "Sleep",
+        "image": "assets/spells/nightshade/sleep.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "0",
+        "spellPower": "4",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/groo"
     },
     {
       "slug": "guildmaster_klastor",
       "name": "Guildmaster Klastor",
       "faction": "necropolis",
-      "className": "",
-      "image": "assets/heroes/necropolis/guildmaster_klastor.webp"
+      "image": "assets/heroes/necropolis/guildmaster_klastor.webp",
+      "className": "Necromancer",
+      "specialty": {
+        "name": "Grave robbers",
+        "description": "Bones Guild - Graverobbers growth in your cities increases by 2. Under his command, Graverobbers gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Graverobbers lose an equal amount of Attack and Defence."
+      },
+      "description": "Bones Guild - Graverobbers growth in your cities increases by 2. Under his command, Graverobbers gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Graverobbers lose an equal amount of Attack and Defence.",
+      "startingSkills": [
+        "Necromancy",
+        "Luck"
+      ],
+      "startingSpell": {
+        "name": "Read Minds",
+        "image": "assets/spells/nightshade/read_minds.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "0",
+        "spellPower": "2",
+        "intelligence": "4"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/guildmaster_klastor"
     },
     {
       "slug": "halon",
       "name": "Halon",
       "faction": "sylvan",
-      "className": "",
-      "image": "assets/heroes/sylvan/halon.webp"
+      "image": "assets/heroes/sylvan/halon.webp",
+      "className": "Druid",
+      "specialty": {
+        "name": "Thunder and Lightning",
+        "description": "He starts with the \"Masterful Chain Lightning\" spell. This version of the spell loses half as much damage when jumping between targets. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels."
+      },
+      "description": "He starts with the \"Masterful Chain Lightning\" spell. This version of the spell loses half as much damage when jumping between targets. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
+      "startingSkills": [
+        "Murmuring",
+        "Primal Magic"
+      ],
+      "startingSpell": {
+        "name": "Chain Lightning",
+        "image": "assets/spells/primal/chain_lighting.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "2",
+        "spellPower": "2",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/halon"
     },
     {
       "slug": "heretic_avis",
       "name": "Heretic Avis",
       "faction": "temple",
-      "className": "",
-      "image": "assets/heroes/temple/heretic_avis.webp"
+      "image": "assets/heroes/temple/heretic_avis.webp",
+      "className": "Knight",
+      "specialty": {
+        "name": "Gem",
+        "description": "Gem Seeker - Produces 1 Gem per day, +1 more for every 5 hero levels. Increases the amount of Gems found on the map by 100%."
+      },
+      "description": "Gem Seeker - Produces 1 Gem per day, +1 more for every 5 hero levels. Increases the amount of Gems found on the map by 100%.",
+      "startingSkills": [
+        "Ascension",
+        "Recruitment"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "2",
+        "defence": "3",
+        "spellPower": "1",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/heretic_avis"
     },
     {
       "slug": "icequeen_hel_ghat",
-      "name": "Icequeen Hel&#x27;Ghat",
+      "name": "Icequeen Hel'Ghat",
       "faction": "schism",
-      "className": "",
-      "image": "assets/heroes/schism/icequeen_hel_ghat.webp"
+      "image": "assets/heroes/schism/icequeen_hel_ghat.webp",
+      "className": "Riftspeaker",
+      "specialty": {
+        "name": "Defence",
+        "description": "Heart of Ice - Creatures in her army take ­–10% basic attack Damage, and ­–1% less for every 2 hero levels. Additionally, for every 2 hero levels, creatures in the army take ­–1% Damage from Melee attacks (Lv.2 / 4 / 6 / 8 / 10 / 12 / 14)."
+      },
+      "description": "Heart of Ice - Creatures in her army take ­–10% basic attack Damage, and ­–1% less for every 2 hero levels. Additionally, for every 2 hero levels, creatures in the army take ­–1% Damage from Melee attacks (Lv.2 / 4 / 6 / 8 / 10 / 12 / 14).",
+      "startingSkills": [
+        "Abyssal Communion",
+        "Defence"
+      ],
+      "startingSpell": {
+        "name": "Ice Bolt",
+        "image": "assets/spells/primal/ice_bolt.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "1",
+        "spellPower": "3",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/icequeen_hel_ghat"
     },
     {
       "slug": "iron_master",
       "name": "Iron Master",
       "faction": "schism",
-      "className": "",
-      "image": "assets/heroes/schism/iron_master.webp"
+      "image": "assets/heroes/schism/iron_master.webp",
+      "className": "Oathkeeper",
+      "specialty": {
+        "name": "Concubi",
+        "description": "Leash of Chains - Concubi growth in your cities increases by 1. Under his command, Concubi gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Concubi lose an equal amount of Attack and Defence."
+      },
+      "description": "Leash of Chains - Concubi growth in your cities increases by 1. Under his command, Concubi gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Concubi lose an equal amount of Attack and Defence.",
+      "startingSkills": [
+        "Abyssal Communion",
+        "Diplomacy"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "3",
+        "defence": "2",
+        "spellPower": "1",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/iron_master"
     },
     {
       "slug": "ister",
       "name": "Ister",
       "faction": "temple",
-      "className": "",
-      "image": "assets/heroes/temple/ister.webp"
+      "image": "assets/heroes/temple/ister.webp",
+      "className": "Knight",
+      "specialty": {
+        "name": "Logistics",
+        "description": "Wayfarer - Has +10% Movement points, plus 2.5% more for every 6 hero levels. Moves significantly more efficiently on roads."
+      },
+      "description": "Wayfarer - Has +10% Movement points, plus 2.5% more for every 6 hero levels. Moves significantly more efficiently on roads.",
+      "startingSkills": [
+        "Ascension",
+        "Logistics"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "2",
+        "defence": "3",
+        "spellPower": "1",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/ister"
     },
     {
       "slug": "janhei",
       "name": "Jänhei",
       "faction": "schism",
-      "className": "",
-      "image": "assets/heroes/schism/janhei.webp"
+      "image": "assets/heroes/schism/janhei.webp",
+      "className": "Oathkeeper",
+      "specialty": {
+        "name": "Cultists",
+        "description": "Rogueish - Cultists growth in your cities increases by 1. Under his command, Cultists gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Cultists lose an equal amount of Attack and Defence."
+      },
+      "description": "Rogueish - Cultists growth in your cities increases by 1. Under his command, Cultists gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Cultists lose an equal amount of Attack and Defence.",
+      "startingSkills": [
+        "Abyssal Communion",
+        "Intelligence"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "3",
+        "defence": "2",
+        "spellPower": "1",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/janhei"
     },
     {
       "slug": "john_johnson",
       "name": "John Johnson",
       "faction": "temple",
-      "className": "",
-      "image": "assets/heroes/temple/john_johnson.webp"
+      "image": "assets/heroes/temple/john_johnson.webp",
+      "className": "Knight",
+      "specialty": {
+        "name": "Swordsmen",
+        "description": "Salt of the Earth - Swordsmen growth in your cities increases by 1. Under his command, Swordsmen gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Swordsmen lose an equal amount of Attack and Defence."
+      },
+      "description": "Salt of the Earth - Swordsmen growth in your cities increases by 1. Under his command, Swordsmen gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Swordsmen lose an equal amount of Attack and Defence.",
+      "startingSkills": [
+        "Ascension",
+        "Defence"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "2",
+        "defence": "3",
+        "spellPower": "1",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/john_johnson"
     },
     {
       "slug": "julius",
       "name": "Julius",
       "faction": "temple",
-      "className": "",
-      "image": "assets/heroes/temple/julius.webp"
+      "image": "assets/heroes/temple/julius.webp",
+      "className": "Cleric",
+      "specialty": {
+        "name": "Healing Water",
+        "description": "Compassionate Healer - Starts with the “Masterful Healing Water” spell. This version of the spell dispels all negative effects from friendly creatures. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels."
+      },
+      "description": "Compassionate Healer - Starts with the “Masterful Healing Water” spell. This version of the spell dispels all negative effects from friendly creatures. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
+      "startingSkills": [
+        "Ascension",
+        "Resistance"
+      ],
+      "startingSpell": {
+        "name": "Healing Water",
+        "image": "assets/spells/daylight/healing_water.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "1",
+        "spellPower": "2",
+        "intelligence": "3"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/julius"
     },
     {
       "slug": "keandra",
       "name": "Keandra",
       "faction": "temple",
-      "className": "",
-      "image": "assets/heroes/temple/keandra.webp"
+      "image": "assets/heroes/temple/keandra.webp",
+      "className": "Knight",
+      "specialty": {
+        "name": "Cavalry",
+        "description": "Jouster - Cavalry growth in your cities increases by 1. Under her command, Cavalry gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Cavalry lose an equal amount of Attack and Defence."
+      },
+      "description": "Jouster - Cavalry growth in your cities increases by 1. Under her command, Cavalry gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Cavalry lose an equal amount of Attack and Defence.",
+      "startingSkills": [
+        "Ascension",
+        "Battlecraft"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "2",
+        "defence": "3",
+        "spellPower": "1",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/keandra"
     },
     {
       "slug": "kel_ghul",
-      "name": "Kel&#x27;Ghul",
+      "name": "Kel'Ghul",
       "faction": "necropolis",
-      "className": "",
-      "image": "assets/heroes/necropolis/kel_ghul.webp"
+      "image": "assets/heroes/necropolis/kel_ghul.webp",
+      "className": "Death Knight",
+      "specialty": {
+        "name": "Dread Knights",
+        "description": "Dreadful War - Dread Knights growth in your cities increases by 2. Under his command, Dread Knights gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Dread Knights lose an equal amount of Attack and Defence."
+      },
+      "description": "Dreadful War - Dread Knights growth in your cities increases by 2. Under his command, Dread Knights gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Dread Knights lose an equal amount of Attack and Defence.",
+      "startingSkills": [
+        "Necromancy",
+        "Tactics"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "3",
+        "defence": "1",
+        "spellPower": "1",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/kel_ghul"
     },
     {
       "slug": "kelarr_son_of_navarr",
       "name": "Kelarr, son of Navarr",
       "faction": "dungeon",
-      "className": "",
-      "image": "assets/heroes/dungeon/kelarr_son_of_navarr.webp"
+      "image": "assets/heroes/dungeon/kelarr_son_of_navarr.webp",
+      "className": "Warlock",
+      "specialty": {
+        "name": "Experience",
+        "description": "Wish to Learn - Gains 25% XP, plus 5% for every 2 hero levels. When leveling up, gains 1 additional attribute point(s) for every 2 hero levels."
+      },
+      "description": "Wish to Learn - Gains 25% XP, plus 5% for every 2 hero levels. When leveling up, gains 1 additional attribute point(s) for every 2 hero levels.",
+      "startingSkills": [
+        "Triumvirates Strength",
+        "Insight"
+      ],
+      "startingSpell": {
+        "name": "From a Bird’s Eye",
+        "image": "assets/spells/daylight/from_a_birds_eye.webp"
+      },
+      "stats": {
+        "attack": "0",
+        "defence": "2",
+        "spellPower": "2",
+        "intelligence": "3"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/kelarr_son_of_navarr"
     },
     {
       "slug": "kestrel",
       "name": "Kestrel",
       "faction": "temple",
-      "className": "",
-      "image": "assets/heroes/temple/kestrel.webp"
+      "image": "assets/heroes/temple/kestrel.webp",
+      "className": "Knight",
+      "specialty": {
+        "name": "Crossbowmen",
+        "description": "Jaeger - Crossbowmen growth in your cities increases by 1. Under her command, Crossbowmen gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Crossbowmen lose an equal amount of Attack and Defence."
+      },
+      "description": "Jaeger - Crossbowmen growth in your cities increases by 1. Under her command, Crossbowmen gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Crossbowmen lose an equal amount of Attack and Defence.",
+      "startingSkills": [
+        "Ascension",
+        "Offence"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "2",
+        "defence": "3",
+        "spellPower": "1",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/kestrel"
     },
     {
       "slug": "khariseth",
       "name": "Khariseth",
       "faction": "hive",
-      "className": "",
-      "image": "assets/heroes/hive/khariseth.webp"
+      "image": "assets/heroes/hive/khariseth.webp",
+      "className": "Herald",
+      "specialty": {
+        "name": "Primal Weaving",
+        "description": "They receive +1 level to all Primal spells, plus another +1 for every 10 hero levels. Casting Primal spells does not prevent them from using other spells of the same Magic School. Enemy hero cannot cast Primal spells."
+      },
+      "description": "They receive +1 level to all Primal spells, plus another +1 for every 10 hero levels. Casting Primal spells does not prevent them from using other spells of the same Magic School. Enemy hero cannot cast Primal spells.",
+      "startingSkills": [
+        "Summon Swarm",
+        "Primal Magic"
+      ],
+      "startingSpell": {
+        "name": "Anti‑Magic",
+        "image": "assets/spells/primal/anti_magic.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "0",
+        "spellPower": "4",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/khariseth"
     },
     {
       "slug": "kieran",
       "name": "Kieran",
       "faction": "dungeon",
-      "className": "",
-      "image": "assets/heroes/dungeon/kieran.webp"
+      "image": "assets/heroes/dungeon/kieran.webp",
+      "className": "Overlord",
+      "specialty": {
+        "name": "Troglodytes",
+        "description": "The Blind Folk - Troglodytes growth in your cities increases by 1. Under his command, Troglodytes gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Troglodytes lose an equal amount of Attack and Defence."
+      },
+      "description": "The Blind Folk - Troglodytes growth in your cities increases by 1. Under his command, Troglodytes gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Troglodytes lose an equal amount of Attack and Defence.",
+      "startingSkills": [
+        "Triumvirates Strength",
+        "Tactics"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "2",
+        "defence": "2",
+        "spellPower": "2",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/kieran"
     },
     {
       "slug": "king_of_kings",
       "name": "King-of-Kings",
       "faction": "necropolis",
-      "className": "",
-      "image": "assets/heroes/necropolis/king_of_kings.webp"
+      "image": "assets/heroes/necropolis/king_of_kings.webp",
+      "className": "Death Knight",
+      "specialty": {
+        "name": "Diplomacy",
+        "description": "Charismatic - Keeps its army when fleeing from battle with neutral squads. +5% Persuasion Power when using Diplomacy, plus 1% more for every 4 hero levels."
+      },
+      "description": "Charismatic - Keeps its army when fleeing from battle with neutral squads. +5% Persuasion Power when using Diplomacy, plus 1% more for every 4 hero levels.",
+      "startingSkills": [
+        "Necromancy",
+        "Diplomacy"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "3",
+        "defence": "1",
+        "spellPower": "1",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/king_of_kings"
     },
     {
       "slug": "kwinri",
       "name": "Kwinri",
       "faction": "schism",
-      "className": "",
-      "image": "assets/heroes/schism/kwinri.webp"
+      "image": "assets/heroes/schism/kwinri.webp",
+      "className": "Riftspeaker",
+      "specialty": {
+        "name": "Ra'Shothes",
+        "description": "Low Summoning - Ra’Shothes growth in your cities increases by 1. Under her command, Ra’Shothes gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Ra’Shothes lose an equal amount of Attack and Defence."
+      },
+      "description": "Low Summoning - Ra’Shothes growth in your cities increases by 1. Under her command, Ra’Shothes gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Ra’Shothes lose an equal amount of Attack and Defence.",
+      "startingSkills": [
+        "Abyssal Communion",
+        "Leadership"
+      ],
+      "startingSpell": {
+        "name": "Groundsight",
+        "image": "assets/spells/primal/groundsight.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "1",
+        "spellPower": "3",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/kwinri"
     },
     {
       "slug": "laura",
       "name": "Laura",
       "faction": "necropolis",
-      "className": "",
-      "image": "assets/heroes/necropolis/laura.webp"
+      "image": "assets/heroes/necropolis/laura.webp",
+      "className": "Necromancer",
+      "specialty": {
+        "name": "Despair",
+        "description": "Mouldering - Starts with the “Masterful Despair” spell. This version of the spell deals +100% Damage. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels."
+      },
+      "description": "Mouldering - Starts with the “Masterful Despair” spell. This version of the spell deals +100% Damage. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
+      "startingSkills": [
+        "Necromancy",
+        "Sorcery"
+      ],
+      "startingSpell": {
+        "name": "Despair",
+        "image": "assets/spells/nightshade/despair.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "0",
+        "spellPower": "2",
+        "intelligence": "4"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/laura"
     },
     {
       "slug": "leira",
       "name": "Leira",
       "faction": "hive",
-      "className": "",
-      "image": "assets/heroes/hive/leira.webp"
+      "image": "assets/heroes/hive/leira.webp",
+      "className": "Herald",
+      "specialty": {
+        "name": "Stinging",
+        "description": "Hornet growth in your cities increases by 1. Under her command, Hornets gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defense increase by 1 for every 3 hero levels, and enemy Hornets lose an equal amount of Attack and Defense."
+      },
+      "description": "Hornet growth in your cities increases by 1. Under her command, Hornets gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defense increase by 1 for every 3 hero levels, and enemy Hornets lose an equal amount of Attack and Defense.",
+      "startingSkills": [
+        "Summon Swarm",
+        "Battle Magic"
+      ],
+      "startingSpell": {
+        "name": "Vulnerability",
+        "image": "assets/spells/nightshade/vulnerability.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "0",
+        "spellPower": "4",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/leira"
     },
     {
       "slug": "leon_sticky_fingers",
       "name": "Leon Sticky-Fingers",
       "faction": "temple",
-      "className": "",
-      "image": "assets/heroes/temple/leon_sticky_fingers.webp"
+      "image": "assets/heroes/temple/leon_sticky_fingers.webp",
+      "className": "Knight",
+      "specialty": {
+        "name": "Scouting",
+        "description": "Pathfinder - Has no terrain penalties. Also has +1 Sight Radius, plus 1 more for every 5 hero levels."
+      },
+      "description": "Pathfinder - Has no terrain penalties. Also has +1 Sight Radius, plus 1 more for every 5 hero levels.",
+      "startingSkills": [
+        "Ascension",
+        "Scouting"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "2",
+        "defence": "3",
+        "spellPower": "1",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/leon_sticky_fingers"
     },
     {
       "slug": "lia_the_untethered_one",
       "name": "Lia the Untethered One",
       "faction": "temple",
-      "className": "",
-      "image": "assets/heroes/temple/lia_the_untethered_one.webp"
+      "image": "assets/heroes/temple/lia_the_untethered_one.webp",
+      "className": "Cleric",
+      "specialty": {
+        "name": "Daylight Magic",
+        "description": "Radiating Knowledge - Receives +1 level to all Daylight spells, plus 1 more for every 10 hero levels, and can use them in battle without limits. Enemy hero cannot cast Daylight spells."
+      },
+      "description": "Radiating Knowledge - Receives +1 level to all Daylight spells, plus 1 more for every 10 hero levels, and can use them in battle without limits. Enemy hero cannot cast Daylight spells.",
+      "startingSkills": [
+        "Ascension",
+        "Daylight Magic"
+      ],
+      "startingSpell": {
+        "name": "From a Bird’s Eye",
+        "image": "assets/spells/daylight/from_a_birds_eye.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "1",
+        "spellPower": "2",
+        "intelligence": "3"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/lia_the_untethered_one"
     },
     {
       "slug": "lo",
       "name": "Lo",
       "faction": "hive",
-      "className": "",
-      "image": "assets/heroes/hive/lo.webp"
+      "image": "assets/heroes/hive/lo.webp",
+      "className": "Enforcer",
+      "specialty": {
+        "name": "Scavenger",
+        "description": "Locust growth in your cities increases by 1. Under her command, Locusts gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defense increase by 1 for every 3 hero levels, and enemy Locusts lose an equal amount of Attack and Defense."
+      },
+      "description": "Locust growth in your cities increases by 1. Under her command, Locusts gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defense increase by 1 for every 3 hero levels, and enemy Locusts lose an equal amount of Attack and Defense.",
+      "startingSkills": [
+        "Summon Avatar",
+        "Defence"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "4",
+        "defence": "0",
+        "spellPower": "2",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/lo"
     },
     {
       "slug": "lodos",
       "name": "Lodos",
       "faction": "dungeon",
-      "className": "",
-      "image": "assets/heroes/dungeon/lodos.webp"
+      "image": "assets/heroes/dungeon/lodos.webp",
+      "className": "Warlock",
+      "specialty": {
+        "name": "Nightshade Magic",
+        "description": "Shadowmastery - Receives +1 level to all Nightshade spells, plus 1 more for every 10 hero levels and can use it in battle without limits. Enemy hero cannot cast Nightshade spells."
+      },
+      "description": "Shadowmastery - Receives +1 level to all Nightshade spells, plus 1 more for every 10 hero levels and can use it in battle without limits. Enemy hero cannot cast Nightshade spells.",
+      "startingSkills": [
+        "Triumvirates Strength",
+        "Nightshade Magic"
+      ],
+      "startingSpell": {
+        "name": "Sleep",
+        "image": "assets/spells/nightshade/sleep.webp"
+      },
+      "stats": {
+        "attack": "0",
+        "defence": "2",
+        "spellPower": "2",
+        "intelligence": "3"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/lodos"
     },
     {
       "slug": "lord_edgar",
       "name": "Lord Edgar",
       "faction": "temple",
-      "className": "",
-      "image": "assets/heroes/temple/lord_edgar.webp"
+      "image": "assets/heroes/temple/lord_edgar.webp",
+      "className": "Knight",
+      "specialty": {
+        "name": "Ascension",
+        "description": "True Lord - Increases Attack and Defence of friendly creatures by 20% of his Attack and Defence, plus 5% more for every 6 hero levels."
+      },
+      "description": "True Lord - Increases Attack and Defence of friendly creatures by 20% of his Attack and Defence, plus 5% more for every 6 hero levels.",
+      "startingSkills": [
+        "Advanced Ascension"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "2",
+        "defence": "3",
+        "spellPower": "1",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/lord_edgar"
     },
     {
       "slug": "lord_rufus",
       "name": "Lord Rufus",
       "faction": "necropolis",
-      "className": "",
-      "image": "assets/heroes/necropolis/lord_rufus.webp"
+      "image": "assets/heroes/necropolis/lord_rufus.webp",
+      "className": "Necromancer",
+      "specialty": {
+        "name": "Rewind life",
+        "description": "Wistful Nostalgia - Starts with the “Masterful Rewind Life” spell. This version of the spell can revive units beyond their original amount. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels."
+      },
+      "description": "Wistful Nostalgia - Starts with the “Masterful Rewind Life” spell. This version of the spell can revive units beyond their original amount. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
+      "startingSkills": [
+        "Necromancy",
+        "Thaumaturgy"
+      ],
+      "startingSpell": {
+        "name": "Rewind Life",
+        "image": "assets/spells/arcane/rewind_life.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "0",
+        "spellPower": "2",
+        "intelligence": "4"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/lord_rufus"
     },
     {
       "slug": "maelstrom",
       "name": "Maelstrom",
       "faction": "hive",
-      "className": "",
-      "image": "assets/heroes/hive/maelstrom.webp"
+      "image": "assets/heroes/hive/maelstrom.webp",
+      "className": "Enforcer",
+      "specialty": {
+        "name": "Reave Away",
+        "description": "Reaver growth in your cities increases by 1. Under his command, Reavers gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defense increase by 1 for every 3 hero levels, and enemy Reavers lose an equal amount of Attack and Defense."
+      },
+      "description": "Reaver growth in your cities increases by 1. Under his command, Reavers gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defense increase by 1 for every 3 hero levels, and enemy Reavers lose an equal amount of Attack and Defense.",
+      "startingSkills": [
+        "Summon Swarm",
+        "Insight"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "4",
+        "defence": "0",
+        "spellPower": "2",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/maelstrom"
     },
     {
       "slug": "mag",
       "name": "Mag",
       "faction": "necropolis",
-      "className": "",
-      "image": "assets/heroes/necropolis/mag.webp"
+      "image": "assets/heroes/necropolis/mag.webp",
+      "className": "Necromancer",
+      "specialty": {
+        "name": "Arcane Magic",
+        "description": "Arcane Dominion - Receives +1 level to all Arcane spells, plus 1 more for every 10 hero levels and can use it in battle without limits. Enemy hero cannot cast Arcane spells."
+      },
+      "description": "Arcane Dominion - Receives +1 level to all Arcane spells, plus 1 more for every 10 hero levels and can use it in battle without limits. Enemy hero cannot cast Arcane spells.",
+      "startingSkills": [
+        "Necromancy",
+        "Arcane Magic"
+      ],
+      "startingSpell": {
+        "name": "Impending Fate",
+        "image": "assets/spells/arcane/impending_fate.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "0",
+        "spellPower": "2",
+        "intelligence": "4"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/mag"
     },
     {
       "slug": "mara_matha",
       "name": "Mara Matha",
       "faction": "schism",
-      "className": "",
-      "image": "assets/heroes/schism/mara_matha.webp"
+      "image": "assets/heroes/schism/mara_matha.webp",
+      "className": "Oathkeeper",
+      "specialty": {
+        "name": "Aga'Shoth Riders",
+        "description": "Coldblood Siblings - Aga’Shoth Riders growth in your cities increases by 1. Under his command, Aga’Shoth Riders gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Aga’Shoth Riders lose an equal amount of Attack and Defence."
+      },
+      "description": "Coldblood Siblings - Aga’Shoth Riders growth in your cities increases by 1. Under his command, Aga’Shoth Riders gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Aga’Shoth Riders lose an equal amount of Attack and Defence.",
+      "startingSkills": [
+        "Advanced Abyssal Communion"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "3",
+        "defence": "2",
+        "spellPower": "1",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/mara_matha"
     },
     {
       "slug": "marl",
       "name": "Marl",
       "faction": "necropolis",
-      "className": "",
-      "image": "assets/heroes/necropolis/marl.webp"
+      "image": "assets/heroes/necropolis/marl.webp",
+      "className": "Death Knight",
+      "specialty": {
+        "name": "Web",
+        "description": "Languid Soil - Starts with the “Masterful Web” spell. This version of the spell affects all enemies. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels."
+      },
+      "description": "Languid Soil - Starts with the “Masterful Web” spell. This version of the spell affects all enemies. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
+      "startingSkills": [
+        "Necromancy",
+        "Logistics"
+      ],
+      "startingSpell": {
+        "name": "Web",
+        "image": "assets/spells/nightshade/web.webp"
+      },
+      "stats": {
+        "attack": "3",
+        "defence": "1",
+        "spellPower": "1",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/marl"
     },
     {
       "slug": "martyr_tho",
       "name": "Martyr Tho",
       "faction": "schism",
-      "className": "",
-      "image": "assets/heroes/schism/martyr_tho.webp"
+      "image": "assets/heroes/schism/martyr_tho.webp",
+      "className": "Oathkeeper",
+      "specialty": {
+        "name": "Mercury",
+        "description": "Alchemist - Produces 1 Mercury per day, +1 more for every 5 hero levels. Increases the amount of Mercury found on the map by 1."
+      },
+      "description": "Alchemist - Produces 1 Mercury per day, +1 more for every 5 hero levels. Increases the amount of Mercury found on the map by 1.",
+      "startingSkills": [
+        "Abyssal Communion",
+        "Daylight Magic"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "3",
+        "defence": "2",
+        "spellPower": "1",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/martyr_tho"
     },
     {
       "slug": "matastala_the_white",
       "name": "Matastala the White",
       "faction": "schism",
-      "className": "",
-      "image": "assets/heroes/schism/matastala_the_white.webp"
+      "image": "assets/heroes/schism/matastala_the_white.webp",
+      "className": "Oathkeeper",
+      "specialty": {
+        "name": "Tactics",
+        "description": "Chessmaster - In the Tactical Phase, has +1 hex to the radius and can see the positions of neutral armies. Creatures in her army gain 1 Initiative for every 6 hero levels."
+      },
+      "description": "Chessmaster - In the Tactical Phase, has +1 hex to the radius and can see the positions of neutral armies. Creatures in her army gain 1 Initiative for every 6 hero levels.",
+      "startingSkills": [
+        "Abyssal Communion",
+        "Tactics"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "3",
+        "defence": "2",
+        "spellPower": "1",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/matastala_the_white"
     },
     {
       "slug": "merry_elias",
       "name": "Merry Elias",
       "faction": "temple",
-      "className": "",
-      "image": "assets/heroes/temple/merry_elias.webp"
+      "image": "assets/heroes/temple/merry_elias.webp",
+      "className": "Cleric",
+      "specialty": {
+        "name": "Global Map Spells",
+        "description": "Spiritual Vigor - +1 spell cap for each Global Map spell. Additionally, his maximum mana increases by 10%, plus 5% more for every 5 hero levels."
+      },
+      "description": "Spiritual Vigor - +1 spell cap for each Global Map spell. Additionally, his maximum mana increases by 10%, plus 5% more for every 5 hero levels.",
+      "startingSkills": [
+        "Ascension",
+        "Diplomacy"
+      ],
+      "startingSpell": {
+        "name": "Reinforcements",
+        "image": "assets/spells/arcane/reinforcements.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "1",
+        "spellPower": "2",
+        "intelligence": "3"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/merry_elias"
     },
     {
       "slug": "mila",
       "name": "Mila",
       "faction": "hive",
-      "className": "",
-      "image": "assets/heroes/hive/mila.webp"
+      "image": "assets/heroes/hive/mila.webp",
+      "className": "Herald",
+      "specialty": {
+        "name": "Wingflap",
+        "description": "She starts with the “Masterful Haste” spell. This version of the spell affects all friendly creatures. While casting this spell, effective Spell Power is increased by 1 for every 3 hero level(s)."
+      },
+      "description": "She starts with the “Masterful Haste” spell. This version of the spell affects all friendly creatures. While casting this spell, effective Spell Power is increased by 1 for every 3 hero level(s).",
+      "startingSkills": [
+        "Summon Swarm",
+        "Daylight Magic"
+      ],
+      "startingSpell": {
+        "name": "Haste",
+        "image": "assets/spells/daylight/haste.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "0",
+        "spellPower": "4",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/mila"
     },
     {
       "slug": "milossa_the_golden",
       "name": "Milossa The Golden",
       "faction": "necropolis",
-      "className": "",
-      "image": "assets/heroes/necropolis/milossa_the_golden.webp"
+      "image": "assets/heroes/necropolis/milossa_the_golden.webp",
+      "className": "Necromancer",
+      "specialty": {
+        "name": "Gold",
+        "description": "Wealthy - Produces 500 Gold per day, +100 more for every 1 hero levels. Increases the amount of Gold found on the map by 50%."
+      },
+      "description": "Wealthy - Produces 500 Gold per day, +100 more for every 1 hero levels. Increases the amount of Gold found on the map by 50%.",
+      "startingSkills": [
+        "Necromancy",
+        "Battle Magic"
+      ],
+      "startingSpell": {
+        "name": "Fatal Decay",
+        "image": "assets/spells/nightshade/fatal_decay.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "0",
+        "spellPower": "2",
+        "intelligence": "4"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/milossa_the_golden"
     },
     {
       "slug": "motley",
       "name": "Motley",
       "faction": "dungeon",
-      "className": "",
-      "image": "assets/heroes/dungeon/motley.webp"
+      "image": "assets/heroes/dungeon/motley.webp",
+      "className": "Warlock",
+      "specialty": {
+        "name": "Onyx Dancers",
+        "description": "Danse Macabre - Onyx Dancers growth in your cities increases by 1. Under her command, Onyx Dancers gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Onyx Dancers lose an equal amount of Attack and Defence."
+      },
+      "description": "Danse Macabre - Onyx Dancers growth in your cities increases by 1. Under her command, Onyx Dancers gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Onyx Dancers lose an equal amount of Attack and Defence.",
+      "startingSkills": [
+        "Triumvirates Strength",
+        "Luck"
+      ],
+      "startingSpell": {
+        "name": "Twilight",
+        "image": "assets/spells/nightshade/twilight.webp"
+      },
+      "stats": {
+        "attack": "0",
+        "defence": "2",
+        "spellPower": "2",
+        "intelligence": "3"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/motley"
     },
     {
       "slug": "mouaren",
       "name": "Mouaren",
       "faction": "dungeon",
-      "className": "",
-      "image": "assets/heroes/dungeon/mouaren.webp"
+      "image": "assets/heroes/dungeon/mouaren.webp",
+      "className": "Overlord",
+      "specialty": {
+        "name": "Infiltrators",
+        "description": "Spy - Infiltrators growth in your cities increases by 1. Under his command, Infiltrators gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Infiltrators lose an equal amount of Attack and Defence."
+      },
+      "description": "Spy - Infiltrators growth in your cities increases by 1. Under his command, Infiltrators gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Infiltrators lose an equal amount of Attack and Defence.",
+      "startingSkills": [
+        "Triumvirates Strength",
+        "Scouting"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "2",
+        "defence": "2",
+        "spellPower": "2",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/mouaren"
     },
     {
       "slug": "mreowa",
       "name": "Mreowa",
       "faction": "sylvan",
-      "className": "",
-      "image": "assets/heroes/sylvan/mreowa.webp"
+      "image": "assets/heroes/sylvan/mreowa.webp",
+      "className": "Warden",
+      "specialty": {
+        "name": "Charming Shine",
+        "description": "She produces +1 Crystal per day, plus an additional +1 for every 5 hero levels. Increases the amount of Crystals found on the map by 100%."
+      },
+      "description": "She produces +1 Crystal per day, plus an additional +1 for every 5 hero levels. Increases the amount of Crystals found on the map by 100%.",
+      "startingSkills": [
+        "Murmuring",
+        "Sorcery"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "2",
+        "defence": "1",
+        "spellPower": "2",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/mreowa"
     },
     {
       "slug": "nadir",
       "name": "Nadir",
       "faction": "temple",
-      "className": "",
-      "image": "assets/heroes/temple/nadir.webp"
+      "image": "assets/heroes/temple/nadir.webp",
+      "className": "Cleric",
+      "specialty": {
+        "name": "Vulnerability",
+        "description": "Heart of Hearts - Starts with the “Masterful Vulnerability” spell. This version of the spell makes the target always take maximum Damage. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels."
+      },
+      "description": "Heart of Hearts - Starts with the “Masterful Vulnerability” spell. This version of the spell makes the target always take maximum Damage. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
+      "startingSkills": [
+        "Ascension",
+        "Nightshade Magic"
+      ],
+      "startingSpell": {
+        "name": "Vulnerability",
+        "image": "assets/spells/nightshade/vulnerability.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "1",
+        "spellPower": "2",
+        "intelligence": "3"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/nadir"
     },
     {
       "slug": "natalida",
       "name": "Natalida",
       "faction": "necropolis",
-      "className": "",
-      "image": "assets/heroes/necropolis/natalida.webp"
+      "image": "assets/heroes/necropolis/natalida.webp",
+      "className": "Death Knight",
+      "specialty": {
+        "name": "Undead pets",
+        "description": "Part of a Pack - Undead Pets growth in your cities increases by 2. Under her command, Undead Pets gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Undead Pets lose an equal amount of Attack and Defence."
+      },
+      "description": "Part of a Pack - Undead Pets growth in your cities increases by 2. Under her command, Undead Pets gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Undead Pets lose an equal amount of Attack and Defence.",
+      "startingSkills": [
+        "Necromancy",
+        "Scouting"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "3",
+        "defence": "1",
+        "spellPower": "1",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/natalida"
     },
     {
       "slug": "niev",
       "name": "Niev",
       "faction": "hive",
-      "className": "",
-      "image": "assets/heroes/hive/niev.webp"
+      "image": "assets/heroes/hive/niev.webp",
+      "className": "Enforcer",
+      "specialty": {
+        "name": "Shooter",
+        "description": "Creatures in her army deal +10% basic attack Damage, plus an additional 1% for every 2 hero level(s). Additionally, they deal +1% Ranged and Long Reach Damage for every 2 hero level(s)."
+      },
+      "description": "Creatures in her army deal +10% basic attack Damage, plus an additional 1% for every 2 hero level(s). Additionally, they deal +1% Ranged and Long Reach Damage for every 2 hero level(s).",
+      "startingSkills": [
+        "Summon Swarm",
+        "Offence"
+      ],
+      "startingSpell": {
+        "name": "Favorable Wind",
+        "image": "assets/spells/daylight/favorable_wind.webp"
+      },
+      "stats": {
+        "attack": "4",
+        "defence": "0",
+        "spellPower": "2",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/niev"
     },
     {
       "slug": "nihil",
       "name": "Nihil",
       "faction": "schism",
-      "className": "",
-      "image": "assets/heroes/schism/nihil.webp"
+      "image": "assets/heroes/schism/nihil.webp",
+      "className": "Oathkeeper",
+      "specialty": {
+        "name": "Logistics",
+        "description": "Wayfarer - Has +10% Movement points, plus 2.5% more for every 6 hero levels. Moves significantly more efficiently on roads."
+      },
+      "description": "Wayfarer - Has +10% Movement points, plus 2.5% more for every 6 hero levels. Moves significantly more efficiently on roads.",
+      "startingSkills": [
+        "Abyssal Communion",
+        "Logistics"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "3",
+        "defence": "2",
+        "spellPower": "1",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/nihil"
     },
     {
       "slug": "nor",
       "name": "Nor",
       "faction": "hive",
-      "className": "",
-      "image": "assets/heroes/hive/nor.webp"
+      "image": "assets/heroes/hive/nor.webp",
+      "className": "Enforcer",
+      "specialty": {
+        "name": "Wish to Learn",
+        "description": "When leveling up, he gains 1 additional attribute point(s) for every 2 hero level(s). He gains +5% XP for every 2 hero level(s)."
+      },
+      "description": "When leveling up, he gains 1 additional attribute point(s) for every 2 hero level(s). He gains +5% XP for every 2 hero level(s).",
+      "startingSkills": [
+        "Summon Swarm",
+        "Battlecraft"
+      ],
+      "startingSpell": {
+        "name": "Impending Fate",
+        "image": "assets/spells/arcane/impending_fate.webp"
+      },
+      "stats": {
+        "attack": "4",
+        "defence": "0",
+        "spellPower": "2",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/nor"
     },
     {
       "slug": "octavia",
       "name": "Octavia",
       "faction": "sylvan",
-      "className": "",
-      "image": "assets/heroes/sylvan/octavia.webp"
+      "image": "assets/heroes/sylvan/octavia.webp",
+      "className": "Warden",
+      "specialty": {
+        "name": "Four‑Leaf Horseshoe",
+        "description": "She has +1 Luck. Creatures under her command have an increased chance of triggering a Lucky Strike: +2% chance per Luck point. For every 4 hero levels, this bonus increases by an additional 1%."
+      },
+      "description": "She has +1 Luck. Creatures under her command have an increased chance of triggering a Lucky Strike: +2% chance per Luck point. For every 4 hero levels, this bonus increases by an additional 1%.",
+      "startingSkills": [
+        "Murmuring",
+        "Luck"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "2",
+        "defence": "1",
+        "spellPower": "2",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/octavia"
     },
     {
       "slug": "old_lord_mandall",
       "name": "Old Lord Mandall",
       "faction": "temple",
-      "className": "",
-      "image": "assets/heroes/temple/old_lord_mandall.webp"
+      "image": "assets/heroes/temple/old_lord_mandall.webp",
+      "className": "Knight",
+      "specialty": {
+        "name": "Heroic Strike",
+        "description": "Heroic Smite - His Heroic Strike deals +40 Damage, plus 5 more for every 3 hero levels. Additionally, it increases all Damage taken by the target by 20% until the end of the next round."
+      },
+      "description": "Heroic Smite - His Heroic Strike deals +40 Damage, plus 5 more for every 3 hero levels. Additionally, it increases all Damage taken by the target by 20% until the end of the next round.",
+      "startingSkills": [
+        "Ascension",
+        "Resistance"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "2",
+        "defence": "3",
+        "spellPower": "1",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/old_lord_mandall"
     },
     {
       "slug": "old_piligrim",
       "name": "Old Piligrim",
       "faction": "sylvan",
-      "className": "",
-      "image": "assets/heroes/sylvan/old_piligrim.webp"
+      "image": "assets/heroes/sylvan/old_piligrim.webp",
+      "className": "Warden",
+      "specialty": {
+        "name": "Natural Selection",
+        "description": "He starts with the \"Masterful Guillotine\" spell. This version of the spell deals damage that increases twice as fast when cast on the same target. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels."
+      },
+      "description": "He starts with the \"Masterful Guillotine\" spell. This version of the spell deals damage that increases twice as fast when cast on the same target. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
+      "startingSkills": [
+        "Murmuring",
+        "Battle Magic"
+      ],
+      "startingSpell": {
+        "name": "Guillotine",
+        "image": "assets/spells/arcane/guillotine.webp"
+      },
+      "stats": {
+        "attack": "2",
+        "defence": "1",
+        "spellPower": "2",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/old_piligrim"
     },
     {
       "slug": "onkos",
       "name": "Onkos",
       "faction": "necropolis",
-      "className": "",
-      "image": "assets/heroes/necropolis/onkos.webp"
+      "image": "assets/heroes/necropolis/onkos.webp",
+      "className": "Death Knight",
+      "specialty": {
+        "name": "Skeletons",
+        "description": "Perfect Puppets - Skeletons growth in your cities increases by 2. Under his command, Skeletons gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Skeletons lose an equal amount of Attack and"
+      },
+      "description": "Perfect Puppets - Skeletons growth in your cities increases by 2. Under his command, Skeletons gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Skeletons lose an equal amount of Attack and",
+      "startingSkills": [
+        "Necromancy",
+        "Offence"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "3",
+        "defence": "1",
+        "spellPower": "1",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/onkos"
     },
     {
       "slug": "oriax",
       "name": "Oriax",
       "faction": "hive",
-      "className": "",
-      "image": "assets/heroes/hive/oriax.webp"
+      "image": "assets/heroes/hive/oriax.webp",
+      "className": "Herald",
+      "specialty": {
+        "name": "Here and There",
+        "description": "She starts with the “Masterful Blink” spell. This version of the spell can target enemy creatures. The cost of this spell is reduced by 1 mana for every 3 hero level(s)."
+      },
+      "description": "She starts with the “Masterful Blink” spell. This version of the spell can target enemy creatures. The cost of this spell is reduced by 1 mana for every 3 hero level(s).",
+      "startingSkills": [
+        "Summon Swarm",
+        "Summon Avatar"
+      ],
+      "startingSpell": {
+        "name": "Blink",
+        "image": "assets/spells/arcane/blink.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "0",
+        "spellPower": "4",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/oriax"
     },
     {
       "slug": "pauper",
       "name": "Pauper",
       "faction": "hive",
-      "className": "",
-      "image": "assets/heroes/hive/pauper.webp"
+      "image": "assets/heroes/hive/pauper.webp",
+      "className": "Herald",
+      "specialty": {
+        "name": "Flea Bites",
+        "description": "Friendly creatures have +1 Speed, plus an additional 1 for every 8 hero level(s)."
+      },
+      "description": "Friendly creatures have +1 Speed, plus an additional 1 for every 8 hero level(s).",
+      "startingSkills": [
+        "Summon Swarm",
+        "Battle Magic"
+      ],
+      "startingSpell": {
+        "name": "Fireball",
+        "image": "assets/spells/primal/fireball.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "0",
+        "spellPower": "4",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/pauper"
     },
     {
       "slug": "pip",
       "name": "Pip",
       "faction": "temple",
-      "className": "",
-      "image": "assets/heroes/temple/pip.webp"
+      "image": "assets/heroes/temple/pip.webp",
+      "className": "Cleric",
+      "specialty": {
+        "name": "Experience",
+        "description": "Wish to Learn - Gains 25% XP, plus 5% for every 2 hero levels. When leveling up, gains 2 additional attribute point(s) for every 2 hero levels."
+      },
+      "description": "Wish to Learn - Gains 25% XP, plus 5% for every 2 hero levels. When leveling up, gains 2 additional attribute point(s) for every 2 hero levels.",
+      "startingSkills": [
+        "Ascension",
+        "Insight"
+      ],
+      "startingSpell": {
+        "name": "Early Start",
+        "image": "assets/spells/arcane/early_start.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "1",
+        "spellPower": "2",
+        "intelligence": "3"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/pip"
     },
     {
       "slug": "ra_davok",
-      "name": "Ra&#x27;Davok",
+      "name": "Ra'Davok",
       "faction": "schism",
-      "className": "",
-      "image": "assets/heroes/schism/ra_davok.webp"
+      "image": "assets/heroes/schism/ra_davok.webp",
+      "className": "Riftspeaker",
+      "specialty": {
+        "name": "Carapace",
+        "description": "Magic Fortress - Starts with the “Masterful Carapace” spell. Creatures with this version of Carapace are immune to negative and dispel effect. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels."
+      },
+      "description": "Magic Fortress - Starts with the “Masterful Carapace” spell. Creatures with this version of Carapace are immune to negative and dispel effect. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
+      "startingSkills": [
+        "Abyssal Communion",
+        "Arcane Magic"
+      ],
+      "startingSpell": {
+        "name": "Carapace",
+        "image": "assets/spells/arcane/carapace.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "1",
+        "spellPower": "3",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/ra_davok"
     },
     {
       "slug": "rhea",
       "name": "Rhea",
       "faction": "dungeon",
-      "className": "",
-      "image": "assets/heroes/dungeon/rhea.webp"
+      "image": "assets/heroes/dungeon/rhea.webp",
+      "className": "Overlord",
+      "specialty": {
+        "name": "Luck",
+        "description": "Four-Leaf Horseshoe - +1 Luck. For each point of Luck, creatures have +2% chance to deal a critical strike. For every 4 levels, +1% to this bonus."
+      },
+      "description": "Four-Leaf Horseshoe - +1 Luck. For each point of Luck, creatures have +2% chance to deal a critical strike. For every 4 levels, +1% to this bonus.",
+      "startingSkills": [
+        "Triumvirates Strength",
+        "Luck"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "2",
+        "defence": "2",
+        "spellPower": "2",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/rhea"
     },
     {
       "slug": "shadespinner_oona",
       "name": "Shadespinner Oona",
       "faction": "necropolis",
-      "className": "",
-      "image": "assets/heroes/necropolis/shadespinner_oona.webp"
+      "image": "assets/heroes/necropolis/shadespinner_oona.webp",
+      "className": "Necromancer",
+      "specialty": {
+        "name": "Nightshade Magic",
+        "description": "Shadowmastery - Receives +1 level to all Nightshade spells, plus 1 more for every 10 hero levels and can use it in battle without limits. Enemy hero cannot cast Nightshade spells."
+      },
+      "description": "Shadowmastery - Receives +1 level to all Nightshade spells, plus 1 more for every 10 hero levels and can use it in battle without limits. Enemy hero cannot cast Nightshade spells.",
+      "startingSkills": [
+        "Necromancy",
+        "Nightshade Magic"
+      ],
+      "startingSpell": {
+        "name": "Sleep",
+        "image": "assets/spells/nightshade/sleep.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "0",
+        "spellPower": "2",
+        "intelligence": "4"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/shadespinner_oona"
     },
     {
       "slug": "sister_deira",
       "name": "Sister Deira",
       "faction": "dungeon",
-      "className": "",
-      "image": "assets/heroes/dungeon/sister_deira.webp"
+      "image": "assets/heroes/dungeon/sister_deira.webp",
+      "className": "Warlock",
+      "specialty": {
+        "name": "Arina's Chosen",
+        "description": "Mask of the Sun - Starts with the “Masterful Arina's Chosen” spell. This version of the spell gives the target +1 action point(s). While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels."
+      },
+      "description": "Mask of the Sun - Starts with the “Masterful Arina's Chosen” spell. This version of the spell gives the target +1 action point(s). While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
+      "startingSkills": [
+        "Triumvirates Strength",
+        "Thaumaturgy"
+      ],
+      "startingSpell": {
+        "name": "Arina’s Chosen",
+        "image": "assets/spells/daylight/arinas_chosen.webp"
+      },
+      "stats": {
+        "attack": "0",
+        "defence": "2",
+        "spellPower": "2",
+        "intelligence": "3"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/sister_deira"
     },
     {
       "slug": "sister_keiri",
       "name": "Sister Keiri",
       "faction": "schism",
-      "className": "",
-      "image": "assets/heroes/schism/sister_keiri.webp"
+      "image": "assets/heroes/schism/sister_keiri.webp",
+      "className": "Riftspeaker",
+      "specialty": {
+        "name": "Umbral Grip",
+        "description": "Mask of the Moon - Starts with the “Masterful Umbral Grip” spell. This version of the spell deals +100% Damage. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels."
+      },
+      "description": "Mask of the Moon - Starts with the “Masterful Umbral Grip” spell. This version of the spell deals +100% Damage. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
+      "startingSkills": [
+        "Abyssal Communion",
+        "Nightshade Magic"
+      ],
+      "startingSpell": {
+        "name": "Umbral Grip",
+        "image": "assets/spells/nightshade/umbral_grip.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "1",
+        "spellPower": "3",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/sister_keiri"
     },
     {
       "slug": "stinger",
       "name": "Stinger",
       "faction": "dungeon",
-      "className": "",
-      "image": "assets/heroes/dungeon/stinger.webp"
+      "image": "assets/heroes/dungeon/stinger.webp",
+      "className": "Overlord",
+      "specialty": {
+        "name": "Heroic Strike",
+        "description": "Venomous Strike - Her Heroic Strike deals +40 Damage, plus 5 more for every 3 hero levels. Additionally, poisons the target until the end of the next round, dealing [25 × (1 ＋ hero's Level × 0.1)] Magic Damage."
+      },
+      "description": "Venomous Strike - Her Heroic Strike deals +40 Damage, plus 5 more for every 3 hero levels. Additionally, poisons the target until the end of the next round, dealing [25 × (1 ＋ hero's Level × 0.1)] Magic Damage.",
+      "startingSkills": [
+        "Advanced Triumvirates Strength"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "2",
+        "defence": "2",
+        "spellPower": "2",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/stinger"
     },
     {
       "slug": "sullie",
       "name": "Sullie",
       "faction": "sylvan",
-      "className": "",
-      "image": "assets/heroes/sylvan/sullie.webp"
+      "image": "assets/heroes/sylvan/sullie.webp",
+      "className": "Druid",
+      "specialty": {
+        "name": "Murmurwood Native",
+        "description": "Her summoned Avatar is immune to Magic Damage. When casting Summon Avatar, its effective Spell Power is increased by 1 for every 3 hero levels."
+      },
+      "description": "Her summoned Avatar is immune to Magic Damage. When casting Summon Avatar, its effective Spell Power is increased by 1 for every 3 hero levels.",
+      "startingSkills": [
+        "Murmuring",
+        "Summon Avatar"
+      ],
+      "startingSpell": {
+        "name": "Weakening Ray",
+        "image": "assets/spells/daylight/weakening_ray.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "2",
+        "spellPower": "2",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/sullie"
     },
     {
       "slug": "sunny_rauktol",
       "name": "Sunny Rauktol",
       "faction": "dungeon",
-      "className": "",
-      "image": "assets/heroes/dungeon/sunny_rauktol.webp"
+      "image": "assets/heroes/dungeon/sunny_rauktol.webp",
+      "className": "Warlock",
+      "specialty": {
+        "name": "Daylight Magic",
+        "description": "Radiating Knowledge - Receives +1 level to all Daylight spells, plus 1 more for every 10 hero levels, and can use them in battle without limits. Enemy hero cannot cast Daylight spells."
+      },
+      "description": "Radiating Knowledge - Receives +1 level to all Daylight spells, plus 1 more for every 10 hero levels, and can use them in battle without limits. Enemy hero cannot cast Daylight spells.",
+      "startingSkills": [
+        "Triumvirates Strength",
+        "Daylight Magic"
+      ],
+      "startingSpell": {
+        "name": "Inner Light",
+        "image": "assets/spells/daylight/inner_light.webp"
+      },
+      "stats": {
+        "attack": "0",
+        "defence": "2",
+        "spellPower": "2",
+        "intelligence": "3"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/sunny_rauktol"
     },
     {
       "slug": "tarius",
       "name": "Tarius",
       "faction": "necropolis",
-      "className": "",
-      "image": "assets/heroes/necropolis/tarius.webp"
+      "image": "assets/heroes/necropolis/tarius.webp",
+      "className": "Death Knight",
+      "specialty": {
+        "name": "Necromancy",
+        "description": "Undead Legion - Has +5% Necromancy Power, plus 1% more for every 4 hero levels."
+      },
+      "description": "Undead Legion - Has +5% Necromancy Power, plus 1% more for every 4 hero levels.",
+      "startingSkills": [
+        "Advanced Necromancy"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "3",
+        "defence": "1",
+        "spellPower": "1",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/tarius"
     },
     {
       "slug": "tavi",
       "name": "Tavi",
       "faction": "hive",
-      "className": "",
-      "image": "assets/heroes/hive/tavi.webp"
+      "image": "assets/heroes/hive/tavi.webp",
+      "className": "Enforcer",
+      "specialty": {
+        "name": "Proliferation",
+        "description": "Her summoned Fire Larva stacks have +4% health, plus another 1% for every 2 hero level(s)."
+      },
+      "description": "Her summoned Fire Larva stacks have +4% health, plus another 1% for every 2 hero level(s).",
+      "startingSkills": [
+        "Advanced Summon Swarm"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "4",
+        "defence": "0",
+        "spellPower": "2",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/tavi"
     },
     {
       "slug": "tellaris_the_betrayed",
       "name": "Tellaris the Betrayed",
       "faction": "dungeon",
-      "className": "",
-      "image": "assets/heroes/dungeon/tellaris_the_betrayed.webp"
+      "image": "assets/heroes/dungeon/tellaris_the_betrayed.webp",
+      "className": "Overlord",
+      "specialty": {
+        "name": "Early Start",
+        "description": "With One Eye - Open Starts with the “Masterful Early Start” spell. This version of the spell cannot be dispelled by any means. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.."
+      },
+      "description": "With One Eye - Open Starts with the “Masterful Early Start” spell. This version of the spell cannot be dispelled by any means. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels..",
+      "startingSkills": [
+        "Triumvirates Strength",
+        "Battlecraft"
+      ],
+      "startingSpell": {
+        "name": "Early Start",
+        "image": "assets/spells/arcane/early_start.webp"
+      },
+      "stats": {
+        "attack": "2",
+        "defence": "2",
+        "spellPower": "2",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/tellaris_the_betrayed"
     },
     {
       "slug": "the_eye_collective",
       "name": "The Eye Collective",
       "faction": "schism",
-      "className": "",
-      "image": "assets/heroes/schism/the_eye_collective.webp"
+      "image": "assets/heroes/schism/the_eye_collective.webp",
+      "className": "Riftspeaker",
+      "specialty": {
+        "name": "Grand Shothes",
+        "description": "Rift's Envoy - Grand Shoth growth in your cities increases by 1. Under its command, Grand Shoth gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Grand Shoth lose an equal amount of Attack and Defence."
+      },
+      "description": "Rift's Envoy - Grand Shoth growth in your cities increases by 1. Under its command, Grand Shoth gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Grand Shoth lose an equal amount of Attack and Defence.",
+      "startingSkills": [
+        "Abyssal Communion",
+        "Summon Avatar"
+      ],
+      "startingSpell": {
+        "name": "Wean",
+        "image": "assets/spells/primal/whean.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "1",
+        "spellPower": "3",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/the_eye_collective"
     },
     {
       "slug": "the_minstrel",
       "name": "The Minstrel",
       "faction": "sylvan",
-      "className": "",
-      "image": "assets/heroes/sylvan/the_minstrel.webp"
+      "image": "assets/heroes/sylvan/the_minstrel.webp",
+      "className": "Druid",
+      "specialty": {
+        "name": "Wandering Musician",
+        "description": "At the beginning of each round, he generates +2 Focus Points, plus an additional +1 for every 3 hero levels. The enemy loses the same amount of Focus Points."
+      },
+      "description": "At the beginning of each round, he generates +2 Focus Points, plus an additional +1 for every 3 hero levels. The enemy loses the same amount of Focus Points.",
+      "startingSkills": [
+        "Murmuring",
+        "Sorcery"
+      ],
+      "startingSpell": {
+        "name": "Energy Explosion",
+        "image": "assets/spells/arcane/energy_explosion.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "2",
+        "spellPower": "2",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/the_minstrel"
     },
     {
       "slug": "tolketh",
       "name": "Tölketh",
       "faction": "schism",
-      "className": "",
-      "image": "assets/heroes/schism/tolketh.webp"
+      "image": "assets/heroes/schism/tolketh.webp",
+      "className": "Riftspeaker",
+      "specialty": {
+        "name": "Heroic Strike",
+        "description": "Stellar Purge - His Heroic Strike deals +40 Damage, plus 3 more for every 5 hero levels. Additionally, it dispels all positive effects from the target."
+      },
+      "description": "Stellar Purge - His Heroic Strike deals +40 Damage, plus 3 more for every 5 hero levels. Additionally, it dispels all positive effects from the target.",
+      "startingSkills": [
+        "Abyssal Communion",
+        "Logistics"
+      ],
+      "startingSpell": {
+        "name": "Reinforcements",
+        "image": "assets/spells/arcane/reinforcements.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "1",
+        "spellPower": "3",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/tolketh"
     },
     {
       "slug": "typhona",
       "name": "Typhona",
       "faction": "dungeon",
-      "className": "",
-      "image": "assets/heroes/dungeon/typhona.webp"
+      "image": "assets/heroes/dungeon/typhona.webp",
+      "className": "Warlock",
+      "specialty": {
+        "name": "Hydras",
+        "description": "Alvarian Hydra - Hydras growth in your cities increases by 1. Under her command, Hydras gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Hydras lose an equal amount of Attack and Defence."
+      },
+      "description": "Alvarian Hydra - Hydras growth in your cities increases by 1. Under her command, Hydras gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Hydras lose an equal amount of Attack and Defence.",
+      "startingSkills": [
+        "Advanced Triumvirates Strength"
+      ],
+      "startingSpell": {
+        "name": "Taunt",
+        "image": "assets/spells/daylight/taunt.webp"
+      },
+      "stats": {
+        "attack": "0",
+        "defence": "2",
+        "spellPower": "2",
+        "intelligence": "3"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/typhona"
     },
     {
       "slug": "ulkuth",
       "name": "Ulkuth",
       "faction": "schism",
-      "className": "",
-      "image": "assets/heroes/schism/ulkuth.webp"
+      "image": "assets/heroes/schism/ulkuth.webp",
+      "className": "Riftspeaker",
+      "specialty": {
+        "name": "Scouting",
+        "description": "Pathfinder - Has no terrain penalties. Also has +1 Sight Radius, plus 1 more for every 5 hero levels."
+      },
+      "description": "Pathfinder - Has no terrain penalties. Also has +1 Sight Radius, plus 1 more for every 5 hero levels.",
+      "startingSkills": [
+        "Abyssal Communion",
+        "Scouting"
+      ],
+      "startingSpell": {
+        "name": "Unnatural Calm",
+        "image": "assets/spells/nightshade/unnatural_calm.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "1",
+        "spellPower": "3",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/ulkuth"
     },
     {
       "slug": "vatawna",
       "name": "Vatawna",
       "faction": "sylvan",
-      "className": "",
-      "image": "assets/heroes/sylvan/vatawna.webp"
+      "image": "assets/heroes/sylvan/vatawna.webp",
+      "className": "Druid",
+      "specialty": {
+        "name": "Spiritual Vigor",
+        "description": "+1 spell slot for each Global Map spell. Her maximum mana increases by 10%, plus an additional 5% for every 5 hero levels."
+      },
+      "description": "+1 spell slot for each Global Map spell. Her maximum mana increases by 10%, plus an additional 5% for every 5 hero levels.",
+      "startingSkills": [
+        "Murmuring",
+        "Intelligence"
+      ],
+      "startingSpell": {
+        "name": "Primordial Chaos",
+        "image": "assets/spells/primal/primordial_chaos.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "2",
+        "spellPower": "2",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/vatawna"
     },
     {
       "slug": "vesper",
       "name": "Vesper",
       "faction": "temple",
-      "className": "",
-      "image": "assets/heroes/temple/vesper.webp"
+      "image": "assets/heroes/temple/vesper.webp",
+      "className": "Cleric",
+      "specialty": {
+        "name": "Blessing",
+        "description": "Blessing - Starts with the “Masterful Blessing” spell. This version of the spell makes the target always deal maximum Damage. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels."
+      },
+      "description": "Blessing - Starts with the “Masterful Blessing” spell. This version of the spell makes the target always deal maximum Damage. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
+      "startingSkills": [
+        "Ascension",
+        "Daylight Magic"
+      ],
+      "startingSpell": {
+        "name": "Blessing",
+        "image": "assets/spells/daylight/blessing.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "1",
+        "spellPower": "2",
+        "intelligence": "3"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/vesper"
     },
     {
       "slug": "vim",
       "name": "Vim",
       "faction": "sylvan",
-      "className": "",
-      "image": "assets/heroes/sylvan/vim.webp"
+      "image": "assets/heroes/sylvan/vim.webp",
+      "className": "Druid",
+      "specialty": {
+        "name": "Rock It up!",
+        "description": "He starts with the \"Masterful Cave In\" spell. The obstacles created by this version of the spell must be damaged 1 additional time to be destroyed. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels."
+      },
+      "description": "He starts with the \"Masterful Cave In\" spell. The obstacles created by this version of the spell must be damaged 1 additional time to be destroyed. While casting this spell, effective Spell Power is increased by 1 for every 3 hero levels.",
+      "startingSkills": [
+        "Murmuring",
+        "Primal Magic"
+      ],
+      "startingSpell": {
+        "name": "Cave In",
+        "image": "assets/spells/primal/cave_in.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "2",
+        "spellPower": "2",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/vim"
     },
     {
       "slug": "walkha",
       "name": "Walkha",
       "faction": "schism",
-      "className": "",
-      "image": "assets/heroes/schism/walkha.webp"
+      "image": "assets/heroes/schism/walkha.webp",
+      "className": "Oathkeeper",
+      "specialty": {
+        "name": "Primal Magic",
+        "description": "Primal Weaving - Receives +1 level to all Primal spells, plus 1 more for every 10 hero levels and can use it in battle without limits. Enemy hero cannot cast Primal spells."
+      },
+      "description": "Primal Weaving - Receives +1 level to all Primal spells, plus 1 more for every 10 hero levels and can use it in battle without limits. Enemy hero cannot cast Primal spells.",
+      "startingSkills": [
+        "Abyssal Communion",
+        "Primal Magic"
+      ],
+      "startingSpell": {
+        "name": "Lightning Bolt",
+        "image": "assets/spells/primal/lighting_bolt.webp"
+      },
+      "stats": {
+        "attack": "3",
+        "defence": "2",
+        "spellPower": "1",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/walkha"
     },
     {
       "slug": "xirr",
       "name": "Xirr",
       "faction": "hive",
-      "className": "",
-      "image": "assets/heroes/hive/xirr.webp"
+      "image": "assets/heroes/hive/xirr.webp",
+      "className": "Herald",
+      "specialty": {
+        "name": "Resistant to Elements",
+        "description": "He is immune to negative effects in battles and on the global map. His creatures take –10% Magic Damage, and an additional –2% for every 3 hero level(s)."
+      },
+      "description": "He is immune to negative effects in battles and on the global map. His creatures take –10% Magic Damage, and an additional –2% for every 3 hero level(s).",
+      "startingSkills": [
+        "Summon Swarm",
+        "Resistance"
+      ],
+      "startingSpell": {
+        "name": "Vengeance",
+        "image": "assets/spells/daylight/vengeance.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "0",
+        "spellPower": "4",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/xirr"
     },
     {
       "slug": "ylwari",
       "name": "Ylwari",
       "faction": "dungeon",
-      "className": "",
-      "image": "assets/heroes/dungeon/ylwari.webp"
+      "image": "assets/heroes/dungeon/ylwari.webp",
+      "className": "Warlock",
+      "specialty": {
+        "name": "Diplomacy",
+        "description": "Charismatic - Keeps her army when fleeing from battle with neutral squads. +5% Persuasion Power when using Diplomacy, plus 1% more for every 4 hero levels."
+      },
+      "description": "Charismatic - Keeps her army when fleeing from battle with neutral squads. +5% Persuasion Power when using Diplomacy, plus 1% more for every 4 hero levels.",
+      "startingSkills": [
+        "Triumvirates Strength",
+        "Diplomacy"
+      ],
+      "startingSpell": {
+        "name": "Assemble!",
+        "image": "assets/spells/arcane/assemble.webp"
+      },
+      "stats": {
+        "attack": "0",
+        "defence": "2",
+        "spellPower": "2",
+        "intelligence": "3"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/ylwari"
     },
     {
       "slug": "zakron_the_great",
       "name": "Zakron the Great",
       "faction": "dungeon",
-      "className": "",
-      "image": "assets/heroes/dungeon/zakron_the_great.webp"
+      "image": "assets/heroes/dungeon/zakron_the_great.webp",
+      "className": "Warlock",
+      "specialty": {
+        "name": "Sorcery",
+        "description": "Spellweaver - Deals +10% Damage with spells, plus 1% more for every 2 hero levels. The Damage from the enemy hero's spells is reduced by the same value."
+      },
+      "description": "Spellweaver - Deals +10% Damage with spells, plus 1% more for every 2 hero levels. The Damage from the enemy hero's spells is reduced by the same value.",
+      "startingSkills": [
+        "Triumvirates Strength",
+        "Sorcery"
+      ],
+      "startingSpell": {
+        "name": "Firewall",
+        "image": "assets/spells/primal/firewall.webp"
+      },
+      "stats": {
+        "attack": "0",
+        "defence": "2",
+        "spellPower": "2",
+        "intelligence": "3"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/zakron_the_great"
     },
     {
       "slug": "zam",
       "name": "Zam",
       "faction": "necropolis",
-      "className": "",
-      "image": "assets/heroes/necropolis/zam.webp"
+      "image": "assets/heroes/necropolis/zam.webp",
+      "className": "Death Knight",
+      "specialty": {
+        "name": "Mercury",
+        "description": "Alchemist - Produces 1 Mercury per day, +1 more for every 5 hero levels. Increases the amount of Mercury found on the map by 1."
+      },
+      "description": "Alchemist - Produces 1 Mercury per day, +1 more for every 5 hero levels. Increases the amount of Mercury found on the map by 1.",
+      "startingSkills": [
+        "Necromancy",
+        "Battlecraft"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "3",
+        "defence": "1",
+        "spellPower": "1",
+        "intelligence": "2"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/zam"
     },
     {
       "slug": "zenith",
       "name": "Zenith",
       "faction": "temple",
-      "className": "",
-      "image": "assets/heroes/temple/zenith.webp"
+      "image": "assets/heroes/temple/zenith.webp",
+      "className": "Cleric",
+      "specialty": {
+        "name": "Lightweavers",
+        "description": "Weaving the Light - Lightweavers growth in your cities increases by 1. Under her command, Lightweavers gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Lightweavers lose an equal amount of Attack and Defence."
+      },
+      "description": "Weaving the Light - Lightweavers growth in your cities increases by 1. Under her command, Lightweavers gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defence increase by 1 for every 3 hero levels, and enemy Lightweavers lose an equal amount of Attack and Defence.",
+      "startingSkills": [
+        "Ascension",
+        "Intelligence"
+      ],
+      "startingSpell": {
+        "name": "Heavenly Blades",
+        "image": "assets/spells/daylight/heavenly_blades.webp"
+      },
+      "stats": {
+        "attack": "1",
+        "defence": "1",
+        "spellPower": "2",
+        "intelligence": "3"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/zenith"
     },
     {
       "slug": "zora_the_self_founded",
       "name": "Zoran, the Self‑Founded",
       "faction": "hive",
-      "className": "",
-      "image": "assets/heroes/hive/zora_the_self_founded.webp"
+      "image": "assets/heroes/hive/zora_the_self_founded.webp",
+      "className": "Enforcer",
+      "specialty": {
+        "name": "Waurmification",
+        "description": "Waurms growth in your cities increases by 1. Under his command, Waurmos gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defense increase by 1 for every 3 hero levels, and enemy Waurmos lose an equal amount of Attack and Defense."
+      },
+      "description": "Waurms growth in your cities increases by 1. Under his command, Waurmos gain 1 Speed, 1 Initiative, and 20% HP. Their Attack and Defense increase by 1 for every 3 hero levels, and enemy Waurmos lose an equal amount of Attack and Defense.",
+      "startingSkills": [
+        "Summon Swarm",
+        "Nightshade Magic"
+      ],
+      "startingSpell": null,
+      "stats": {
+        "attack": "4",
+        "defence": "0",
+        "spellPower": "2",
+        "intelligence": "1"
+      },
+      "sourceUrl": "https://www.olden-era.com/en/heroes/zora_the_self_founded"
     }
   ]
 }

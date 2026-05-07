@@ -2,6 +2,8 @@ import { gameData } from "./src/data/game-data.js";
 
 const rollButton = document.querySelector("#rollButton");
 const townRollButton = document.querySelector("#townRollButton");
+const coinButton = document.querySelector("#coinButton");
+const coinResult = document.querySelector("#coinResult");
 const poolInfo = document.querySelector("#poolInfo");
 const panels = {
   left: document.querySelector('.duelist-panel[data-side="left"]'),
@@ -97,7 +99,6 @@ function rerollHero(side) {
   const otherSide = side === "left" ? "right" : "left";
   const otherHeroName = state.sides[otherSide].hero?.name;
   const alternatives = pool.filter((hero) => hero.name !== otherHeroName);
-
   state.sides[side].hero = sample(alternatives.length ? alternatives : pool);
 }
 
@@ -116,7 +117,6 @@ function rerollCastles() {
   const [leftFaction, rightFaction] = pickTwoUnique(factions);
   state.sides.left.faction = leftFaction.key;
   state.sides.right.faction = rightFaction.key;
-
   rerollHero("left");
   rerollHero("right");
 
@@ -125,6 +125,31 @@ function rerollCastles() {
   }
 
   render();
+}
+
+function renderSkills(container, skills) {
+  container.innerHTML = "";
+
+  for (const skill of skills) {
+    const chip = document.createElement("span");
+    chip.className = "detail-chip";
+    chip.textContent = skill;
+    container.appendChild(chip);
+  }
+}
+
+function renderSpell(container, spell) {
+  if (!spell) {
+    container.innerHTML = '<span class="detail-chip detail-chip-muted">No starting spell</span>';
+    return;
+  }
+
+  container.innerHTML = `
+    <div class="spell-content">
+      ${spell.image ? `<img class="spell-icon" src="./public/${spell.image}" alt="${spell.name}" />` : ""}
+      <span class="spell-name">${spell.name}</span>
+    </div>
+  `;
 }
 
 function setPanel(side) {
@@ -145,10 +170,23 @@ function setPanel(side) {
 
   panel.querySelector("[data-hero-faction]").textContent = faction.name;
   panel.querySelector("[data-hero-name]").textContent = hero.name;
+  panel.querySelector("[data-hero-class]").textContent = hero.className || "Unknown class";
+  panel.querySelector("[data-hero-description]").textContent =
+    hero.description || "No specialty description available.";
   panel.querySelector("[data-hero-pool]").textContent = `${pool.length} heroes in ${faction.name}`;
 
-  const rerollButton = panel.querySelector("[data-reroll-side]");
-  rerollButton.dataset.side = side;
+  const sourceLink = panel.querySelector("[data-hero-source]");
+  sourceLink.href = hero.sourceUrl;
+
+  renderSkills(panel.querySelector("[data-hero-skills]"), hero.startingSkills ?? []);
+  renderSpell(panel.querySelector("[data-hero-spell]"), hero.startingSpell);
+
+  panel.querySelector("[data-stat-attack]").textContent = hero.stats.attack;
+  panel.querySelector("[data-stat-defence]").textContent = hero.stats.defence;
+  panel.querySelector("[data-stat-spell-power]").textContent = hero.stats.spellPower;
+  panel.querySelector("[data-stat-intelligence]").textContent = hero.stats.intelligence;
+
+  panel.querySelector("[data-reroll-side]").dataset.side = side;
 }
 
 function updateTownSelectorState() {
@@ -160,7 +198,6 @@ function updateTownSelectorState() {
     for (const button of panel.querySelectorAll(".town-option")) {
       const isSelected = button.dataset.faction === selectedFaction;
       const isBlocked = button.dataset.faction === blockedFaction && !isSelected;
-
       button.classList.toggle("is-selected", isSelected);
       button.disabled = isBlocked;
       button.setAttribute("aria-pressed", String(isSelected));
@@ -174,11 +211,21 @@ function render() {
   updateTownSelectorState();
 }
 
+function flipCoin() {
+  const value = Math.random() < 0.5 ? 0 : 1;
+  coinButton.classList.remove("is-flipping");
+  void coinButton.offsetWidth;
+  coinButton.classList.add("is-flipping");
+  coinButton.querySelector(".coin-face").textContent = String(value);
+  coinResult.textContent = `Result: ${value}`;
+}
+
 buildTownSelectors();
 rerollCastles();
 
 rollButton.addEventListener("click", rerollBothHeroes);
 townRollButton.addEventListener("click", rerollCastles);
+coinButton.addEventListener("click", flipCoin);
 
 for (const panel of Object.values(panels)) {
   panel.querySelector("[data-reroll-side]").addEventListener("click", (event) => {
@@ -195,4 +242,4 @@ window.addEventListener("keydown", (event) => {
 });
 
 poolInfo.textContent =
-  "You can reroll castles as a pair or reroll only heroes. Castles never repeat, and hero rerolls always stay inside the chosen faction.";
+  "Castles can reroll as a pair, heroes can reroll independently, and the coin flip is a separate 0/1 helper.";
