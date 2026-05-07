@@ -15,6 +15,9 @@ const roomValue = document.querySelector("#roomValue");
 const seatValue = document.querySelector("#seatValue");
 const presenceValue = document.querySelector("#presenceValue");
 const copyLinkButton = document.querySelector("#copyLinkButton");
+const waitingPanel = document.querySelector("#waitingPanel");
+const arenaSection = document.querySelector(".arena");
+const controlsSection = document.querySelector(".controls");
 const panels = {
   left: document.querySelector('.duelist-panel[data-side="left"]'),
   right: document.querySelector('.duelist-panel[data-side="right"]'),
@@ -325,8 +328,23 @@ function renderMeta(viewState) {
   coinResult.textContent = `Result: ${viewState.coin ?? 0}`;
 }
 
+function renderLobbyState(viewState) {
+  if (state.mode === "single") {
+    waitingPanel.classList.add("hidden");
+    arenaSection.classList.remove("hidden");
+    controlsSection.classList.remove("hidden");
+    return;
+  }
+
+  const isReady = (viewState.connectedPeers ?? 1) > 1;
+  waitingPanel.classList.toggle("hidden", isReady);
+  arenaSection.classList.toggle("hidden", !isReady);
+  controlsSection.classList.toggle("hidden", !isReady);
+}
+
 function render() {
   const viewState = getCurrentViewState();
+  renderLobbyState(viewState);
   if (!hasRenderableState(viewState)) {
     renderMeta(viewState);
     return;
@@ -488,7 +506,10 @@ async function initializeMultiplayer({ roomId, isHost }) {
   }
 
   function initializeSharedGameIfNeeded() {
-    const { game, usage } = ensureSharedMaps();
+    const { players, game, usage } = ensureSharedMaps();
+    if (!players.get("left")) {
+      players.set("left", clientId);
+    }
     if (game.get("initialized")) {
       return;
     }

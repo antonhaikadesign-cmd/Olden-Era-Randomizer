@@ -666,3 +666,26 @@ h1 {
   margin: 0;
   color: var(--ink);
 }
+
+.waiting-panel {
+  margin-bottom: 18px;
+  padding: 24px 28px;
+  border: 2px solid rgba(240, 208, 126, 0.55);
+  background:
+    linear-gradient(180deg, rgba(16, 34, 79, 0.92), rgba(9, 21, 51, 0.95)),
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.05), transparent 40%);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.waiting-title {
+  margin: 0;
+  color: var(--gold-soft);
+  font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.waiting-copy {
+  margin: 10px 0 0;
+  max-width: 760px;
+  color: var(--muted);
+  line-height: 1.5;
+}
