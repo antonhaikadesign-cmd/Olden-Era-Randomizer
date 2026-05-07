@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olden Era Hero Randomizer</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <main class="board">
+        <header class="board-header">
+          <div class="title-panel">
+            <p class="eyebrow">Heroes of Might and Magic: Olden Era</p>
+            <h1>Hero Duel Randomizer</h1>
+            <p class="subtitle">
+              Choose castles for both sides, then reroll only heroes from those factions.
+            </p>
+          </div>
+          <img class="header-art" src="./public/assets/ui/header.jpg" alt="Olden Era official artwork" />
+        </header>
+
+        <section class="arena" aria-label="Randomized matchup">
+          <article class="duelist-panel" data-side="left">
+            <p class="panel-label">Opponent I</p>
+
+            <section class="town-panel">
+              <div class="town-banner">
+                <div class="town-copy">
+                  <span class="town-tag">Castle</span>
+                  <strong class="town-name" data-town-name></strong>
+                </div>
+                <img class="town-avatar" data-town-image alt="" />
+              </div>
+              <div class="town-selector" data-town-selector></div>
+            </section>
+
+            <section class="hero-card">
+              <img class="hero-portrait" data-hero-image alt="" />
+              <div class="hero-copy">
+                <div class="hero-heading">
+                  <p class="hero-faction" data-hero-faction></p>
+                  <h2 class="hero-name" data-hero-name></h2>
+                </div>
+                <div class="hero-meta">
+                  <p class="hero-pool" data-hero-pool></p>
+                  <button class="hero-reroll-button" type="button" data-reroll-side>
+                    Reroll Hero
+                  </button>
+                </div>
+              </div>
+            </section>
+          </article>
+
+          <div class="versus-column" aria-hidden="true">
+            <div class="versus-mark">VS</div>
+            <button class="roll-button roll-button-secondary" id="townRollButton" type="button">
+              Reroll Castles
+            </button>
+            <button class="roll-button" id="rollButton" type="button">Reroll Both Heroes</button>
+          </div>
+
+          <article class="duelist-panel" data-side="right">
+            <p class="panel-label">Opponent II</p>
+
+            <section class="town-panel">
+              <div class="town-banner">
+                <div class="town-copy">
+                  <span class="town-tag">Castle</span>
+                  <strong class="town-name" data-town-name></strong>
+                </div>
+                <img class="town-avatar" data-town-image alt="" />
+              </div>
+              <div class="town-selector" data-town-selector></div>
+            </section>
+
+            <section class="hero-card">
+              <img class="hero-portrait" data-hero-image alt="" />
+              <div class="hero-copy">
+                <div class="hero-heading">
+                  <p class="hero-faction" data-hero-faction></p>
+                  <h2 class="hero-name" data-hero-name></h2>
+                </div>
+                <div class="hero-meta">
+                  <p class="hero-pool" data-hero-pool></p>
+                  <button class="hero-reroll-button" type="button" data-reroll-side>
+                    Reroll Hero
+                  </button>
+                </div>
+              </div>
+            </section>
+          </article>
+        </section>
+
+        <footer class="controls">
+          <p class="meta" id="poolInfo"></p>
+        </footer>
+      </main>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

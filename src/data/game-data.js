@@ -1,0 +1,794 @@
+export const gameData = {
+  "generatedAt": "2026-05-07T16:22:53.348Z",
+  "source": "https://www.olden-era.com/en/heroes",
+  "factions": [
+    {
+      "key": "temple",
+      "name": "Temple",
+      "image": "assets/factions/temple.webp"
+    },
+    {
+      "key": "schism",
+      "name": "Schism",
+      "image": "assets/factions/schism.webp"
+    },
+    {
+      "key": "dungeon",
+      "name": "Dungeon",
+      "image": "assets/factions/dungeon.webp"
+    },
+    {
+      "key": "necropolis",
+      "name": "Necropolis",
+      "image": "assets/factions/necropolis.webp"
+    },
+    {
+      "key": "sylvan",
+      "name": "Sylvan",
+      "image": "assets/factions/sylvan.webp"
+    },
+    {
+      "key": "hive",
+      "name": "Hive",
+      "image": "assets/factions/hive.webp"
+    }
+  ],
+  "heroes": [
+    {
+      "slug": "abigor_duke_of_battle",
+      "name": "Abigor, Duke of Battle",
+      "faction": "hive",
+      "className": "",
+      "image": "assets/heroes/hive/abigor_duke_of_battle.webp"
+    },
+    {
+      "slug": "adahn",
+      "name": "Adahn",
+      "faction": "necropolis",
+      "className": "",
+      "image": "assets/heroes/necropolis/adahn.webp"
+    },
+    {
+      "slug": "aeliniel",
+      "name": "Aeliniel",
+      "faction": "sylvan",
+      "className": "",
+      "image": "assets/heroes/sylvan/aeliniel.webp"
+    },
+    {
+      "slug": "aeos_the_exalted",
+      "name": "Aeos the Exalted",
+      "faction": "temple",
+      "className": "",
+      "image": "assets/heroes/temple/aeos_the_exalted.webp"
+    },
+    {
+      "slug": "alluring_sh_a",
+      "name": "Alluring Sh&#x27;a",
+      "faction": "sylvan",
+      "className": "",
+      "image": "assets/heroes/sylvan/alluring_sh_a.webp"
+    },
+    {
+      "slug": "anastasia_the_meek",
+      "name": "Anastasia the Meek",
+      "faction": "temple",
+      "className": "",
+      "image": "assets/heroes/temple/anastasia_the_meek.webp"
+    },
+    {
+      "slug": "artorius_veritas",
+      "name": "Artorius Veritas",
+      "faction": "necropolis",
+      "className": "",
+      "image": "assets/heroes/necropolis/artorius_veritas.webp"
+    },
+    {
+      "slug": "aunt_daliar",
+      "name": "Autn Daliar",
+      "faction": "sylvan",
+      "className": "",
+      "image": "assets/heroes/sylvan/aunt_daliar.webp"
+    },
+    {
+      "slug": "bathym_duke_of_jewels",
+      "name": "Bathym, Duke of Jewels",
+      "faction": "hive",
+      "className": "",
+      "image": "assets/heroes/hive/bathym_duke_of_jewels.webp"
+    },
+    {
+      "slug": "blackhorn",
+      "name": "Blackhorn",
+      "faction": "schism",
+      "className": "",
+      "image": "assets/heroes/schism/blackhorn.webp"
+    },
+    {
+      "slug": "bulwark",
+      "name": "Bulwark",
+      "faction": "necropolis",
+      "className": "",
+      "image": "assets/heroes/necropolis/bulwark.webp"
+    },
+    {
+      "slug": "changeling_urgo",
+      "name": "Changeling Urgo",
+      "faction": "schism",
+      "className": "",
+      "image": "assets/heroes/schism/changeling_urgo.webp"
+    },
+    {
+      "slug": "clarissa",
+      "name": "Clarissa",
+      "faction": "temple",
+      "className": "",
+      "image": "assets/heroes/temple/clarissa.webp"
+    },
+    {
+      "slug": "creta_daughter_of_navarr",
+      "name": "Creta, daughter of Navarr",
+      "faction": "dungeon",
+      "className": "",
+      "image": "assets/heroes/dungeon/creta_daughter_of_navarr.webp"
+    },
+    {
+      "slug": "curson_duke_of_rage",
+      "name": "Curson, Duke of Rage",
+      "faction": "hive",
+      "className": "",
+      "image": "assets/heroes/hive/curson_duke_of_rage.webp"
+    },
+    {
+      "slug": "devir_son_of_devir",
+      "name": "Devir, son of Devir",
+      "faction": "dungeon",
+      "className": "",
+      "image": "assets/heroes/dungeon/devir_son_of_devir.webp"
+    },
+    {
+      "slug": "dhuvri",
+      "name": "Dhüvri",
+      "faction": "schism",
+      "className": "",
+      "image": "assets/heroes/schism/dhuvri.webp"
+    },
+    {
+      "slug": "echolily",
+      "name": "Echolily",
+      "faction": "sylvan",
+      "className": "",
+      "image": "assets/heroes/sylvan/echolily.webp"
+    },
+    {
+      "slug": "eith",
+      "name": "Eith",
+      "faction": "sylvan",
+      "className": "",
+      "image": "assets/heroes/sylvan/eith.webp"
+    },
+    {
+      "slug": "elder_tss_kish",
+      "name": "Elder Tss&#x27;kish",
+      "faction": "sylvan",
+      "className": "",
+      "image": "assets/heroes/sylvan/elder_tss_kish.webp"
+    },
+    {
+      "slug": "enatee",
+      "name": "Enatee",
+      "faction": "dungeon",
+      "className": "",
+      "image": "assets/heroes/dungeon/enatee.webp"
+    },
+    {
+      "slug": "ethric",
+      "name": "Ethric",
+      "faction": "necropolis",
+      "className": "",
+      "image": "assets/heroes/necropolis/ethric.webp"
+    },
+    {
+      "slug": "faleor",
+      "name": "Faleor",
+      "faction": "sylvan",
+      "className": "",
+      "image": "assets/heroes/sylvan/faleor.webp"
+    },
+    {
+      "slug": "fleu",
+      "name": "Fleu",
+      "faction": "hive",
+      "className": "",
+      "image": "assets/heroes/hive/fleu.webp"
+    },
+    {
+      "slug": "funerella",
+      "name": "Funerella",
+      "faction": "necropolis",
+      "className": "",
+      "image": "assets/heroes/necropolis/funerella.webp"
+    },
+    {
+      "slug": "gingertail",
+      "name": "Gingertail",
+      "faction": "sylvan",
+      "className": "",
+      "image": "assets/heroes/sylvan/gingertail.webp"
+    },
+    {
+      "slug": "glacia",
+      "name": "Glacia",
+      "faction": "sylvan",
+      "className": "",
+      "image": "assets/heroes/sylvan/glacia.webp"
+    },
+    {
+      "slug": "glastor",
+      "name": "Glastor",
+      "faction": "dungeon",
+      "className": "",
+      "image": "assets/heroes/dungeon/glastor.webp"
+    },
+    {
+      "slug": "gleard_the_grey",
+      "name": "Gleard the Grey",
+      "faction": "dungeon",
+      "className": "",
+      "image": "assets/heroes/dungeon/gleard_the_grey.webp"
+    },
+    {
+      "slug": "goldentongue",
+      "name": "Goldentongue",
+      "faction": "hive",
+      "className": "",
+      "image": "assets/heroes/hive/goldentongue.webp"
+    },
+    {
+      "slug": "gorel_spearhead",
+      "name": "Gorel Spearhead",
+      "faction": "sylvan",
+      "className": "",
+      "image": "assets/heroes/sylvan/gorel_spearhead.webp"
+    },
+    {
+      "slug": "grellekh_the_betrayer",
+      "name": "Grellekh the Betrayer",
+      "faction": "schism",
+      "className": "",
+      "image": "assets/heroes/schism/grellekh_the_betrayer.webp"
+    },
+    {
+      "slug": "groo",
+      "name": "Groo",
+      "faction": "hive",
+      "className": "",
+      "image": "assets/heroes/hive/groo.webp"
+    },
+    {
+      "slug": "guildmaster_klastor",
+      "name": "Guildmaster Klastor",
+      "faction": "necropolis",
+      "className": "",
+      "image": "assets/heroes/necropolis/guildmaster_klastor.webp"
+    },
+    {
+      "slug": "halon",
+      "name": "Halon",
+      "faction": "sylvan",
+      "className": "",
+      "image": "assets/heroes/sylvan/halon.webp"
+    },
+    {
+      "slug": "heretic_avis",
+      "name": "Heretic Avis",
+      "faction": "temple",
+      "className": "",
+      "image": "assets/heroes/temple/heretic_avis.webp"
+    },
+    {
+      "slug": "icequeen_hel_ghat",
+      "name": "Icequeen Hel&#x27;Ghat",
+      "faction": "schism",
+      "className": "",
+      "image": "assets/heroes/schism/icequeen_hel_ghat.webp"
+    },
+    {
+      "slug": "iron_master",
+      "name": "Iron Master",
+      "faction": "schism",
+      "className": "",
+      "image": "assets/heroes/schism/iron_master.webp"
+    },
+    {
+      "slug": "ister",
+      "name": "Ister",
+      "faction": "temple",
+      "className": "",
+      "image": "assets/heroes/temple/ister.webp"
+    },
+    {
+      "slug": "janhei",
+      "name": "Jänhei",
+      "faction": "schism",
+      "className": "",
+      "image": "assets/heroes/schism/janhei.webp"
+    },
+    {
+      "slug": "john_johnson",
+      "name": "John Johnson",
+      "faction": "temple",
+      "className": "",
+      "image": "assets/heroes/temple/john_johnson.webp"
+    },
+    {
+      "slug": "julius",
+      "name": "Julius",
+      "faction": "temple",
+      "className": "",
+      "image": "assets/heroes/temple/julius.webp"
+    },
+    {
+      "slug": "keandra",
+      "name": "Keandra",
+      "faction": "temple",
+      "className": "",
+      "image": "assets/heroes/temple/keandra.webp"
+    },
+    {
+      "slug": "kel_ghul",
+      "name": "Kel&#x27;Ghul",
+      "faction": "necropolis",
+      "className": "",
+      "image": "assets/heroes/necropolis/kel_ghul.webp"
+    },
+    {
+      "slug": "kelarr_son_of_navarr",
+      "name": "Kelarr, son of Navarr",
+      "faction": "dungeon",
+      "className": "",
+      "image": "assets/heroes/dungeon/kelarr_son_of_navarr.webp"
+    },
+    {
+      "slug": "kestrel",
+      "name": "Kestrel",
+      "faction": "temple",
+      "className": "",
+      "image": "assets/heroes/temple/kestrel.webp"
+    },
+    {
+      "slug": "khariseth",
+      "name": "Khariseth",
+      "faction": "hive",
+      "className": "",
+      "image": "assets/heroes/hive/khariseth.webp"
+    },
+    {
+      "slug": "kieran",
+      "name": "Kieran",
+      "faction": "dungeon",
+      "className": "",
+      "image": "assets/heroes/dungeon/kieran.webp"
+    },
+    {
+      "slug": "king_of_kings",
+      "name": "King-of-Kings",
+      "faction": "necropolis",
+      "className": "",
+      "image": "assets/heroes/necropolis/king_of_kings.webp"
+    },
+    {
+      "slug": "kwinri",
+      "name": "Kwinri",
+      "faction": "schism",
+      "className": "",
+      "image": "assets/heroes/schism/kwinri.webp"
+    },
+    {
+      "slug": "laura",
+      "name": "Laura",
+      "faction": "necropolis",
+      "className": "",
+      "image": "assets/heroes/necropolis/laura.webp"
+    },
+    {
+      "slug": "leira",
+      "name": "Leira",
+      "faction": "hive",
+      "className": "",
+      "image": "assets/heroes/hive/leira.webp"
+    },
+    {
+      "slug": "leon_sticky_fingers",
+      "name": "Leon Sticky-Fingers",
+      "faction": "temple",
+      "className": "",
+      "image": "assets/heroes/temple/leon_sticky_fingers.webp"
+    },
+    {
+      "slug": "lia_the_untethered_one",
+      "name": "Lia the Untethered One",
+      "faction": "temple",
+      "className": "",
+      "image": "assets/heroes/temple/lia_the_untethered_one.webp"
+    },
+    {
+      "slug": "lo",
+      "name": "Lo",
+      "faction": "hive",
+      "className": "",
+      "image": "assets/heroes/hive/lo.webp"
+    },
+    {
+      "slug": "lodos",
+      "name": "Lodos",
+      "faction": "dungeon",
+      "className": "",
+      "image": "assets/heroes/dungeon/lodos.webp"
+    },
+    {
+      "slug": "lord_edgar",
+      "name": "Lord Edgar",
+      "faction": "temple",
+      "className": "",
+      "image": "assets/heroes/temple/lord_edgar.webp"
+    },
+    {
+      "slug": "lord_rufus",
+      "name": "Lord Rufus",
+      "faction": "necropolis",
+      "className": "",
+      "image": "assets/heroes/necropolis/lord_rufus.webp"
+    },
+    {
+      "slug": "maelstrom",
+      "name": "Maelstrom",
+      "faction": "hive",
+      "className": "",
+      "image": "assets/heroes/hive/maelstrom.webp"
+    },
+    {
+      "slug": "mag",
+      "name": "Mag",
+      "faction": "necropolis",
+      "className": "",
+      "image": "assets/heroes/necropolis/mag.webp"
+    },
+    {
+      "slug": "mara_matha",
+      "name": "Mara Matha",
+      "faction": "schism",
+      "className": "",
+      "image": "assets/heroes/schism/mara_matha.webp"
+    },
+    {
+      "slug": "marl",
+      "name": "Marl",
+      "faction": "necropolis",
+      "className": "",
+      "image": "assets/heroes/necropolis/marl.webp"
+    },
+    {
+      "slug": "martyr_tho",
+      "name": "Martyr Tho",
+      "faction": "schism",
+      "className": "",
+      "image": "assets/heroes/schism/martyr_tho.webp"
+    },
+    {
+      "slug": "matastala_the_white",
+      "name": "Matastala the White",
+      "faction": "schism",
+      "className": "",
+      "image": "assets/heroes/schism/matastala_the_white.webp"
+    },
+    {
+      "slug": "merry_elias",
+      "name": "Merry Elias",
+      "faction": "temple",
+      "className": "",
+      "image": "assets/heroes/temple/merry_elias.webp"
+    },
+    {
+      "slug": "mila",
+      "name": "Mila",
+      "faction": "hive",
+      "className": "",
+      "image": "assets/heroes/hive/mila.webp"
+    },
+    {
+      "slug": "milossa_the_golden",
+      "name": "Milossa The Golden",
+      "faction": "necropolis",
+      "className": "",
+      "image": "assets/heroes/necropolis/milossa_the_golden.webp"
+    },
+    {
+      "slug": "motley",
+      "name": "Motley",
+      "faction": "dungeon",
+      "className": "",
+      "image": "assets/heroes/dungeon/motley.webp"
+    },
+    {
+      "slug": "mouaren",
+      "name": "Mouaren",
+      "faction": "dungeon",
+      "className": "",
+      "image": "assets/heroes/dungeon/mouaren.webp"
+    },
+    {
+      "slug": "mreowa",
+      "name": "Mreowa",
+      "faction": "sylvan",
+      "className": "",
+      "image": "assets/heroes/sylvan/mreowa.webp"
+    },
+    {
+      "slug": "nadir",
+      "name": "Nadir",
+      "faction": "temple",
+      "className": "",
+      "image": "assets/heroes/temple/nadir.webp"
+    },
+    {
+      "slug": "natalida",
+      "name": "Natalida",
+      "faction": "necropolis",
+      "className": "",
+      "image": "assets/heroes/necropolis/natalida.webp"
+    },
+    {
+      "slug": "niev",
+      "name": "Niev",
+      "faction": "hive",
+      "className": "",
+      "image": "assets/heroes/hive/niev.webp"
+    },
+    {
+      "slug": "nihil",
+      "name": "Nihil",
+      "faction": "schism",
+      "className": "",
+      "image": "assets/heroes/schism/nihil.webp"
+    },
+    {
+      "slug": "nor",
+      "name": "Nor",
+      "faction": "hive",
+      "className": "",
+      "image": "assets/heroes/hive/nor.webp"
+    },
+    {
+      "slug": "octavia",
+      "name": "Octavia",
+      "faction": "sylvan",
+      "className": "",
+      "image": "assets/heroes/sylvan/octavia.webp"
+    },
+    {
+      "slug": "old_lord_mandall",
+      "name": "Old Lord Mandall",
+      "faction": "temple",
+      "className": "",
+      "image": "assets/heroes/temple/old_lord_mandall.webp"
+    },
+    {
+      "slug": "old_piligrim",
+      "name": "Old Piligrim",
+      "faction": "sylvan",
+      "className": "",
+      "image": "assets/heroes/sylvan/old_piligrim.webp"
+    },
+    {
+      "slug": "onkos",
+      "name": "Onkos",
+      "faction": "necropolis",
+      "className": "",
+      "image": "assets/heroes/necropolis/onkos.webp"
+    },
+    {
+      "slug": "oriax",
+      "name": "Oriax",
+      "faction": "hive",
+      "className": "",
+      "image": "assets/heroes/hive/oriax.webp"
+    },
+    {
+      "slug": "pauper",
+      "name": "Pauper",
+      "faction": "hive",
+      "className": "",
+      "image": "assets/heroes/hive/pauper.webp"
+    },
+    {
+      "slug": "pip",
+      "name": "Pip",
+      "faction": "temple",
+      "className": "",
+      "image": "assets/heroes/temple/pip.webp"
+    },
+    {
+      "slug": "ra_davok",
+      "name": "Ra&#x27;Davok",
+      "faction": "schism",
+      "className": "",
+      "image": "assets/heroes/schism/ra_davok.webp"
+    },
+    {
+      "slug": "rhea",
+      "name": "Rhea",
+      "faction": "dungeon",
+      "className": "",
+      "image": "assets/heroes/dungeon/rhea.webp"
+    },
+    {
+      "slug": "shadespinner_oona",
+      "name": "Shadespinner Oona",
+      "faction": "necropolis",
+      "className": "",
+      "image": "assets/heroes/necropolis/shadespinner_oona.webp"
+    },
+    {
+      "slug": "sister_deira",
+      "name": "Sister Deira",
+      "faction": "dungeon",
+      "className": "",
+      "image": "assets/heroes/dungeon/sister_deira.webp"
+    },
+    {
+      "slug": "sister_keiri",
+      "name": "Sister Keiri",
+      "faction": "schism",
+      "className": "",
+      "image": "assets/heroes/schism/sister_keiri.webp"
+    },
+    {
+      "slug": "stinger",
+      "name": "Stinger",
+      "faction": "dungeon",
+      "className": "",
+      "image": "assets/heroes/dungeon/stinger.webp"
+    },
+    {
+      "slug": "sullie",
+      "name": "Sullie",
+      "faction": "sylvan",
+      "className": "",
+      "image": "assets/heroes/sylvan/sullie.webp"
+    },
+    {
+      "slug": "sunny_rauktol",
+      "name": "Sunny Rauktol",
+      "faction": "dungeon",
+      "className": "",
+      "image": "assets/heroes/dungeon/sunny_rauktol.webp"
+    },
+    {
+      "slug": "tarius",
+      "name": "Tarius",
+      "faction": "necropolis",
+      "className": "",
+      "image": "assets/heroes/necropolis/tarius.webp"
+    },
+    {
+      "slug": "tavi",
+      "name": "Tavi",
+      "faction": "hive",
+      "className": "",
+      "image": "assets/heroes/hive/tavi.webp"
+    },
+    {
+      "slug": "tellaris_the_betrayed",
+      "name": "Tellaris the Betrayed",
+      "faction": "dungeon",
+      "className": "",
+      "image": "assets/heroes/dungeon/tellaris_the_betrayed.webp"
+    },
+    {
+      "slug": "the_eye_collective",
+      "name": "The Eye Collective",
+      "faction": "schism",
+      "className": "",
+      "image": "assets/heroes/schism/the_eye_collective.webp"
+    },
+    {
+      "slug": "the_minstrel",
+      "name": "The Minstrel",
+      "faction": "sylvan",
+      "className": "",
+      "image": "assets/heroes/sylvan/the_minstrel.webp"
+    },
+    {
+      "slug": "tolketh",
+      "name": "Tölketh",
+      "faction": "schism",
+      "className": "",
+      "image": "assets/heroes/schism/tolketh.webp"
+    },
+    {
+      "slug": "typhona",
+      "name": "Typhona",
+      "faction": "dungeon",
+      "className": "",
+      "image": "assets/heroes/dungeon/typhona.webp"
+    },
+    {
+      "slug": "ulkuth",
+      "name": "Ulkuth",
+      "faction": "schism",
+      "className": "",
+      "image": "assets/heroes/schism/ulkuth.webp"
+    },
+    {
+      "slug": "vatawna",
+      "name": "Vatawna",
+      "faction": "sylvan",
+      "className": "",
+      "image": "assets/heroes/sylvan/vatawna.webp"
+    },
+    {
+      "slug": "vesper",
+      "name": "Vesper",
+      "faction": "temple",
+      "className": "",
+      "image": "assets/heroes/temple/vesper.webp"
+    },
+    {
+      "slug": "vim",
+      "name": "Vim",
+      "faction": "sylvan",
+      "className": "",
+      "image": "assets/heroes/sylvan/vim.webp"
+    },
+    {
+      "slug": "walkha",
+      "name": "Walkha",
+      "faction": "schism",
+      "className": "",
+      "image": "assets/heroes/schism/walkha.webp"
+    },
+    {
+      "slug": "xirr",
+      "name": "Xirr",
+      "faction": "hive",
+      "className": "",
+      "image": "assets/heroes/hive/xirr.webp"
+    },
+    {
+      "slug": "ylwari",
+      "name": "Ylwari",
+      "faction": "dungeon",
+      "className": "",
+      "image": "assets/heroes/dungeon/ylwari.webp"
+    },
+    {
+      "slug": "zakron_the_great",
+      "name": "Zakron the Great",
+      "faction": "dungeon",
+      "className": "",
+      "image": "assets/heroes/dungeon/zakron_the_great.webp"
+    },
+    {
+      "slug": "zam",
+      "name": "Zam",
+      "faction": "necropolis",
+      "className": "",
+      "image": "assets/heroes/necropolis/zam.webp"
+    },
+    {
+      "slug": "zenith",
+      "name": "Zenith",
+      "faction": "temple",
+      "className": "",
+      "image": "assets/heroes/temple/zenith.webp"
+    },
+    {
+      "slug": "zora_the_self_founded",
+      "name": "Zoran, the Self‑Founded",
+      "faction": "hive",
+      "className": "",
+      "image": "assets/heroes/hive/zora_the_self_founded.webp"
+    }
+  ]
+};
